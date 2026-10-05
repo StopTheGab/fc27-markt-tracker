@@ -1,0 +1,22 @@
+# Secrets
+.env
+*.env
+!.env.example
+
+# Local runtime data
+data/
+logs/
+export/
+*.sqlite
+*.db
+*.pid
+__pycache__/
+*.pyc
+.venv/
+
+# Dashboard
+dashboard/node_modules/
+dashboard/.next/
+dashboard/out/
+dashboard/.vercel/
+.vercel/
