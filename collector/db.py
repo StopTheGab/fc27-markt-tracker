@@ -163,7 +163,7 @@ def price_series(con, card_id: str, since: str) -> list[tuple[datetime, int]]:
     return [(parse(r["ts"]), int(r["price"])) for r in rows]
 
 
-def classify_price(con, card_id: str, price: int, max_dev: float = 0.5) -> str:
+def classify_price(con, card_id: str, price: int, max_dev: float | None = None) -> str:
     """'live' or 'suspect': a point > max_dev away from the median of the last 8 valid points is suspect
     (source glitch, e.g. Bellingham 167k -> 1.5k). A suspect point is promoted when the next one confirms it."""
     rows = con.execute("SELECT ts, price, origin FROM prices WHERE card_id=? AND price IS NOT NULL "
@@ -173,6 +173,8 @@ def classify_price(con, card_id: str, price: int, max_dev: float = 0.5) -> str:
         return "live"
     valid.sort()
     med = valid[len(valid) // 2]
+    if max_dev is None:  # expensive cards rarely jump 30 %+ in 15 min; cheap ones move by whole price steps
+        max_dev = 0.3 if med >= 100_000 else 0.5
     if abs(price - med) <= med * max_dev:
         return "live"
     last = rows[0] if rows else None

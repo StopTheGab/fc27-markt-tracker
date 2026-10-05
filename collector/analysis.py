@@ -396,7 +396,8 @@ def close_tip(con, tip: dict, price: int, now: datetime, r: dict) -> None:
 
 def hit_rate(con, now: datetime, window_days: int = 14) -> dict | None:
     since = db.iso(now - timedelta(days=window_days))
-    rows = con.execute("SELECT outcome FROM tips WHERE closed_at IS NOT NULL AND closed_at>=?", (since,)).fetchall()
+    rows = con.execute("SELECT outcome FROM tips WHERE closed_at IS NOT NULL AND closed_at>=? "
+                       "AND outcome IN ('hit','miss')", (since,)).fetchall()  # 'invalid' = data glitch, not counted
     open_n = con.execute("SELECT COUNT(*) FROM tips WHERE closed_at IS NULL").fetchone()[0]
     if not rows and not open_n:
         return None
@@ -498,7 +499,8 @@ def analyze(con, cards: list[dict], now: datetime) -> dict:
                     active[cid] = {
                         "card_id": cid, "name": by_id.get(cid, {}).get("name"), "type": "sell",
                         "price": m["price"], "avg_7d": m["avg_7d"], "deviation_pct": pct(m["price"], m["avg_7d"]),
-                        "expected_sell": m["price"], "expected_profit": profit, "confidence": "hoch",
+                        "expected_sell": m["price"], "expected_profit": profit,
+                        "confidence": "hoch" if m["data_days"] >= r["low_confidence_days"] else "gering",
                         "reasons": [f"Preis weiterhin am/über 7-Tage-Schnitt",
                                     f"Gekauft laut Signal bei {fmt(last['buy_price'])} – Gewinn nach Steuer {fmt(profit)}"],
                         "rules": ["base_sell_avg"], "buy_price": last["buy_price"],
