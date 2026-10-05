@@ -512,8 +512,13 @@
       "end": "2026-10-23",
       "status": "erwartet",
       "certainty": "unsicher",
-      "expected_effect": "Erste große Promo nach DFG: Promo-Freitag-Dip am 09.10. 19:00. Früher Termin (traditionell Ende Januar, z. B. FC 26: 31.01.2026 laut realsport101-Prognose) stammt nur aus Leaks/Prognosen.",
+      "expected_effect": "Erste große Promo nach DFG: Promo-Freitag-Dip am 09.10. 19:00. Früher Termin (traditionell Ende Januar, z. B. FC 26: 31.01.2026 laut realsport101-Prognose) stammt nur aus Leaks/Prognosen. Stand 05.10.: fifauteam nennt 09.10. 18:00 UK – 23.10. 18:00 UK (Seite widersprüchlich: 'official' vs. 'estimated, based on leaks'); geleakte Team-1-Liste (unsicher) mit vielen 86–91ern (u. a. Estevão, Doué, A. Thompson 91; Carreras, Woltemade 90) → Druck auf 86–89er Specials/Meta-Karten ab 09.10.; keine EA-Bestätigung gefunden.",
       "sources": [
+        {
+          "title": "fifauteam – FC 27 Future Stars (Daten + geleakte Team-1-Liste)",
+          "url": "https://fifauteam.com/?p=362090",
+          "date": "2026-10"
+        },
         {
           "title": "realsport101 – FC 27 Promo Calendar: Confirmed & Expected Dates",
           "url": "https://realsport101.com/article/fc-27-promo-calendar-confirmed-expected-dates-for-every-ultimate-team-campaign",
