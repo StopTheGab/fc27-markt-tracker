@@ -1,7 +1,7 @@
 "use client";
 
 import { pct, SIGNAL_LABEL, trendClass } from "@/lib/format";
-import type { Loaded, SignalType } from "@/lib/types";
+import type { Loaded, SignalStrength, SignalType } from "@/lib/types";
 
 export function SignalBadge({ type }: { type: SignalType | null | undefined }) {
   if (!type) return <span className="muted">–</span>;
@@ -9,6 +9,27 @@ export function SignalBadge({ type }: { type: SignalType | null | undefined }) {
     <span className={`badge badge-${type}`}>
       {type === "buy" ? "▲" : "▼"} {SIGNAL_LABEL[type] ?? type}
     </span>
+  );
+}
+
+/** Badge „STARK“ für starke Signale (≥ 15 % unter Schnitt); sonst nichts. */
+export function StrongBadge({ strength }: { strength: SignalStrength | null | undefined }) {
+  if (strength !== "stark") return null;
+  return (
+    <span className="badge badge-strong" title="Mindestens 15 % unter dem 7-Tage-Schnitt">
+      STARK
+    </span>
+  );
+}
+
+/** Kurze Erklärung, wie Kauf-/Verkaufslimits und Signale entstehen. */
+export function LimitsExplainer() {
+  return (
+    <p className="small muted explainer">
+      ⓘ Kaufsignal, wenn der Preis unter das Kauflimit fällt (7-Tage-Schnitt minus 8–20 %, je nach Schwankung der
+      Karte); ab 15 % = starkes Signal. Verkaufen am 7-Tage-Schnitt, im Wochenhoch (Do/Fr) oder vor Promos. Gewinn
+      nach 5 % EA-Steuer.
+    </p>
   );
 }
 

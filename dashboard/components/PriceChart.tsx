@@ -19,6 +19,10 @@ interface Props {
   priceMin?: number | null;
   priceMax?: number | null;
   gaps?: Gap[];
+  /** Kauflimit (gestrichelt grün) */
+  buyLimit?: number | null;
+  /** Verkaufslimit (gestrichelt rot) */
+  sellLimit?: number | null;
 }
 
 const H_DESKTOP = 280;
@@ -68,7 +72,7 @@ function segments(points: ChartPoint[], key: "p" | "avg", intervalMinutes: numbe
   return out;
 }
 
-export function PriceChart({ points, from, to, intervalMinutes, priceMin, priceMax, gaps = [] }: Props) {
+export function PriceChart({ points, from, to, intervalMinutes, priceMin, priceMax, gaps = [], buyLimit, sellLimit }: Props) {
   const boxRef = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(700);
   const [hover, setHover] = useState<ChartPoint | null>(null);
@@ -98,6 +102,8 @@ export function PriceChart({ points, from, to, intervalMinutes, priceMin, priceM
       if (isNum(p.avg)) vals.push(p.avg);
     }
     if (!vals.length) return null;
+    // Kauf-/Verkaufslimit liegen nah am Schnitt (max. 20 % darunter) und werden immer gezeigt
+    for (const v of [buyLimit, sellLimit]) if (isNum(v) && v > 0) vals.push(v);
     let lo = Math.min(...vals);
     let hi = Math.max(...vals);
     // Preisgrenzen nur einbeziehen, wenn sie nah am Datenbereich liegen (sonst wird das Diagramm platt)
@@ -143,7 +149,7 @@ export function PriceChart({ points, from, to, intervalMinutes, priceMin, priceM
       days.forEach((t, i) => i % every === 0 && xticks.push({ t, label: dayLabel(t) }));
     }
     return { lo, hi, ticks, x, y, xticks, limits };
-  }, [visible, from, to, iw, ih, priceMin, priceMax]);
+  }, [visible, from, to, iw, ih, priceMin, priceMax, buyLimit, sellLimit]);
 
   const now = to;
   const priceSegs = useMemo(() => segments(visible, "p", intervalMinutes, now), [visible, intervalMinutes, now]);
@@ -228,6 +234,27 @@ export function PriceChart({ points, from, to, intervalMinutes, priceMin, priceM
               </text>
             </g>
           ))}
+        {/* Kauf-/Verkaufslimit */}
+        {(
+          [
+            [buyLimit, "var(--pos)", "Kauflimit"],
+            [sellLimit, "var(--neg)", "Verkaufslimit"],
+          ] as const
+        ).map(([v, color, label]) =>
+          isNum(v) && v > 0 ? (
+            <g key={label}>
+              <line x1={M.left} x2={M.left + iw} y1={y(v)} y2={y(v)} stroke={color} strokeWidth={1.5} strokeDasharray="5 4" />
+              <text
+                x={M.left + 4}
+                y={y(v) + (label === "Kauflimit" ? 12 : -4)}
+                fontSize={10.5}
+                fill={color}
+              >
+                {label} {coins(v)}
+              </text>
+            </g>
+          ) : null,
+        )}
         {/* 7-Tage-Schnitt */}
         {avgSegs.map((s, i) =>
           s.length > 1 ? (
@@ -281,6 +308,18 @@ export function PriceChart({ points, from, to, intervalMinutes, priceMin, priceM
           <i style={{ borderColor: "var(--series-2)", borderTopStyle: "dashed" }} />
           gleitender 7-Tage-Schnitt
         </span>
+        {isNum(buyLimit) && buyLimit > 0 && (
+          <span>
+            <i style={{ borderColor: "var(--pos)", borderTopStyle: "dashed" }} />
+            Kauflimit (bieten bis)
+          </span>
+        )}
+        {isNum(sellLimit) && sellLimit > 0 && (
+          <span>
+            <i style={{ borderColor: "var(--neg)", borderTopStyle: "dashed" }} />
+            Verkaufslimit (verkaufen ab)
+          </span>
+        )}
         {limits.some((l) => l.inside) && (
           <span>
             <i style={{ borderColor: "#8a909c", borderTopStyle: "dotted" }} />

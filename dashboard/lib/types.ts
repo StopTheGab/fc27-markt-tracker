@@ -48,6 +48,8 @@ export interface Market {
 
 export type SignalType = "buy" | "sell";
 
+export type SignalStrength = "stark" | "normal";
+
 export interface Card {
   id: string;
   ea_id?: number | null;
@@ -69,6 +71,16 @@ export interface Card {
   deviation_pct: number | null;
   data_days?: number | null;
   signal: SignalType | null;
+  /** "stark" = ≥ 15 % unter Schnitt, sonst "normal"; null ohne Signal */
+  signal_strength?: SignalStrength | null;
+  /** Kauflimit: bis zu diesem Preis bieten (7-Tage-Schnitt − threshold_pct, abgerundet auf Preisstufe) */
+  buy_limit?: number | null;
+  /** Verkaufslimit = 7-Tage-Schnitt, aufgerundet auf Preisstufe */
+  sell_limit?: number | null;
+  /** Abstand Kauflimit zum Schnitt in % (8–20, je nach Schwankung der Karte) */
+  threshold_pct?: number | null;
+  /** Gewinn nach 5 % Steuer bei Kauf zum Kauflimit und Verkauf zum Verkaufslimit */
+  limit_profit?: number | null;
   watch_reason?: string | null;
   image?: string | null;
   link?: string | null;
@@ -90,6 +102,9 @@ export interface Signal {
   expected_sell?: number | null;
   expected_profit: number | null;
   confidence?: "hoch" | "mittel" | "gering" | null;
+  strength?: SignalStrength | null;
+  buy_limit?: number | null;
+  sell_limit?: number | null;
   reasons?: string[] | null;
   rules?: string[] | null;
 }

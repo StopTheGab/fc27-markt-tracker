@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo } from "react";
 import { useData, useHasPrices } from "@/components/DataProvider";
-import { ConfidenceBadge, LoadNotice, NoPricesNotice, Pct, SignalBadge } from "@/components/ui";
+import { ConfidenceBadge, LimitsExplainer, LoadNotice, NoPricesNotice, Pct, SignalBadge, StrongBadge } from "@/components/ui";
 import { PostItem, recentPosts } from "@/components/creators";
 import {
   coins,
@@ -34,6 +34,7 @@ export default function HomePage() {
     const list = (signals.data.signals || []).filter((s) => s && s.card_id);
     const conf: Record<string, number> = { hoch: 0, mittel: 1, gering: 2 };
     const byStrength = (a: Signal, b: Signal) =>
+      (b.strength === "stark" ? 1 : 0) - (a.strength === "stark" ? 1 : 0) ||
       (conf[a.confidence ?? "gering"] ?? 3) - (conf[b.confidence ?? "gering"] ?? 3) ||
       Math.abs(b.deviation_pct ?? 0) - Math.abs(a.deviation_pct ?? 0);
     return {
@@ -67,6 +68,7 @@ export default function HomePage() {
             <SignalGroup title="Verkaufen" list={sorted.sell} cardById={cardById} />
           </>
         )}
+        <LimitsExplainer />
       </section>
 
       <section className="section">
@@ -148,6 +150,8 @@ function SignalGroup({ title, list, cardById }: { title: string; list: Signal[];
 function SignalCard({ s, card }: { s: Signal; card?: Card }) {
   const { now } = useData();
   const sub = [card?.rating, card?.position, card?.version].filter(Boolean).join(" · ");
+  const buyLimit = isNum(s.buy_limit) ? s.buy_limit : card?.buy_limit;
+  const sellLimit = isNum(s.sell_limit) ? s.sell_limit : card?.sell_limit;
   return (
     <article className={`signal-card ${s.type}`}>
       <div className="signal-top">
@@ -158,7 +162,10 @@ function SignalCard({ s, card }: { s: Signal; card?: Card }) {
           {sub && <div className="small muted">{sub}</div>}
         </div>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 4 }}>
-          <SignalBadge type={s.type} />
+          <span style={{ display: "inline-flex", gap: 4 }}>
+            <StrongBadge strength={s.strength} />
+            <SignalBadge type={s.type} />
+          </span>
           <ConfidenceBadge value={s.confidence} />
         </div>
       </div>
@@ -176,6 +183,14 @@ function SignalCard({ s, card }: { s: Signal; card?: Card }) {
           <dd>
             <Pct value={s.deviation_pct} />
           </dd>
+        </div>
+        <div>
+          <dt>Kauflimit (bieten bis)</dt>
+          <dd className="num">{coins(buyLimit)}</dd>
+        </div>
+        <div>
+          <dt>Verkaufslimit (ab)</dt>
+          <dd className="num">{coins(sellLimit)}</dd>
         </div>
         <div>
           <dt>Erw. Gewinn (nach 5 % Steuer)</dt>

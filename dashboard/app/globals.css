@@ -387,6 +387,33 @@ label.check input {
   background: var(--surface-2);
   color: var(--text-2);
 }
+.badge-strong {
+  background: var(--pos);
+  color: #0b1a10;
+  letter-spacing: 0.04em;
+}
+.signal-card.sell .badge-strong {
+  background: var(--neg);
+  color: #1f0b0b;
+}
+.explainer {
+  margin: 4px 0 16px;
+  max-width: 80ch;
+}
+.limits-line {
+  font-size: 0.85rem;
+  color: var(--text-2);
+  margin-top: 2px;
+}
+.limits-line .num {
+  color: var(--text);
+  font-weight: 600;
+}
+.near-limit,
+.limits-line .num.near-limit {
+  color: var(--pos);
+  font-weight: 700;
+}
 .badge-danger {
   background: var(--danger-bg);
   color: #ffb3b3;

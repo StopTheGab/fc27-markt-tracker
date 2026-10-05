@@ -5,10 +5,10 @@ import { useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { useData, useHasPrices } from "@/components/DataProvider";
 import { PriceChart, withRollingAvg } from "@/components/PriceChart";
-import { ConfidenceBadge, LoadNotice, NoPricesNotice, Pct, SignalBadge } from "@/components/ui";
+import { ConfidenceBadge, LimitsExplainer, LoadNotice, NoPricesNotice, Pct, SignalBadge, StrongBadge } from "@/components/ui";
 import { KindBadge, PostTime, recentPosts, safeUrl } from "@/components/creators";
 import { loadJson } from "@/lib/data";
-import { coins, dateTime, isNum, num, relative, signedCoins } from "@/lib/format";
+import { coins, dateTime, isNum, num, pct, relative, signedCoins } from "@/lib/format";
 import type { HistoryFile, Loaded } from "@/lib/types";
 
 export default function CardPage() {
@@ -114,6 +114,7 @@ function CardDetail() {
           <div className="small muted">{meta}</div>
           <div style={{ marginTop: 6, display: "flex", gap: 6, flexWrap: "wrap" }}>
             {card.signal && <SignalBadge type={card.signal} />}
+            {card.signal && <StrongBadge strength={card.signal_strength} />}
             {card.available === false && <span className="badge badge-danger">gerade nicht handelbar</span>}
             {card.link && (
               <a href={card.link} target="_blank" rel="noopener noreferrer" className="small">
@@ -139,6 +140,25 @@ function CardDetail() {
             <div className="tile-sub">
               Abweichung <Pct value={card.deviation_pct} />
             </div>
+          </div>
+          <div className="tile">
+            <div className="tile-label">Bieten bis</div>
+            <div className="tile-value num pos">{coins(card.buy_limit)}</div>
+            <div className="tile-sub">
+              {isNum(card.threshold_pct) ? `−${pct(card.threshold_pct, false)} unter Schnitt` : "Kauflimit"}
+            </div>
+          </div>
+          <div className="tile">
+            <div className="tile-label">Verkaufen ab</div>
+            <div className="tile-value num neg">{coins(card.sell_limit)}</div>
+            <div className="tile-sub">Verkaufslimit = 7-Tage-Schnitt</div>
+          </div>
+          <div className="tile">
+            <div className="tile-label">Gewinn bei Limits</div>
+            <div className={`tile-value num ${isNum(card.limit_profit) ? (card.limit_profit >= 0 ? "pos" : "neg") : ""}`}>
+              {signedCoins(card.limit_profit)}
+            </div>
+            <div className="tile-sub">nach 5 % EA-Steuer</div>
           </div>
           <div className="tile">
             <div className="tile-label">Änderung 1 h</div>
@@ -175,6 +195,7 @@ function CardDetail() {
             <div className="signal-top">
               <h2 style={{ margin: 0 }}>Aktuelles Signal</h2>
               <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+                <StrongBadge strength={signal.strength} />
                 <SignalBadge type={signal.type} />
                 <ConfidenceBadge value={signal.confidence} />
               </div>
@@ -189,6 +210,14 @@ function CardDetail() {
                 <dd className={`num ${isNum(signal.expected_profit) ? (signal.expected_profit >= 0 ? "pos" : "neg") : ""}`}>
                   {signedCoins(signal.expected_profit)}
                 </dd>
+              </div>
+              <div>
+                <dt>Kauflimit (bieten bis)</dt>
+                <dd className="num">{coins(isNum(signal.buy_limit) ? signal.buy_limit : card.buy_limit)}</dd>
+              </div>
+              <div>
+                <dt>Verkaufslimit (ab)</dt>
+                <dd className="num">{coins(isNum(signal.sell_limit) ? signal.sell_limit : card.sell_limit)}</dd>
               </div>
               {isNum(signal.expected_sell) && (
                 <div>
@@ -247,6 +276,8 @@ function CardDetail() {
               priceMin={card.price_min}
               priceMax={card.price_max}
               gaps={gaps}
+              buyLimit={card.buy_limit}
+              sellLimit={card.sell_limit}
             />
             <div className="small muted" style={{ marginTop: 6 }}>
               Im Zeitraum: Tief {coins(rangeMin)} · Hoch {coins(rangeMax)} · {inRange.length} Messpunkte · letzter
@@ -260,6 +291,8 @@ function CardDetail() {
           </>
         )}
       </section>
+
+      <LimitsExplainer />
 
       {mentions.length > 0 && (
         <section className="section panel">

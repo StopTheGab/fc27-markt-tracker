@@ -3,16 +3,27 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useData, useHasPrices } from "@/components/DataProvider";
-import { LoadNotice, NoPricesNotice, Pct, SignalBadge } from "@/components/ui";
-import { coins, dateTime } from "@/lib/format";
+import { LimitsExplainer, LoadNotice, NoPricesNotice, Pct, SignalBadge, StrongBadge } from "@/components/ui";
+import { coins, dateTime, isNum } from "@/lib/format";
 import type { Card } from "@/lib/types";
 
-type SortKey = "name" | "rating" | "price" | "deviation_pct" | "change_1h_pct" | "change_24h_pct" | "signal";
+type SortKey =
+  | "name"
+  | "rating"
+  | "price"
+  | "buy_limit"
+  | "sell_limit"
+  | "deviation_pct"
+  | "change_1h_pct"
+  | "change_24h_pct"
+  | "signal";
 
 const SORT_LABEL: Record<SortKey, string> = {
   name: "Name",
   rating: "Rating",
   price: "Preis",
+  buy_limit: "Kauflimit",
+  sell_limit: "Verkaufslimit",
   deviation_pct: "Abweichung",
   change_1h_pct: "1 h",
   change_24h_pct: "24 h",
@@ -25,6 +36,7 @@ interface Filters {
   version: string;
   signal: "" | "buy" | "sell" | "none";
   onlySignals: boolean;
+  nearLimit: boolean;
   min: string;
   max: string;
   sort: SortKey;
@@ -37,6 +49,7 @@ const DEFAULT_FILTERS: Filters = {
   version: "",
   signal: "",
   onlySignals: false,
+  nearLimit: false,
   min: "",
   max: "",
   sort: "rating",
@@ -64,11 +77,16 @@ function parseCoins(s: string): number | null {
   return Number.isFinite(n) ? n : null;
 }
 
+/** Preis höchstens 3 % über dem Kauflimit (oder darunter). */
+function nearBuyLimit(c: Card): boolean {
+  return isNum(c.price) && isNum(c.buy_limit) && c.buy_limit > 0 && c.price <= c.buy_limit * 1.03;
+}
+
 function compare(a: Card, b: Card, key: SortKey): number {
   if (key === "name") return a.name.localeCompare(b.name, "de");
   if (key === "signal") {
     const r = (c: Card) => (c.signal === "buy" ? 2 : c.signal === "sell" ? 1 : 0);
-    return r(a) - r(b);
+    return r(a) - r(b) || (a.signal_strength === "stark" ? 1 : 0) - (b.signal_strength === "stark" ? 1 : 0);
   }
   const va = a[key];
   const vb = b[key];
@@ -106,6 +124,7 @@ export default function CardsPage() {
       if (f.position && c.position !== f.position) return false;
       if (f.version && c.version !== f.version) return false;
       if (f.onlySignals && !c.signal) return false;
+      if (f.nearLimit && !nearBuyLimit(c)) return false;
       if (f.signal === "none" && c.signal) return false;
       if ((f.signal === "buy" || f.signal === "sell") && c.signal !== f.signal) return false;
       if (min !== null && (c.price === null || c.price < min)) return false;
@@ -204,6 +223,10 @@ export default function CardsPage() {
               <input type="checkbox" checked={f.onlySignals} onChange={(e) => set("onlySignals", e.target.checked)} />
               Nur Signale
             </label>
+            <label className="check" title="Preis höchstens 3 % über dem Kauflimit">
+              <input type="checkbox" checked={f.nearLimit} onChange={(e) => set("nearLimit", e.target.checked)} />
+              Nahe Kauflimit
+            </label>
             {filtered && (
               <button type="button" className="btn" onClick={() => setF((p) => ({ ...DEFAULT_FILTERS, sort: p.sort, dir: p.dir }))}>
                 Filter zurücksetzen
@@ -237,6 +260,8 @@ export default function CardsPage() {
                       <th>Pos.</th>
                       {header("price", true)}
                       <th className="r">7-T-Schnitt</th>
+                      {header("buy_limit", true)}
+                      {header("sell_limit", true)}
                       {header("deviation_pct", true)}
                       {header("change_1h_pct", true)}
                       {header("change_24h_pct", true)}
@@ -259,6 +284,10 @@ export default function CardsPage() {
                           {c.available === false && <div className="small muted">nicht handelbar</div>}
                         </td>
                         <td className="r num muted">{coins(c.avg_7d)}</td>
+                        <td className={`r num ${nearBuyLimit(c) ? "near-limit" : ""}`} title={isNum(c.threshold_pct) ? `${c.threshold_pct.toLocaleString("de-DE")} % unter Schnitt` : undefined}>
+                          {coins(c.buy_limit)}
+                        </td>
+                        <td className="r num">{coins(c.sell_limit)}</td>
                         <td className="r">
                           <Pct value={c.deviation_pct} />
                         </td>
@@ -269,7 +298,10 @@ export default function CardsPage() {
                           <Pct value={c.change_24h_pct} />
                         </td>
                         <td>
-                          <SignalBadge type={c.signal} />
+                          <span style={{ display: "inline-flex", gap: 4, flexWrap: "wrap" }}>
+                            <SignalBadge type={c.signal} />
+                            {c.signal && <StrongBadge strength={c.signal_strength} />}
+                          </span>
                         </td>
                       </tr>
                     ))}
@@ -291,7 +323,16 @@ export default function CardsPage() {
                         {[c.rating, c.position, c.version].filter(Boolean).join(" · ")}
                         {c.available === false ? " · nicht handelbar" : ""}
                       </span>
-                      {c.signal && <SignalBadge type={c.signal} />}
+                      {c.signal && (
+                        <span style={{ display: "inline-flex", gap: 4 }}>
+                          <SignalBadge type={c.signal} />
+                          <StrongBadge strength={c.signal_strength} />
+                        </span>
+                      )}
+                    </div>
+                    <div className="limits-line">
+                      Bieten bis <span className={`num ${nearBuyLimit(c) ? "near-limit" : ""}`}>{coins(c.buy_limit)}</span> · Verkaufen ab{" "}
+                      <span className="num">{coins(c.sell_limit)}</span>
                     </div>
                     <div className="card-item-nums">
                       <span>
@@ -307,6 +348,7 @@ export default function CardsPage() {
                   </Link>
                 ))}
               </div>
+              <LimitsExplainer />
             </>
           )}
         </>

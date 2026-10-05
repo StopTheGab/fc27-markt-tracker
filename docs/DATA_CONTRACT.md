@@ -64,6 +64,11 @@ erklärt, was fehlt. Das Dashboard zeigt dann einen klaren Hinweis statt Preisen
       "deviation_pct": -3.8 | null,      // (price - avg_7d) / avg_7d * 100
       "data_days": 2.1,
       "signal": "buy" | "sell" | null,
+      "signal_strength": "stark" | "normal" | null,   // Stärke des aktiven Signals, null ohne Signal
+      "buy_limit": 1150000 | null,       // Kauflimit: bis zu diesem Preis bieten (avg_7d − threshold_pct, abgerundet auf Preisstufe)
+      "sell_limit": 1300000 | null,      // Verkaufslimit = avg_7d, aufgerundet auf Preisstufe
+      "threshold_pct": 11.5 | null,      // Abstand Kauflimit zum Schnitt in % (8–20, je nach Schwankung der Karte)
+      "limit_profit": 85000 | null,      // sell_limit * 0.95 - buy_limit (Gewinn nach 5 % Steuer bei Limits)
       "watch_reason": "Meta-ST, in WL-Teams häufig",
       "image": "https://..." | null,
       "link": "https://www.fut.gg/players/..."
@@ -88,12 +93,20 @@ erklärt, was fehlt. Das Dashboard zeigt dann einen klaren Hinweis statt Preisen
       "expected_sell": 1300000,
       "expected_profit": 135000,          // expected_sell * 0.95 - price
       "confidence": "hoch" | "mittel" | "gering",
-      "reasons": [ "15,4 % unter 7-Tage-Schnitt", "Weekend League startet in 2 Tagen ..." ],
+      "strength": "stark" | "normal",     // "stark" = ≥ 15 % unter Schnitt, sonst "normal"
+      "buy_limit": 1150000 | null,        // Kauflimit der Karte (wie cards.json), bei Verkaufssignalen ggf. null
+      "sell_limit": 1300000 | null,       // Verkaufslimit der Karte (wie cards.json)
+      "reasons": [ "15,4 % unter 7-Tage-Schnitt …", "Wochentief …", "Kauf-Tipp von <Creator> …", "Promo „…“ in ca. 30 h …" ],
       "rules": [ "base_15pct", "weekday_cycle" ]
     }
   ]
 }
 ```
+Kaufsignal entsteht, wenn der Preis unter `buy_limit` fällt (`collector/analysis.py` → `card_limits`,
+`evaluate_buy`). Verkaufssignale (zu offenen Kauf-Tipps) entstehen am 7-Tage-Schnitt oder zusätzlich aus
+`rules`: `week_peak_sell` (Wochenhoch Do/Fr), `promo_sell` (Promo naht), `creator_sell` (Verkaufs-Tipp Creator) –
+nie mit Verlust. Fehlen Daten (zu wenig Verlauf), sind `buy_limit`, `sell_limit`, `threshold_pct`,
+`limit_profit` `null`; das Dashboard zeigt dann „–“.
 
 ## history/<card_id>.json  (eine Datei pro Karte)
 ```json
