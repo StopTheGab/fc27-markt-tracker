@@ -508,7 +508,8 @@ def analyze(con, cards: list[dict], now: datetime) -> dict:
     con.commit()
 
     new = update_signal_state(con, active, now, r)
-    record_new_tips(con, [s for s in active.values() if s["type"] == "buy"], now)
+    # Only confirmed buys (>= 2 points under the limit) become tips - single-point dips are often source glitches
+    record_new_tips(con, [s for s in active.values() if s["type"] == "buy" and "unconfirmed" not in s.get("rules", [])], now)
 
     crash_prev = db.kv_get(con, "crash_active", False)
     crash_new = crash["active"] and not crash_prev
