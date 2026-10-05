@@ -12,7 +12,7 @@ Sparsam: höchstens 3 Agents, kurze Berichte (≤ 15 Zeilen), WebSearch mode "st
    Leaks als „unsicher“). Neue Termine → `market_calendar.json` (`events`, `promos`) ergänzen, JSON valide halten.
 3. **Lern-Agent** – vergleicht Tipps (`tips`) mit der Preisentwicklung, hält die Trefferquote in
    `knowledge/trefferquote.md` fest; Regeländerungen nur mit Begründung in `rules.json` + `knowledge/regel_aenderungen.md`.
-   Grundregel (15 %, Steuer 5 %) nie ändern.
+   Nie ändern: 5 % Steuer, nur Signale mit Gewinn, ≥ 15 % = „starkes Signal“ (Logik v2 seit 05.10., siehe regel_aenderungen.md).
 4. **Creator-Transkripte** – für jedes NEUE Video (Tabelle `creator_posts`, kind ≠ info, noch nicht in
    `knowledge/creator_tipps/`): im Chrome-Browser „Fifa“ öffnen (claude-in-chrome), Video stumm pausieren, „Transkript anzeigen“
    (Panel `PAmodern_transcript_view`) auslesen; bei Shorts ohne Sprache die gezeigten Karten per Screenshot alle 3 s ablesen.
