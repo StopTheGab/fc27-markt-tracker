@@ -77,7 +77,7 @@ class AnalysisTest(unittest.TestCase):
         cards = self.flat_cards(25)
         target = card(99)
         cards.append(target)
-        self.fill(target["id"], 5, lambda t: 10000 if t < NOW - timedelta(minutes=40) else 9000)
+        self.fill(target["id"], 5, lambda t: 10000 if t < NOW - timedelta(minutes=40) else 9500)  # -5 %: < 8 % floor
         res = analysis.analyze(self.con, cards, NOW)
         self.assertNotIn(target["id"], res["signals"])
 
@@ -152,3 +152,14 @@ class AnalysisTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class WeekWindowTest(unittest.TestCase):
+    def test_windows(self):
+        from collector.analysis import PEAK_WINDOWS, TROUGH_WINDOWS, _in_windows
+        mon_9 = datetime(2026, 10, 5, 7, 0, tzinfo=timezone.utc)    # Mo 09:00 MESZ
+        thu_16 = datetime(2026, 10, 8, 14, 0, tzinfo=timezone.utc)  # Do 16:00 MESZ
+        wed_12 = datetime(2026, 10, 7, 10, 0, tzinfo=timezone.utc)  # Mi 12:00 MESZ
+        self.assertTrue(_in_windows(mon_9, TROUGH_WINDOWS))
+        self.assertTrue(_in_windows(thu_16, PEAK_WINDOWS))
+        self.assertFalse(_in_windows(wed_12, TROUGH_WINDOWS) or _in_windows(wed_12, PEAK_WINDOWS))

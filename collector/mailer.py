@@ -98,6 +98,9 @@ def _wrap(title: str, body_html: str, settings: Settings) -> str:
     )
 
 
+_KIND = {"buy": "Kauf-Tipp", "sell": "Verkaufs-Tipp", "market": "Marktanalyse", "info": "Video"}
+
+
 def _signal_lines(s: dict) -> list[str]:
     typ = "KAUFEN" if s["type"] == "buy" else "VERKAUFEN"
     lines = [
@@ -114,11 +117,19 @@ def signal_mail(con, settings: Settings, result: dict) -> None:
         return
     new = result["new_signals"]
     crash_new = result.get("crash_new")
-    if not new and not crash_new:
+    # New tip videos of the main creator (priority 1) count as a signal; others go into the hourly update
+    tips = [p for p in result.get("new_creator_posts", [])
+            if p["creator"].get("priority") == 1 and p["kind"] in ("buy", "sell", "market")]
+    lives = result.get("live_started", [])
+    if not new and not crash_new and not tips and not lives:
         return
     buys = [s for s in new if s["type"] == "buy"]
     sells = [s for s in new if s["type"] == "sell"]
-    if crash_new and not new:
+    if lives and not new and not crash_new and not tips:
+        subject = f"[FC27 SIGNAL] {lives[0]['creator']['name']} ist LIVE: {lives[0]['title'][:60]}"
+    elif tips and not new and not crash_new:
+        subject = f"[FC27 SIGNAL] {tips[0]['creator']['name']}: {tips[0]['title'][:70]}"
+    elif crash_new and not new:
         subject = f"[FC27 SIGNAL] Marktcrash erkannt ({result['crash'].get('drop_pct') or ''} %)"
     elif len(new) == 1:
         s = new[0]
@@ -131,6 +142,19 @@ def signal_mail(con, settings: Settings, result: dict) -> None:
                        f"{result.get('suppressed_by_crash', 0)} Einzel-Kaufsignale werden deshalb nicht gemeldet."])
     for s in sells + buys:
         blocks.append(_signal_lines(s))
+    names = result.get("metrics", {})
+    for lv in lives:
+        blocks.append([f"LIVE: {lv['creator']['name']} streamt gerade – {lv['title']}", lv["url"],
+                       "Tipp: reinschauen und wichtige Aussagen im Chat an Claude weitergeben – dann werden sie mit Datum erfasst."])
+    for p in tips:
+        lines = [f"NEUES VIDEO von {p['creator']['name']} ({_KIND.get(p['kind'], p['kind'])}): {p['title']}",
+                 f"Veröffentlicht: {db.parse(p['published']).astimezone(TZ):%d.%m. %H:%M} – {p['url']}"]
+        if p["cards"]:
+            lines.append("Erwähnte Karten: " + ", ".join(
+                f"{cid} ({fmt((names.get(cid) or {}).get('price'))})" for cid in p["cards"][:6]))
+        else:
+            lines.append("Karten nicht im Titel/Beschreibung genannt – Tipps stehen im Video.")
+        blocks.append(lines)
     text = "\n\n".join("\n".join(b) for b in blocks) + f"\n\nDashboard: {settings.dashboard_link}\n"
     body = "".join("<p style=\"margin:0 0 12px\">" + "<br>".join(html.escape(x) for x in b) + "</p>" for b in blocks)
     send(con, settings, "signal", subject, text, _wrap(subject.replace("[FC27 SIGNAL] ", ""), body, settings))
@@ -171,6 +195,16 @@ def hourly_mail(con, settings: Settings, result: dict, cards: list[dict]) -> Non
         lines.append("Größte Bewegungen (1 h):")
         for cid, ch in movers:
             lines.append(f"- {names.get(cid, cid)}: {ch:+.1f} % ({fmt(result['metrics'][cid]['price'])})")
+    try:
+        posts = con.execute(
+            "SELECT p.*, p.creator_id AS cid FROM creator_posts p WHERE first_seen>=? AND published>=? "
+            "ORDER BY published DESC", (db.iso(now - timedelta(minutes=65)), db.iso(now - timedelta(hours=48)))).fetchall()
+    except Exception:
+        posts = []
+    if posts:
+        lines.append("Neue Creator-Videos:")
+        for p in posts[:4]:
+            lines.append(f"- {p['cid']}: {p['title'][:80]} ({_KIND.get(p['kind'], p['kind'])}) {p['url']}")
     if assessment and now - db.parse(assessment["created_at"]) < timedelta(hours=6):
         lines.append(f"Einschätzung ({assessment['author']}): {assessment['text']}")
     text = "\n".join(lines) + f"\n\nDashboard: {settings.dashboard_link}\n"

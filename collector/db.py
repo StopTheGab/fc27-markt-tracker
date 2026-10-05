@@ -156,10 +156,31 @@ def insert_price(con, card_id: str, ts: str, price: int | None, origin: str, sou
 
 def price_series(con, card_id: str, since: str) -> list[tuple[datetime, int]]:
     rows = con.execute(
-        "SELECT ts, price FROM prices WHERE card_id=? AND ts>=? AND price IS NOT NULL ORDER BY ts",
+        "SELECT ts, price FROM prices WHERE card_id=? AND ts>=? AND price IS NOT NULL "
+        "AND origin != 'suspect' ORDER BY ts",
         (card_id, since),
     ).fetchall()
     return [(parse(r["ts"]), int(r["price"])) for r in rows]
+
+
+def classify_price(con, card_id: str, price: int, max_dev: float = 0.5) -> str:
+    """'live' or 'suspect': a point > max_dev away from the median of the last 8 valid points is suspect
+    (source glitch, e.g. Bellingham 167k -> 1.5k). A suspect point is promoted when the next one confirms it."""
+    rows = con.execute("SELECT ts, price, origin FROM prices WHERE card_id=? AND price IS NOT NULL "
+                       "ORDER BY ts DESC LIMIT 9", (card_id,)).fetchall()
+    valid = [r["price"] for r in rows if r["origin"] != "suspect"][:8]
+    if len(valid) < 3:
+        return "live"
+    valid.sort()
+    med = valid[len(valid) // 2]
+    if abs(price - med) <= med * max_dev:
+        return "live"
+    last = rows[0] if rows else None
+    if last is not None and last["origin"] == "suspect" and abs(price - last["price"]) <= last["price"] * 0.1:
+        # two consecutive points agree -> real move; promote the earlier one as well
+        con.execute("UPDATE prices SET origin='live' WHERE card_id=? AND ts=?", (card_id, last["ts"]))
+        return "live"
+    return "suspect"
 
 
 def latest_assessment(con) -> dict | None:

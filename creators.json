@@ -1,0 +1,28 @@
+{
+  "_doc": "Creator, deren Tipps verfolgt werden. Quelle: öffentliche YouTube-RSS-Feeds (offiziell angeboten, kein Login). TikTok/Instagram/Discord sind ohne Login nicht automatisch lesbar. Auswahl des Users am 2026-10-05, Recherche: knowledge/creator_kandidaten_2026-10-05.md.",
+  "creators": [
+    {
+      "id": "fifallstars",
+      "name": "FIFAllstars",
+      "priority": 1,
+      "language": "de",
+      "youtube_channel_id": "UCwOzrElbrSOe2BruHbpJK5Q",
+      "youtube": "https://www.youtube.com/@FIFAllstars",
+      "tiktok": "https://www.tiktok.com/@fifallstars",
+      "instagram": "https://www.instagram.com/fifallstars_david/",
+      "discord_free": "https://discord.gg/n54GPN4UFs",
+      "warning": "Bezahlter Premium-Discord (Patreon), Shop-Affiliate (Eneba)"
+    },
+    {
+      "id": "thefutaccountant",
+      "name": "TheFutAccountant",
+      "priority": 2,
+      "language": "en",
+      "youtube_channel_id": "UCH0UIRlgHgKLY6VAo7ZlAkQ",
+      "youtube": "https://www.youtube.com/@TheFutAccountant",
+      "tiktok": "https://www.tiktok.com/@fut_accountant",
+      "instagram": "https://www.instagram.com/thefutaccountant/",
+      "warning": "Wirbt für bezahlten Discord (FUTDonk)"
+    }
+  ]
+}

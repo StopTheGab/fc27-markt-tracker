@@ -280,9 +280,19 @@ class SignalRuleTest(Base):
         super().setUp()
         self.r = analysis.rules()
 
-    def test_threshold_exactly_15pct(self):
-        self.assertIsNotNone(analysis.evaluate_buy(card(1), metrics(8500), LATE, {}, self.r))
-        self.assertIsNone(analysis.evaluate_buy(card(1), metrics(8510), LATE, {}, self.r))
+    def test_dynamic_limit_and_strong_signal(self):
+        """Seit 2026-10-05: Kauflimit = Schnitt - max(8 %, 2 x Schwankung); >= 15 % = starkes Signal."""
+        m = metrics(8510)
+        lim = analysis.card_limits(m, self.r)
+        self.assertGreaterEqual(lim["threshold_pct"], 8.0)
+        self.assertLessEqual(lim["threshold_pct"], 20.0)
+        sig = analysis.evaluate_buy(card(1), m, LATE, {}, self.r)
+        self.assertEqual(sig["strength"], "normal")
+        self.assertEqual(analysis.evaluate_buy(card(1), metrics(8500), LATE, {}, self.r)["strength"], "stark")
+        self.assertIsNone(analysis.evaluate_buy(card(1), metrics(9300), LATE, {}, self.r))  # only -7 %: below tax floor
+        self.assertEqual(analysis.price_step(23400), 250)
+        self.assertEqual(analysis.round_down(23400), 23250)
+        self.assertEqual(analysis.round_up(23400), 23500)
 
     def test_profit_formula_and_confidence(self):
         sig = analysis.evaluate_buy(card(1), metrics(8000), LATE, {}, self.r)

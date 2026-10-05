@@ -33,7 +33,61 @@ R_DEFAULT = {
     "stale_price_hours": 0.75, "trim_pct": 5.0, "crash_breadth_share": 0.6, "crash_breadth_pct": -5.0,
     "release_phase_end": "2026-11-06", "min_buy_price": 700, "cv_max": 0.25, "liq_stop_changes": 4,
     "liq_warn_changes": 7, "promo_min_price": 10000,
+    "min_dip_pct": 8.0, "vol_k": 2.0, "max_dip_pct": 20.0, "strong_dip_pct": 15.0,
+    "peak_sell_ratio": 0.97, "creator_tip_hours": 48,
 }
+
+# Week windows (Europe/Berlin, weekday 1 = Monday). Source: knowledge/signalregeln.md R-WOCHE-*.
+TROUGH_WINDOWS = [((7, "21:00"), (1, "12:00")), ((2, "00:00"), (2, "23:59"))]   # Sun evening - Mon noon, Tuesday
+PEAK_WINDOWS = [((4, "14:00"), (5, "22:00"))]                                    # Thu afternoon - Fri evening
+
+
+def _in_windows(now: datetime, windows) -> bool:
+    local = now.astimezone(calendar_ctx.TZ)
+    cur = (local.isoweekday() - 1) * 1440 + local.hour * 60 + local.minute
+    for (wd1, t1), (wd2, t2) in windows:
+        a = calendar_ctx._minutes(wd1, t1)
+        b = calendar_ctx._minutes(wd2, t2)
+        if (a <= cur <= b) if a <= b else (cur >= a or cur <= b):
+            return True
+    return False
+
+
+def price_step(p: float) -> int:
+    """EA bid increments (transfermarkt.md; FC 27 not officially confirmed)."""
+    if p < 1000:
+        return 50
+    if p < 10000:
+        return 100
+    if p < 50000:
+        return 250
+    if p < 100000:
+        return 500
+    return 1000
+
+
+def round_down(p: float) -> int:
+    s = price_step(p)
+    return int(p // s * s)
+
+
+def round_up(p: float) -> int:
+    s = price_step(p)
+    return int(-(-p // s) * s)
+
+
+def card_limits(m: dict, r: dict) -> dict | None:
+    """Option F + B: per-card buy limit (dip threshold adapts to the card's volatility, min 8 % because of
+    the 5 % tax) and sell limit (= 7-day average, base rule)."""
+    avg = m.get("avg_7d")
+    if not avg:
+        return None
+    cv = m.get("cv") or 0.0
+    thr = min(max(r["min_dip_pct"], r["vol_k"] * cv * 100), r["max_dip_pct"])
+    buy = round_down(avg * (1 - thr / 100))
+    sell = round_up(avg)
+    return {"threshold_pct": round(thr, 1), "buy_limit": buy, "sell_limit": sell,
+            "limit_profit": round(sell * (1 - r["ea_tax"]) - buy)}
 
 
 def rules() -> dict:
@@ -123,8 +177,10 @@ def evaluate_buy(card: dict, m: dict, now: datetime, ctx: dict, r: dict) -> dict
     if m.get("data_hours", 0) < r["min_data_hours_for_signal"]:
         return None
     dev = pct(price, avg)
-    if dev is None or dev > -r["buy_threshold_pct"]:
+    lim = card_limits(m, r)
+    if dev is None or lim is None or price > lim["buy_limit"]:
         return None
+    strong = dev <= -r["strong_dip_pct"]
     if price <= r["min_buy_price"]:
         return None  # R-UNTERGRENZE fallback: at/near the absolute floor
     pmin = card.get("_price_min")
@@ -140,10 +196,11 @@ def evaluate_buy(card: dict, m: dict, now: datetime, ctx: dict, r: dict) -> dict
     if profit < r["min_profit_coins"] or profit / price * 100 < r["min_profit_pct"]:
         return None
 
-    reasons = [f"{abs(dev):.1f} % unter 7-Tage-Schnitt ({fmt(price)} statt {fmt(avg)})",
+    reasons = [f"{abs(dev):.1f} % unter 7-Tage-Schnitt ({fmt(price)} statt {fmt(avg)}) – Kauflimit {fmt(lim['buy_limit'])}"
+               + (" · STARKES Signal (≥ 15 %)" if strong else f" (Schwelle {lim['threshold_pct']:.0f} % für diese Karte)"),
                *([f"Release-Phase: Verkaufsziel = 72-h-Schnitt {fmt(target)} statt 7-Tage-Schnitt"] if target != avg else []),
                f"Erwarteter Gewinn nach 5 % Steuer: {fmt(profit)} Coins ({profit / price * 100:.1f} %)"]
-    rules_hit = ["base_15pct", "tax_profit"]
+    rules_hit = ["base_15pct" if strong else "dynamic_dip", "tax_profit"]
     level = 2  # 2 = hoch, 1 = mittel, 0 = gering
 
     if m["data_days"] < r["low_confidence_days"]:
@@ -157,7 +214,7 @@ def evaluate_buy(card: dict, m: dict, now: datetime, ctx: dict, r: dict) -> dict
     # Confirmation: last N points all below threshold
     recent = m.get("recent") or []
     confirm = recent[-r["confirm_points"]:]
-    if len(confirm) < r["confirm_points"] or any(pct(p, avg) > -r["buy_threshold_pct"] for p in confirm):
+    if len(confirm) < r["confirm_points"] or any(p > lim["buy_limit"] for p in confirm):
         level = min(level, 1)
         reasons.append("Noch nicht durch zweiten Messpunkt bestätigt")
         rules_hit.append("unconfirmed")
@@ -187,6 +244,21 @@ def evaluate_buy(card: dict, m: dict, now: datetime, ctx: dict, r: dict) -> dict
     elif phase and phase.get("price_tendency") == "up":
         reasons.append(f"Wochenphase „{phase.get('label')}“: Erholung typisch – Kaufzeitpunkt günstig")
         rules_hit.append("weekday_cycle")
+    if ctx.get("trough"):
+        if level == 1 and m["data_days"] >= r["low_confidence_days"] and "unconfirmed" not in rules_hit:
+            level = 2
+        reasons.append("Wochentief (So-Abend bis Di) – typischer Kaufzeitpunkt")
+        rules_hit.append("week_trough")
+    elif ctx.get("peak"):
+        level = min(level, 1)
+        reasons.append("Wochenhoch (Do/Fr vor der WL) – Kauf ist jetzt meist teurer als nötig")
+        rules_hit.append("week_peak")
+    tip = (ctx.get("creator_tips") or {}).get(card["id"])
+    if tip and tip["kind"] == "buy":
+        if level == 1 and m["data_days"] >= r["low_confidence_days"]:
+            level = 2
+        reasons.append(f"Kauf-Tipp von {tip['creator']} ({tip['date']}): „{tip['title'][:60]}“")
+        rules_hit.append("creator_buy")
     promo = ctx.get("promo")
     if promo and card.get("category") in ("meta", "trading", "promo", None) and price >= r["promo_min_price"]:
         level = min(level, 1)
@@ -198,8 +270,33 @@ def evaluate_buy(card: dict, m: dict, now: datetime, ctx: dict, r: dict) -> dict
         "price": price, "avg_7d": avg, "deviation_pct": dev,
         "expected_sell": target, "expected_profit": profit,
         "confidence": ["gering", "mittel", "hoch"][level],
+        "strength": "stark" if strong else "normal",
+        "buy_limit": lim["buy_limit"], "sell_limit": lim["sell_limit"],
         "reasons": reasons, "rules": rules_hit,
     }
+
+
+def creator_tips(con, now: datetime, r: dict) -> dict[str, dict]:
+    """Option E: newest buy/sell video per card from the last 48 h (priority-1 creator wins)."""
+    out: dict[str, dict] = {}
+    try:
+        rows = con.execute("SELECT * FROM creator_posts WHERE published>=? AND kind IN ('buy','sell') "
+                           "ORDER BY published DESC", (db.iso(now - timedelta(hours=r["creator_tip_hours"])),)).fetchall()
+    except Exception:  # table not created yet
+        return out
+    try:
+        from .creators import load_config
+        prio = {c["id"]: (c.get("priority", 9), c.get("name")) for c in load_config()}
+    except Exception:
+        prio = {}
+    for row in rows:
+        p, name = prio.get(row["creator_id"], (9, row["creator_id"]))
+        for cid in json.loads(row["cards"]):
+            cur = out.get(cid)
+            if cur is None or p < cur["priority"]:
+                out[cid] = {"kind": row["kind"], "creator": name, "priority": p, "title": row["title"],
+                            "date": db.parse(row["published"]).astimezone(calendar_ctx.TZ).strftime("%d.%m. %H:%M")}
+    return out
 
 
 def detect_crash(metrics: dict[str, dict], buy_candidates: int, r: dict) -> dict:
@@ -331,7 +428,8 @@ def analyze(con, cards: list[dict], now: datetime) -> dict:
     cal = calendar_ctx.load_calendar()
     phase = calendar_ctx.week_phase(now, cal)
     promo = calendar_ctx.promo_within(now, r["promo_window_hours"], cal)
-    ctx = {"phase": phase, "promo": promo}
+    ctx = {"phase": phase, "promo": promo, "trough": _in_windows(now, TROUGH_WINDOWS),
+           "peak": _in_windows(now, PEAK_WINDOWS), "creator_tips": creator_tips(con, now, r)}
     since = db.iso(now - timedelta(days=14))
     metrics: dict[str, dict] = {}
     series_all: dict[str, list] = {}
@@ -363,16 +461,27 @@ def analyze(con, cards: list[dict], now: datetime) -> dict:
             continue
         created = db.parse(tip["created_at"])
         profit = round(m["price"] * (1 - r["ea_tax"]) - tip["buy_price"])
-        if m["price"] >= m["avg_7d"] and profit > 0:  # B3: no "sell" signal that realises a loss
+        card = by_id.get(cid, {})
+        why = None
+        if m["price"] >= m["avg_7d"]:
+            why = (f"Preis wieder am/über 7-Tage-Schnitt ({fmt(m['price'])} ≥ {fmt(m['avg_7d'])})", "base_sell_avg")
+        elif ctx["peak"] and m["price"] >= m["avg_7d"] * r["peak_sell_ratio"]:
+            why = (f"Wochenhoch: Preis nahe am Schnitt ({fmt(m['price'])}), vor dem WL-Wochenende verkaufen", "week_peak_sell")
+        elif promo and card.get("category") in ("meta", "promo") and m["price"] >= r["promo_min_price"]:
+            why = (f"Promo „{promo['name']}“ in ca. {promo['hours']} h – vorher verkaufen, Specials fallen meist", "promo_sell")
+        elif (ctx["creator_tips"].get(cid) or {}).get("kind") == "sell":
+            t = ctx["creator_tips"][cid]
+            why = (f"Verkaufs-Tipp von {t['creator']} ({t['date']})", "creator_sell")
+        if why and profit > 0:  # B3: no "sell" signal that realises a loss
             active[cid] = {
                 "card_id": cid, "name": by_id.get(cid, {}).get("name"), "type": "sell",
                 "price": m["price"], "avg_7d": m["avg_7d"], "deviation_pct": pct(m["price"], m["avg_7d"]),
                 "expected_sell": m["price"], "expected_profit": profit,
                 "confidence": "hoch" if m["data_days"] >= r["low_confidence_days"] else "gering",
-                "reasons": [f"Preis wieder am/über 7-Tage-Schnitt ({fmt(m['price'])} ≥ {fmt(m['avg_7d'])})",
+                "reasons": [why[0],
                             f"Kaufsignal vom {created.astimezone(calendar_ctx.TZ):%d.%m. %H:%M} bei {fmt(tip['buy_price'])}",
                             f"Gewinn nach Steuer: {fmt(profit)} Coins"],
-                "rules": ["base_sell_avg"], "buy_price": tip["buy_price"],
+                "rules": [why[1]], "buy_price": tip["buy_price"], "strength": "normal",
             }
             close_tip(con, tip, m["price"], now, r)
         elif now - created > timedelta(days=r["tip_max_days"]):

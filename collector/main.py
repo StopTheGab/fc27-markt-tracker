@@ -17,7 +17,7 @@ import traceback
 from datetime import timedelta
 from logging.handlers import RotatingFileHandler
 
-from . import analysis, db, export, mailer, publish
+from . import analysis, creators, db, export, mailer, publish
 from .config import (HEARTBEAT_FILE, LOG_DIR, PID_FILE, STOP_FILE, WATCHLIST_PATH, Settings, ensure_dirs)
 
 log = logging.getLogger("collector")
@@ -111,7 +111,10 @@ def run_once(settings: Settings) -> None:
                         # B7: source has not refreshed this card for hours -> not a current market price
                         errors.append(f"{q.card_id}: Quellpreis veraltet (Stand {db.iso(q.source_updated_at)})")
                     elif q.price is not None:
-                        if db.insert_price(con, q.card_id, ts, int(q.price), "live", src.id, db.iso(q.source_updated_at)):
+                        origin = db.classify_price(con, q.card_id, int(q.price))
+                        if origin == "suspect":
+                            errors.append(f"{q.card_id}: unplausibler Preis {q.price} (Ausreißer, wartet auf Bestätigung)")
+                        if db.insert_price(con, q.card_id, ts, int(q.price), origin, src.id, db.iso(q.source_updated_at)):
                             n_prices += 1
                     sets, vals = [], []
                     if q.price_min is not None:
@@ -140,6 +143,14 @@ def run_once(settings: Settings) -> None:
                 cards = db.active_cards(con)
         if cards:
             result = analysis.analyze(con, cards, db.utcnow())
+            try:
+                result["new_creator_posts"] = creators.update(con, cards, db.utcnow())
+                result["new_creator_posts"] += creators.update_discord(con, cards, settings.env, db.utcnow())
+                result["live_started"] = creators.check_live(con, settings.env, db.utcnow())
+            except Exception as e:
+                log.exception("Creator-Feeds fehlgeschlagen")
+                errors.append(f"Creator-Feeds: {e}")
+                result["new_creator_posts"] = []
         # B4: mails first - signal state is already persisted, a later export error must not swallow them
         if result is not None:
             try:

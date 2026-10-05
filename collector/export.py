@@ -6,8 +6,14 @@ import shutil
 from datetime import timedelta
 from pathlib import Path
 
-from . import db
+from . import creators, db
 from .config import EXPORT_DIR, VERSION
+
+
+def _limits(m: dict) -> dict:
+    from .analysis import card_limits, rules
+    lim = card_limits(m, rules()) if m else None
+    return lim or {"threshold_pct": None, "buy_limit": None, "sell_limit": None, "limit_profit": None}
 
 
 def _write(path: Path, obj) -> None:
@@ -116,10 +122,17 @@ def export_all(con, cards: list[dict], result: dict | None, source_info: dict, r
                               if m.get("price") and m.get("avg_7d") else None),
             "data_days": m.get("data_days", 0.0), "coverage": m.get("coverage"),
             "signal": sig["type"] if sig else None,
+            "signal_strength": sig.get("strength") if sig else None,
+            **(_limits(m)),
             "watch_reason": c.get("reason"), "image": c.get("image"),
             "link": c.get("futgg_url"),
         })
     _write(EXPORT_DIR / "cards.json", {"generated_at": db.iso(now), "cards": out_cards})
+
+    try:
+        _write(EXPORT_DIR / "creators.json", creators.export_data(con, cards, metrics, now))
+    except Exception as e:  # optional section, never block the export
+        run_errors.append(f"creators.json: {e}")
 
     sigs = sorted(result["signals"].values(), key=lambda s: (s["type"] != "buy", -(s.get("expected_profit") or 0)))
     _write(EXPORT_DIR / "signals.json", {

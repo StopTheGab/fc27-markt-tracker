@@ -1,5 +1,5 @@
 {
-  "_doc": "Signal-Parameter. Grundregel bleibt: Kauf bei >= 15 % unter 7-Tage-Schnitt, Verkauf bei Preis >= 7-Tage-Schnitt, Gewinn = Verkauf*0.95 - Kauf. Herleitung der Zusatzregeln: knowledge/signalregeln.md. Aenderungen protokollieren in knowledge/regel_aenderungen.md.",
+  "_doc": "Signal-Parameter. Seit 2026-10-05 (Entscheidung User): Kauf, wenn Preis <= Kauflimit = 7-Tage-Schnitt minus max(8 %, 2 x Schwankung der Karte), hoechstens 20 %; >= 15 % = 'starkes Signal'. Verkauf bei Preis >= 7-Tage-Schnitt (bzw. Wochenhoch/Promo/Creator-Tipp, nur mit Gewinn). Gewinn = Verkauf*0.95 - Kauf. Herleitung: knowledge/signalregeln.md, Aenderungen: knowledge/regel_aenderungen.md.",
   "ea_tax": 0.05,
   "buy_threshold_pct": 15.0,
   "min_profit_coins": 500,
@@ -28,5 +28,11 @@
   "cv_max": 0.25,
   "liq_stop_changes": 4,
   "liq_warn_changes": 7,
-  "promo_min_price": 10000
+  "promo_min_price": 10000,
+  "min_dip_pct": 8.0,
+  "vol_k": 2.0,
+  "max_dip_pct": 20.0,
+  "strong_dip_pct": 15.0,
+  "peak_sell_ratio": 0.97,
+  "creator_tip_hours": 48
 }

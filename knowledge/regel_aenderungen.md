@@ -24,3 +24,19 @@ Jede Änderung hier mit Datum, Grund und Quelle eintragen (auch durch den Lern-A
   vorerst keine Daten) – Kandidaten für später.
 - Mail-Wiederholung: Vorgabe des Users (neu, wenn beim letzten Abruf kein Signal; nach Verschwinden frühestens nach 2 h
   wieder neu) statt R-SPERRE (24 h).
+
+## 2026-10-05 17:45 – Signal-Logik v2 (Entscheidung des Users: Empfehlung B + C + F, dazu D/E als Hinweise)
+
+**Anlass:** Echte Daten 11–17 Uhr (94 Karten ≥ 10.000): tiefster Punkt im Median nur −3,7 % unter eigenem Schnitt,
+nur 4 Karten ≤ −8 %, echte −15 % praktisch nie. Die feste 15-%-Regel lieferte so keine Signale. Wegen 5 % Steuer lohnt
+ein Kauf erst ab ca. −8 % (Gewinn = 0,95 × Schnitt − Preis).
+
+- **F – Limits je Karte:** Kauflimit = 7-Tage-Schnitt × (1 − Schwelle), abgerundet auf Preisstufe; Verkaufslimit = 7-Tage-Schnitt, aufgerundet.
+- **B – Schwelle je Karte:** Schwelle = max(8 %, 2 × Schwankung der Karte [Variationskoeffizient der Stundenmittel]), höchstens 20 %.
+  Kaufsignal, wenn Preis ≤ Kauflimit; ≥ 15 % unter Schnitt = **starkes Signal** (alte Grundregel).
+- **C – Wochenzyklus:** Wochentief (So 21:00 – Mo 12:00, Di ganztägig) hebt „mittel“ → „hoch“ (nur mit ≥ 3 Tagen Daten);
+  Wochenhoch (Do 14:00 – Fr 22:00) senkt Kauf auf max. „mittel“ und löst bei offenen Tipps Verkauf ab 97 % des Schnitts aus.
+- **D – Promo:** Promo-Start in ≤ 48 h → Verkaufssignal für offene Tipps (Meta/Promo-Karten ≥ 10.000), Kauf max. „mittel“.
+- **E – Creator:** Kauf-Tipp der letzten 48 h zur Karte (FIFAllstars vor TheFutAccountant) hebt Sicherheit; Verkaufs-Tipp → Verkaufssignal.
+- Unverändert: Verkauf nur mit Gewinn nach Steuer, Crash statt Einzelsignale, < 3 Tage = „gering“, Preisgrenzen, Liquidität, Ausreißerfilter (neu: Punkte > 50 % vom Median gelten erst nach Bestätigung).
+- Preisstufen (50/100/250/500/1.000) sind für FC 27 nicht offiziell bestätigt (transfermarkt.md).

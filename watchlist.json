@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-05T09:00:00Z",
+  "generated_at": "2026-10-05T15:30:00Z",
   "game": "FC27",
   "platform": "ps",
-  "method": "WebSearch/WebFetch nach FC-27-Quellen ab 2026-09-21 (realsport101 PlayStyles/TOTW 2+3/Destined for Glory 1+2, earlygame Starter-Karten, allthings.how 25k-Team, timesaver.gg Launch-Trading + Item-Score). Kandidaten über fut.gg sitemap-player-detail-27.xml auf eaId gemappt, dann je Spieler die fut.gg-HTML-Seite (3 s Pause, eigener User-Agent, kein /api/) ausgelesen: Rating, Position, Verein, Liga, Nation und resourceIds der Promo-Versionen. Basis-Gold-Ratings aus fut.gg; Preise nicht erhoben.",
+  "method": "WebSearch/WebFetch nach FC-27-Quellen ab 2026-09-21 (realsport101 PlayStyles/TOTW 2+3/Destined for Glory 1+2, earlygame Starter-Karten, allthings.how 25k-Team, timesaver.gg Launch-Trading + Item-Score). Kandidaten über fut.gg sitemap-player-detail-27.xml auf eaId gemappt, dann je Spieler die fut.gg-HTML-Seite (3 s Pause, eigener User-Agent, kein /api/) ausgelesen: Rating, Position, Verein, Liga, Nation und resourceIds der Promo-Versionen. Basis-Gold-Ratings aus fut.gg; Preise nicht erhoben. | Update 2026-10-05 (Nachmittag): Karten mit PS-Preis < 1.000 Coins (export/cards.json) entfernt, außer Futter 84–87; Bouaddi (veralteter Quellpreis) entfernt. Neu: TOTW-3-Rest (gamewave.fr/realsport101, 30.09.) und Meta-Golds aus Top-Ligen; Kandidaten-IDs über fut.gg-Sitemap, PS-Preis/Rating/Verein/Liga/Position je Spieler über die öffentliche FUTNext-Spielerseite geprüft (≥ 4 s Pause, eigener User-Agent, 120 Abrufe); aufgenommen nur 10.000–200.000 Coins. TOTW 4 (07.10.) noch nicht erschienen. Zusätzlich holografische TOTW-Varianten (eigene resourceId, laut fut.gg-Kartenseite holographicType='holographic' mit standardItemEaId der TOTW-Karte; 1 fut.gg-Abruf) sowie Gold-Basisversionen von Diani/Caicedo (Preis aus Collector-Cache). Golds 85–88 liegen überwiegend unter 10k und wurden nicht aufgenommen.",
   "cards": [
     {
       "id": "27-227203",
@@ -1142,38 +1142,6 @@
       ]
     },
     {
-      "id": "27-259480",
-      "ea_id": 259480,
-      "resource_id": 259480,
-      "name": "Ismael Saibari",
-      "version": "Gold Rare",
-      "rating": 83,
-      "position": "CAM",
-      "club": "FC Bayern München",
-      "league": "Bundesliga",
-      "nation": "Morocco",
-      "futgg_url": "https://www.fut.gg/players/259480-ismael-saibari/27-259480/",
-      "category": "meta",
-      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 83",
-      "sources": [
-        {
-          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
-          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
-          "date": "2026-09-22"
-        },
-        {
-          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
-          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
-          "date": "2026-09-25"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/259480-ismael-saibari/27-259480/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
       "id": "27-261855",
       "ea_id": 261855,
       "resource_id": 261855,
@@ -1238,38 +1206,6 @@
       ]
     },
     {
-      "id": "27-206113",
-      "ea_id": 206113,
-      "resource_id": 206113,
-      "name": "Serge Gnabry",
-      "version": "Gold Rare",
-      "rating": 83,
-      "position": "CAM",
-      "club": "FC Bayern München",
-      "league": "Bundesliga",
-      "nation": "Germany",
-      "futgg_url": "https://www.fut.gg/players/206113-serge-gnabry/27-206113/",
-      "category": "meta",
-      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 83",
-      "sources": [
-        {
-          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
-          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
-          "date": "2026-09-22"
-        },
-        {
-          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
-          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
-          "date": "2026-09-25"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/206113-serge-gnabry/27-206113/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
       "id": "27-264453",
       "ea_id": 264453,
       "resource_id": 264453,
@@ -1292,102 +1228,6 @@
         {
           "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
           "url": "https://www.fut.gg/players/264453-micky-van-de-ven/27-264453/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
-      "id": "27-270531",
-      "ea_id": 270531,
-      "resource_id": 270531,
-      "name": "Ousmane Diomande",
-      "version": "Gold Rare",
-      "rating": 81,
-      "position": "CB",
-      "club": "Nott'm Forest",
-      "league": "Premier League",
-      "nation": "Ivory Coast",
-      "futgg_url": "https://www.fut.gg/players/270531-ousmane-diomande/27-270531/",
-      "category": "meta",
-      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 81",
-      "sources": [
-        {
-          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
-          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
-          "date": "2026-09-22"
-        },
-        {
-          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
-          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
-          "date": "2026-09-25"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/270531-ousmane-diomande/27-270531/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
-      "id": "27-238616",
-      "ea_id": 238616,
-      "resource_id": 238616,
-      "name": "Pedro Neto",
-      "version": "Gold Rare",
-      "rating": 81,
-      "position": "RM",
-      "club": "Chelsea",
-      "league": "Premier League",
-      "nation": "Portugal",
-      "futgg_url": "https://www.fut.gg/players/238616-pedro-neto/27-238616/",
-      "category": "meta",
-      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 81",
-      "sources": [
-        {
-          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
-          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
-          "date": "2026-09-22"
-        },
-        {
-          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
-          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
-          "date": "2026-09-25"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/238616-pedro-neto/27-238616/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
-      "id": "27-237942",
-      "ea_id": 237942,
-      "resource_id": 237942,
-      "name": "Pervis Estupiñán",
-      "version": "Gold Rare",
-      "rating": 78,
-      "position": "LB",
-      "club": "Milano FC",
-      "league": "Serie A Enilive",
-      "nation": "Ecuador",
-      "futgg_url": "https://www.fut.gg/players/237942-pervis-estupinan/27-237942/",
-      "category": "meta",
-      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 78",
-      "sources": [
-        {
-          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
-          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
-          "date": "2026-09-22"
-        },
-        {
-          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
-          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
-          "date": "2026-09-25"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/237942-pervis-estupinan/27-237942/",
           "date": "2026-10-05"
         }
       ]
@@ -3321,65 +3161,6 @@
       ]
     },
     {
-      "id": "27-254243",
-      "ea_id": 254243,
-      "resource_id": 254243,
-      "name": "Elliot Anderson",
-      "version": "Gold Rare",
-      "rating": 84,
-      "position": "CDM",
-      "club": "Manchester City",
-      "league": "Premier League",
-      "nation": "England",
-      "futgg_url": "https://www.fut.gg/players/254243-elliot-anderson/27-254243/",
-      "category": "trading",
-      "reason": "OTW-Spieler (OTW-Version untradeable) → handelbare Gold-Basis als Spekulationsziel rund um OTW-Upgrades, Rating 84",
-      "sources": [
-        {
-          "title": "timesaver.gg: FC 27 FUT Market Launch Week - Trading 85s & OTW Prep (aktualisiert)",
-          "url": "https://timesaver.gg/blog/fc-27-fut-market-launch-week-trading-85s-otw-prep",
-          "date": "2026-09-24"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/254243-elliot-anderson/27-254243/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
-      "id": "27-227678",
-      "ea_id": 227678,
-      "resource_id": 227678,
-      "name": "Ezri Konsa",
-      "version": "Gold Rare",
-      "rating": 84,
-      "position": "CB",
-      "club": "Arsenal",
-      "league": "Premier League",
-      "nation": "England",
-      "futgg_url": "https://www.fut.gg/players/227678-ezri-konsa/27-227678/",
-      "category": "trading",
-      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 84",
-      "sources": [
-        {
-          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
-          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
-          "date": "2026-09-22"
-        },
-        {
-          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
-          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
-          "date": "2026-09-28"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/227678-ezri-konsa/27-227678/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
       "id": "27-241461",
       "ea_id": 241461,
       "resource_id": 241461,
@@ -3434,70 +3215,6 @@
       ]
     },
     {
-      "id": "27-260247",
-      "ea_id": 260247,
-      "resource_id": 260247,
-      "name": "Morgan Rogers",
-      "version": "Gold Rare",
-      "rating": 84,
-      "position": "CAM",
-      "club": "Chelsea",
-      "league": "Premier League",
-      "nation": "England",
-      "futgg_url": "https://www.fut.gg/players/260247-morgan-rogers/27-260247/",
-      "category": "trading",
-      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 84",
-      "sources": [
-        {
-          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
-          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
-          "date": "2026-09-22"
-        },
-        {
-          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
-          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
-          "date": "2026-09-28"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/260247-morgan-rogers/27-260247/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
-      "id": "27-277846",
-      "ea_id": 277846,
-      "resource_id": 277846,
-      "name": "Nico Paz",
-      "version": "Gold Rare",
-      "rating": 84,
-      "position": "CAM",
-      "club": "Como 1907",
-      "league": "Serie A Enilive",
-      "nation": "Argentina",
-      "futgg_url": "https://www.fut.gg/players/277846-nicolas-paz-martinez-nico-paz/27-277846/",
-      "category": "trading",
-      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 84",
-      "sources": [
-        {
-          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
-          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
-          "date": "2026-09-22"
-        },
-        {
-          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
-          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
-          "date": "2026-09-28"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/277846-nicolas-paz-martinez-nico-paz/27-277846/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
       "id": "27-264947",
       "ea_id": 264947,
       "resource_id": 264947,
@@ -3520,33 +3237,6 @@
         {
           "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
           "url": "https://www.fut.gg/players/264947-nicole-anyomi/27-264947/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
-      "id": "27-210676",
-      "ea_id": 210676,
-      "resource_id": 210676,
-      "name": "Wladimiro Falcone",
-      "version": "Gold Rare",
-      "rating": 84,
-      "position": "GK",
-      "club": "US Lecce",
-      "league": "Serie A Enilive",
-      "nation": "Italy",
-      "futgg_url": "https://www.fut.gg/players/210676-wladimiro-falcone/27-210676/",
-      "category": "trading",
-      "reason": "Teil eines verbreiteten 25k-Starterteams → hohes Handelsvolumen im unteren/mittleren Preisbereich, Rating 84",
-      "sources": [
-        {
-          "title": "allthings.how: EA FC 27 Best Ultimate Team Starter Squad Under 25,000 Coins",
-          "url": "https://allthings.how/?p=219957",
-          "date": "2026-09-25"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/210676-wladimiro-falcone/27-210676/",
           "date": "2026-10-05"
         }
       ]
@@ -3611,33 +3301,6 @@
       ]
     },
     {
-      "id": "27-205452",
-      "ea_id": 205452,
-      "resource_id": 205452,
-      "name": "Antonio Rüdiger",
-      "version": "Gold Rare",
-      "rating": 83,
-      "position": "CB",
-      "club": "Real Madrid",
-      "league": "LALIGA EA SPORTS",
-      "nation": "Germany",
-      "futgg_url": "https://www.fut.gg/players/205452-antonio-rudiger/27-205452/",
-      "category": "trading",
-      "reason": "Teil eines verbreiteten 25k-Starterteams → hohes Handelsvolumen im unteren/mittleren Preisbereich, Rating 83",
-      "sources": [
-        {
-          "title": "allthings.how: EA FC 27 Best Ultimate Team Starter Squad Under 25,000 Coins",
-          "url": "https://allthings.how/?p=219957",
-          "date": "2026-09-25"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/205452-antonio-rudiger/27-205452/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
       "id": "27-242444",
       "ea_id": 242444,
       "resource_id": 242444,
@@ -3670,70 +3333,6 @@
       ]
     },
     {
-      "id": "27-257279",
-      "ea_id": 257279,
-      "resource_id": 257279,
-      "name": "Álex Baena",
-      "version": "Gold Rare",
-      "rating": 83,
-      "position": "LM",
-      "club": "Atlético de Madrid",
-      "league": "LALIGA EA SPORTS",
-      "nation": "Spain",
-      "futgg_url": "https://www.fut.gg/players/257279-alex-baena/27-257279/",
-      "category": "trading",
-      "reason": "Gold-Basis eines aktuellen TOTW-Spielers; liquide Karte, Rating 83",
-      "sources": [
-        {
-          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
-          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
-          "date": "2026-09-23"
-        },
-        {
-          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
-          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
-          "date": "2026-09-30"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/257279-alex-baena/27-257279/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
-      "id": "27-242964",
-      "ea_id": 242964,
-      "resource_id": 242964,
-      "name": "Anthony Gordon",
-      "version": "Gold Rare",
-      "rating": 82,
-      "position": "LW",
-      "club": "FC Barcelona",
-      "league": "LALIGA EA SPORTS",
-      "nation": "England",
-      "futgg_url": "https://www.fut.gg/players/242964-anthony-gordon/27-242964/",
-      "category": "trading",
-      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 82",
-      "sources": [
-        {
-          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
-          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
-          "date": "2026-09-22"
-        },
-        {
-          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
-          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
-          "date": "2026-09-28"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/242964-anthony-gordon/27-242964/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
       "id": "27-251852",
       "ea_id": 251852,
       "resource_id": 251852,
@@ -3756,70 +3355,6 @@
         {
           "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
           "url": "https://www.fut.gg/players/251852-karim-adeyemi/27-251852/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
-      "id": "27-264388",
-      "ea_id": 264388,
-      "resource_id": 264388,
-      "name": "Moleiro",
-      "version": "Gold Rare",
-      "rating": 82,
-      "position": "LM",
-      "club": "Villarreal CF",
-      "league": "LALIGA EA SPORTS",
-      "nation": "Spain",
-      "futgg_url": "https://www.fut.gg/players/264388-moleiro/27-264388/",
-      "category": "trading",
-      "reason": "Gold-Basis eines aktuellen TOTW-Spielers; liquide Karte, Rating 82",
-      "sources": [
-        {
-          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
-          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
-          "date": "2026-09-23"
-        },
-        {
-          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
-          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
-          "date": "2026-09-30"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/264388-moleiro/27-264388/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
-      "id": "27-243245",
-      "ea_id": 243245,
-      "resource_id": 243245,
-      "name": "Orkun Kökçü",
-      "version": "Gold Rare",
-      "rating": 82,
-      "position": "CM",
-      "club": "Beşiktaş",
-      "league": "Trendyol Süper Lig",
-      "nation": "Türkiye",
-      "futgg_url": "https://www.fut.gg/players/243245-orkun-kokcu/27-243245/",
-      "category": "trading",
-      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 82",
-      "sources": [
-        {
-          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
-          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
-          "date": "2026-09-22"
-        },
-        {
-          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
-          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
-          "date": "2026-09-28"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/243245-orkun-kokcu/27-243245/",
           "date": "2026-10-05"
         }
       ]
@@ -3852,146 +3387,6 @@
         {
           "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
           "url": "https://www.fut.gg/players/277869-michael-kayode/27-277869/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
-      "id": "27-278901",
-      "ea_id": 278901,
-      "resource_id": 278901,
-      "name": "Ayyoub Bouaddi",
-      "version": "Gold Rare",
-      "rating": 80,
-      "position": "CDM",
-      "club": "LOSC",
-      "league": "Ligue 1 McDonald's",
-      "nation": "Morocco",
-      "futgg_url": "https://www.fut.gg/players/278901-ayyoub-bouaddi/27-278901/",
-      "category": "trading",
-      "reason": "OTW-Spieler (OTW-Version untradeable) → handelbare Gold-Basis als Spekulationsziel rund um OTW-Upgrades, Rating 80",
-      "sources": [
-        {
-          "title": "timesaver.gg: FC 27 FUT Market Launch Week - Trading 85s & OTW Prep (aktualisiert)",
-          "url": "https://timesaver.gg/blog/fc-27-fut-market-launch-week-trading-85s-otw-prep",
-          "date": "2026-09-24"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/278901-ayyoub-bouaddi/27-278901/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
-      "id": "27-243702",
-      "ea_id": 243702,
-      "resource_id": 243702,
-      "name": "Djed Spence",
-      "version": "Gold Rare",
-      "rating": 80,
-      "position": "LB",
-      "club": "Lombardia FC",
-      "league": "Serie A Enilive",
-      "nation": "England",
-      "futgg_url": "https://www.fut.gg/players/243702-djed-spence/27-243702/",
-      "category": "trading",
-      "reason": "Teil eines verbreiteten 25k-Starterteams → hohes Handelsvolumen im unteren/mittleren Preisbereich, Rating 80",
-      "sources": [
-        {
-          "title": "allthings.how: EA FC 27 Best Ultimate Team Starter Squad Under 25,000 Coins",
-          "url": "https://allthings.how/?p=219957",
-          "date": "2026-09-25"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/243702-djed-spence/27-243702/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
-      "id": "27-241736",
-      "ea_id": 241736,
-      "resource_id": 241736,
-      "name": "Yann Aurel Bisseck",
-      "version": "Gold Rare",
-      "rating": 78,
-      "position": "CB",
-      "club": "Lombardia FC",
-      "league": "Serie A Enilive",
-      "nation": "Germany",
-      "futgg_url": "https://www.fut.gg/players/241736-yann-aurel-bisseck/27-241736/",
-      "category": "trading",
-      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 78",
-      "sources": [
-        {
-          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
-          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
-          "date": "2026-09-22"
-        },
-        {
-          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
-          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
-          "date": "2026-09-28"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/241736-yann-aurel-bisseck/27-241736/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
-      "id": "27-72997",
-      "ea_id": 72997,
-      "resource_id": 72997,
-      "name": "Rodrigo Mora",
-      "version": "Gold Rare",
-      "rating": 77,
-      "position": "CAM",
-      "club": "AS Roma",
-      "league": "Serie A Enilive",
-      "nation": "Portugal",
-      "futgg_url": "https://www.fut.gg/players/72997-rodrigo-mora-de-carvalho-rodrigo-mora/27-72997/",
-      "category": "trading",
-      "reason": "OTW-Spieler (OTW-Version untradeable) → handelbare Gold-Basis als Spekulationsziel rund um OTW-Upgrades, Rating 77",
-      "sources": [
-        {
-          "title": "timesaver.gg: FC 27 FUT Market Launch Week - Trading 85s & OTW Prep (aktualisiert)",
-          "url": "https://timesaver.gg/blog/fc-27-fut-market-launch-week-trading-85s-otw-prep",
-          "date": "2026-09-24"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/72997-rodrigo-mora-de-carvalho-rodrigo-mora/27-72997/",
-          "date": "2026-10-05"
-        }
-      ]
-    },
-    {
-      "id": "27-67379273",
-      "ea_id": 270409,
-      "resource_id": 67379273,
-      "name": "Savinho",
-      "version": "Gold Rare",
-      "rating": 80,
-      "position": "RW",
-      "club": "Spurs",
-      "league": "Premier League",
-      "nation": "Brazil",
-      "futgg_url": "https://www.fut.gg/players/270409-savio/27-67379273/",
-      "category": "trading",
-      "reason": "OTW-Spieler (OTW-Version untradeable) → handelbare Gold-Karte (Rare 80) als Spekulationsziel rund um OTW-Upgrades",
-      "sources": [
-        {
-          "title": "timesaver.gg: FC 27 FUT Market Launch Week - Trading 85s & OTW Prep (aktualisiert)",
-          "url": "https://timesaver.gg/blog/fc-27-fut-market-launch-week-trading-85s-otw-prep",
-          "date": "2026-09-24"
-        },
-        {
-          "title": "FUT.GG Kartenseite (Versionsliste Savinho, abgerufen)",
-          "url": "https://www.fut.gg/players/270409-savio/27-50602057/",
           "date": "2026-10-05"
         }
       ]
@@ -4078,55 +3473,2153 @@
       ]
     },
     {
-      "id": "27-212228",
-      "ea_id": 212228,
-      "resource_id": 212228,
-      "name": "Ivan Toney",
-      "version": "Gold Rare",
-      "rating": 83,
-      "position": "ST",
-      "club": "Al Ahli",
-      "league": "ROSHN Saudi League",
-      "nation": "England",
-      "futgg_url": "https://www.fut.gg/players/212228-ivan-toney/27-212228/",
-      "category": "fodder",
-      "reason": "83er Gold Rare aus wenig gefragter Liga (ROSHN Saudi League) – SBC-Futter (Item Score 410); Preis nicht verifiziert",
+      "id": "27-50519998",
+      "ea_id": 188350,
+      "resource_id": 50519998,
+      "name": "Marco Reus",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "CAM",
+      "club": "LA Galaxy",
+      "league": "MLS",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/188350-marco-reus/27-50519998/",
+      "category": "promo",
+      "reason": "TOTW-2-Karte (CAM 80, 23.09.), nicht mehr in Packs -> Angebot sinkt; PS ~11.2k, handelbar",
       "sources": [
         {
-          "title": "timesaver.gg: FC 27 Item Score Table - Cheapest Fodder (84s)",
-          "url": "https://timesaver.gg/blog/fc-27-item-score-table-cheapest-fodder-84s",
-          "date": "2026-09-26"
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
         },
         {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/212228-ivan-toney/27-212228/",
+          "title": "FUTNext Spielerseite (PS-Preis 11.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/marco-reus/50519998",
           "date": "2026-10-05"
         }
       ]
     },
     {
-      "id": "27-215914",
-      "ea_id": 215914,
-      "resource_id": 215914,
-      "name": "N'Golo Kanté",
-      "version": "Gold Rare",
-      "rating": 83,
+      "id": "27-50522413",
+      "ea_id": 190765,
+      "resource_id": 50522413,
+      "name": "Pascal Groß",
+      "version": "Team of the Week",
+      "rating": 81,
       "position": "CDM",
-      "club": "Fenerbahçe",
-      "league": "Trendyol Süper Lig",
-      "nation": "France",
-      "futgg_url": "https://www.fut.gg/players/215914-ngolo-kante/27-215914/",
-      "category": "fodder",
-      "reason": "83er Gold Rare aus wenig gefragter Liga (Trendyol Süper Lig) – SBC-Futter (Item Score 410); Preis nicht verifiziert",
+      "club": "Brighton",
+      "league": "Premier League",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/190765-pascal-gross/27-50522413/",
+      "category": "promo",
+      "reason": "TOTW-2-Karte (CDM 81, 23.09.), nicht mehr in Packs -> Angebot sinkt; PS ~12.2k, handelbar",
       "sources": [
         {
-          "title": "timesaver.gg: FC 27 Item Score Table - Cheapest Fodder (84s)",
-          "url": "https://timesaver.gg/blog/fc-27-item-score-table-cheapest-fodder-84s",
-          "date": "2026-09-26"
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
         },
         {
-          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
-          "url": "https://www.fut.gg/players/215914-ngolo-kante/27-215914/",
+          "title": "FUTNext Spielerseite (PS-Preis 12.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/pascal-gross/50522413",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50542545",
+      "ea_id": 210897,
+      "resource_id": 50542545,
+      "name": "Chancel Mbemba",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "CB",
+      "club": "Diriyah",
+      "league": "ROSHN Saudi League",
+      "nation": "DR Congo",
+      "futgg_url": "https://www.fut.gg/players/210897-chancel-mbemba/27-50542545/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-3-Karte (CB 80, bis Mi 07.10. in Packs), PS ~10.2k – nahe Discard-Preis, Trading/Abverkauf beobachten",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/chancel-mbemba/50542545",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50547923",
+      "ea_id": 216275,
+      "resource_id": 50547923,
+      "name": "Phillipp Mwene",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "LB",
+      "club": "1. FSV Mainz 05",
+      "league": "Bundesliga",
+      "nation": "Austria",
+      "futgg_url": "https://www.fut.gg/players/216275-phillipp-mwene/27-50547923/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-3-Karte (LB 80, bis Mi 07.10. in Packs), PS ~10.2k – nahe Discard-Preis, Trading/Abverkauf beobachten",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/phillipp-mwene/50547923",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50555799",
+      "ea_id": 224151,
+      "resource_id": 50555799,
+      "name": "Henry Martín",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "ST",
+      "club": "Club América",
+      "league": "Liga BBVA MX",
+      "nation": "Mexico",
+      "futgg_url": "https://www.fut.gg/players/224151-henry-martin/27-50555799/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-3-Karte (ST 80, bis Mi 07.10. in Packs), PS ~10k – nahe Discard-Preis, Trading/Abverkauf beobachten",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/henry-martin/50555799",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50566782",
+      "ea_id": 235134,
+      "resource_id": 50566782,
+      "name": "Pablo Rosario",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "CDM",
+      "club": "FC Porto",
+      "league": "Liga Portugal",
+      "nation": "Dominican Republic",
+      "futgg_url": "https://www.fut.gg/players/235134-pablo-rosario/27-50566782/",
+      "category": "promo",
+      "reason": "TOTW-2-Karte (CDM 80, 23.09.), nicht mehr in Packs -> Angebot sinkt; PS ~11.5k, handelbar",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 11.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/pablo-rosario/50566782",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50569088",
+      "ea_id": 237440,
+      "resource_id": 50569088,
+      "name": "Hannes Delcroix",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "CB",
+      "club": "FC Lugano",
+      "league": "Brack Super League",
+      "nation": "Haiti",
+      "futgg_url": "https://www.fut.gg/players/237440-hannes-delcroix/27-50569088/",
+      "category": "promo",
+      "reason": "TOTW-2-Karte (CB 80, 23.09.), nicht mehr in Packs -> Angebot sinkt; PS ~10.8k, handelbar",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.750 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/hannes-delcroix/50569088",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50569719",
+      "ea_id": 238071,
+      "resource_id": 50569719,
+      "name": "Dujon Sterling",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "RB",
+      "club": "Rangers",
+      "league": "Scottish Prem",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/238071-dujon-sterling/27-50569719/",
+      "category": "promo",
+      "reason": "TOTW-2-Karte (RB 80, 23.09.), nicht mehr in Packs -> Angebot sinkt; PS ~11.2k, handelbar",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 11.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/dujon-sterling/50569719",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67361026",
+      "ea_id": 252162,
+      "resource_id": 67361026,
+      "name": "Ayase Ueda",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "ST",
+      "club": "LOSC",
+      "league": "Ligue 1 McDonald's",
+      "nation": "Japan",
+      "futgg_url": "https://www.fut.gg/players/252162-ayase-ueda/27-67361026/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-3-Karte (ST 80, bis Mi 07.10. in Packs), PS ~10.2k – nahe Discard-Preis, Trading/Abverkauf beobachten",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/ayase-ueda/67361026",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50584200",
+      "ea_id": 252552,
+      "resource_id": 50584200,
+      "name": "Konstantinos Tzolakis",
+      "version": "Team of the Week",
+      "rating": 81,
+      "position": "GK",
+      "club": "Hull City",
+      "league": "Premier League",
+      "nation": "Greece",
+      "futgg_url": "https://www.fut.gg/players/252552-konstantinos-tzolakis/27-50584200/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-3-Karte (GK 81, bis Mi 07.10. in Packs), PS ~11.5k – nahe Discard-Preis, Trading/Abverkauf beobachten",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 11.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/konstantinos-tzolakis/50584200",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50586853",
+      "ea_id": 255205,
+      "resource_id": 50586853,
+      "name": "Sebastian Berhalter",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "CDM",
+      "club": "Middlesbrough",
+      "league": "EFL Championship",
+      "nation": "United States",
+      "futgg_url": "https://www.fut.gg/players/255205-sebastian-berhalter/27-50586853/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-3-Karte (CDM 80, bis Mi 07.10. in Packs), PS ~10.5k – nahe Discard-Preis, Trading/Abverkauf beobachten",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/sebastian-berhalter/50586853",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50586923",
+      "ea_id": 255275,
+      "resource_id": 50586923,
+      "name": "Milan Iloski",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "ST",
+      "club": "Philadelphia",
+      "league": "MLS",
+      "nation": "United States",
+      "futgg_url": "https://www.fut.gg/players/255275-milan-iloski/27-50586923/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-3-Karte (ST 80, bis Mi 07.10. in Packs), PS ~10k – nahe Discard-Preis, Trading/Abverkauf beobachten",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/milan-iloski/50586923",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50591227",
+      "ea_id": 259579,
+      "resource_id": 50591227,
+      "name": "Salomón Rodríguez",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "ST",
+      "club": "City Torque",
+      "league": "Sudamericana",
+      "nation": "Uruguay",
+      "futgg_url": "https://www.fut.gg/players/259579-salomon-rodriguez/27-50591227/",
+      "category": "promo",
+      "reason": "TOTW-2-Karte (ST 80, 23.09.), nicht mehr in Packs -> Angebot sinkt; PS ~10.8k, handelbar",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.750 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/salomon-rodriguez/50591227",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50593509",
+      "ea_id": 261861,
+      "resource_id": 50593509,
+      "name": "Jack Moylan",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "CAM",
+      "club": "Cardiff City",
+      "league": "EFL Championship",
+      "nation": "Republic of Ireland",
+      "futgg_url": "https://www.fut.gg/players/261861-jack-moylan/27-50593509/",
+      "category": "promo",
+      "reason": "TOTW-2-Karte (CAM 80, 23.09.), nicht mehr in Packs -> Angebot sinkt; PS ~10.5k, handelbar",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/jack-moylan/50593509",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50593513",
+      "ea_id": 261865,
+      "resource_id": 50593513,
+      "name": "Miguel Gutiérrez",
+      "version": "Team of the Week",
+      "rating": 82,
+      "position": "LB",
+      "club": "Leverkusen",
+      "league": "Bundesliga",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/261865-miguel-gutierrez/27-50593513/",
+      "category": "promo",
+      "reason": "TOTW-2-Karte (LB 82, 23.09.), nicht mehr in Packs -> Angebot sinkt; PS ~12.2k, handelbar",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 12.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/miguel-gutierrez/50593513",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50594290",
+      "ea_id": 262642,
+      "resource_id": 50594290,
+      "name": "Zeki Amdouni",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "ST",
+      "club": "Burnley",
+      "league": "EFL Championship",
+      "nation": "Switzerland",
+      "futgg_url": "https://www.fut.gg/players/262642-zeki-amdouni/27-50594290/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-3-Karte (ST 80, bis Mi 07.10. in Packs), PS ~10.2k – nahe Discard-Preis, Trading/Abverkauf beobachten",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/zeki-amdouni/50594290",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50599622",
+      "ea_id": 267974,
+      "resource_id": 50599622,
+      "name": "Mexx Meerdink",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "ST",
+      "club": "AZ",
+      "league": "Eredivisie",
+      "nation": "Netherlands",
+      "futgg_url": "https://www.fut.gg/players/267974-mexx-meerdink/27-50599622/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-3-Karte (ST 80, bis Mi 07.10. in Packs), PS ~11.8k – nahe Discard-Preis, Trading/Abverkauf beobachten",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 11.750 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/mexx-meerdink/50599622",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67379904",
+      "ea_id": 271040,
+      "resource_id": 67379904,
+      "name": "Jaedyn Shaw",
+      "version": "Team of the Week",
+      "rating": 82,
+      "position": "LM",
+      "club": "Gotham FC",
+      "league": "NWSL",
+      "nation": "United States",
+      "futgg_url": "https://www.fut.gg/players/271040-jaedyn-shaw/27-67379904/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-3-Karte (LM 82, bis Mi 07.10. in Packs), PS ~10.5k – nahe Discard-Preis, Trading/Abverkauf beobachten",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/jaedyn-shaw/67379904",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50603785",
+      "ea_id": 272137,
+      "resource_id": 50603785,
+      "name": "Sara Ortega",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "LM",
+      "club": "Athletic Club",
+      "league": "Liga F Moeve",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/272137-sara-ortega/27-50603785/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-3-Karte (LM 80, bis Mi 07.10. in Packs), PS ~10k – nahe Discard-Preis, Trading/Abverkauf beobachten",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/sara-ortega/50603785",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50604825",
+      "ea_id": 273177,
+      "resource_id": 50604825,
+      "name": "Olivia Holdt",
+      "version": "Team of the Week",
+      "rating": 81,
+      "position": "LM",
+      "club": "Spurs",
+      "league": "Barclays WSL",
+      "nation": "Denmark",
+      "futgg_url": "https://www.fut.gg/players/273177-olivia-holdt/27-50604825/",
+      "category": "promo",
+      "reason": "TOTW-2-Karte (LM 81, 23.09.), nicht mehr in Packs -> Angebot sinkt; PS ~10.5k, handelbar",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/olivia-holdt/50604825",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50605215",
+      "ea_id": 273567,
+      "resource_id": 50605215,
+      "name": "Chiara Hahn",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "CDM",
+      "club": "TSG Hoffenheim",
+      "league": "GPFBL",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/273567-chiara-hahn/27-50605215/",
+      "category": "promo",
+      "reason": "TOTW-2-Karte (CDM 80, 23.09.), nicht mehr in Packs -> Angebot sinkt; PS ~10.8k, handelbar",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.750 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/chiara-hahn/50605215",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50608343",
+      "ea_id": 276695,
+      "resource_id": 50608343,
+      "name": "Shea Charles",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "CM",
+      "club": "Fulham",
+      "league": "Premier League",
+      "nation": "Northern Ireland",
+      "futgg_url": "https://www.fut.gg/players/276695-shea-charles/27-50608343/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-3-Karte (CM 80, bis Mi 07.10. in Packs), PS ~10.2k – nahe Discard-Preis, Trading/Abverkauf beobachten",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/shea-charles/50608343",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50608373",
+      "ea_id": 276725,
+      "resource_id": 50608373,
+      "name": "Lorenzo Palmisani",
+      "version": "Team of the Week",
+      "rating": 82,
+      "position": "GK",
+      "club": "Frosinone Calcio",
+      "league": "Serie A Enilive",
+      "nation": "Italy",
+      "futgg_url": "https://www.fut.gg/players/276725-lorenzo-palmisani/27-50608373/",
+      "category": "promo",
+      "reason": "TOTW-2-Karte (GK 82, 23.09.), nicht mehr in Packs -> Angebot sinkt; PS ~11.5k, handelbar",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 11.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/lorenzo-palmisani/50608373",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50402374",
+      "ea_id": 70726,
+      "resource_id": 50402374,
+      "name": "Anis Hadj Moussa",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "RW",
+      "club": "Feyenoord",
+      "league": "Eredivisie",
+      "nation": "Algeria",
+      "futgg_url": "https://www.fut.gg/players/70726-anis-hadj-moussa/27-50402374/",
+      "category": "promo",
+      "reason": "TOTW-2-Karte (RW 80, 23.09.), nicht mehr in Packs -> Angebot sinkt; PS ~12.8k, handelbar",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 12.750 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/anis-hadj-moussa/50402374",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50411878",
+      "ea_id": 80230,
+      "resource_id": 50411878,
+      "name": "Bella Andersson",
+      "version": "Team of the Week",
+      "rating": 80,
+      "position": "CB",
+      "club": "Real Madrid",
+      "league": "Liga F Moeve",
+      "nation": "Sweden",
+      "futgg_url": "https://www.fut.gg/players/80230-bella-andersson/27-50411878/",
+      "category": "promo",
+      "reason": "TOTW-2-Karte (CB 80, 23.09.), nicht mehr in Packs -> Angebot sinkt; PS ~11k, handelbar",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 11.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/bella-andersson/50411878",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-241846",
+      "ea_id": 241846,
+      "resource_id": 241846,
+      "name": "Ewa Pajor",
+      "version": "Gold Rare",
+      "rating": 89,
+      "position": "ST",
+      "club": "FC Barcelona",
+      "league": "Liga F Moeve",
+      "nation": "Poland",
+      "futgg_url": "https://www.fut.gg/players/241846-ewa-pajor/27-241846/",
+      "category": "meta",
+      "reason": "Gold ST 89 (Liga F Moeve); PS+ Chip Shot (realsport101); liquide Preisklasse, PS ~148k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 148.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/ewa-pajor/241846",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-237288",
+      "ea_id": 237288,
+      "resource_id": 237288,
+      "name": "Mariona",
+      "version": "Gold Rare",
+      "rating": 89,
+      "position": "CM",
+      "club": "Arsenal",
+      "league": "Barclays WSL",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/237288-mariona/27-237288/",
+      "category": "meta",
+      "reason": "Gold CM 89 (Barclays WSL); PS+ Technical (realsport101); liquide Preisklasse, PS ~94k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 94.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/mariona/237288",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-237289",
+      "ea_id": 237289,
+      "resource_id": 237289,
+      "name": "Patri Guijarro",
+      "version": "Gold Rare",
+      "rating": 88,
+      "position": "CDM",
+      "club": "FC Barcelona",
+      "league": "Liga F Moeve",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/237289-patri-guijarro/27-237289/",
+      "category": "meta",
+      "reason": "Gold CDM 88 (Liga F Moeve); PS+ Intercept = Meta-PS für CDM (realsport101); liquide Preisklasse, PS ~196k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 196.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/patri-guijarro/237289",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-258980",
+      "ea_id": 258980,
+      "resource_id": 258980,
+      "name": "Alessia Russo",
+      "version": "Gold Rare",
+      "rating": 88,
+      "position": "ST",
+      "club": "Arsenal",
+      "league": "Barclays WSL",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/258980-alessia-russo/27-258980/",
+      "category": "meta",
+      "reason": "Gold ST 88 (Barclays WSL); PS+ Low Driven Shot = Meta-PS für ST (realsport101); liquide Preisklasse, PS ~11k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 11.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/alessia-russo/258980",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-233662",
+      "ea_id": 233662,
+      "resource_id": 233662,
+      "name": "Sakina Karchaoui",
+      "version": "Gold Rare",
+      "rating": 87,
+      "position": "CM",
+      "club": "PSG",
+      "league": "Arkema PL",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/233662-sakina-karchaoui/27-233662/",
+      "category": "meta",
+      "reason": "Gold CM 87 (Arkema PL); ohne PS+ (realsport101); liquide Preisklasse, PS ~99.5k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 99.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/sakina-karchaoui/233662",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-278219",
+      "ea_id": 278219,
+      "resource_id": 278219,
+      "name": "Tabitha Chawinga",
+      "version": "Gold Rare",
+      "rating": 87,
+      "position": "LW",
+      "club": "OL",
+      "league": "Arkema PL",
+      "nation": "Malawi",
+      "futgg_url": "https://www.fut.gg/players/278219-tabitha-chawinga/27-278219/",
+      "category": "meta",
+      "reason": "Gold LW 87 (Arkema PL); PS+ Quick Step (realsport101); liquide Preisklasse, PS ~30.5k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 30.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/tabitha-chawinga/278219",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-228702",
+      "ea_id": 228702,
+      "resource_id": 228702,
+      "name": "Frenkie de Jong",
+      "version": "Gold Rare",
+      "rating": 86,
+      "position": "CM",
+      "club": "FC Barcelona",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Netherlands",
+      "futgg_url": "https://www.fut.gg/players/228702-frenkie-de-jong/27-228702/",
+      "category": "meta",
+      "reason": "Gold CM 86 (LALIGA EA SPORTS); PS+ Tiki Taka (realsport101); liquide Preisklasse, PS ~89.5k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 89.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/frenkie-de-jong/228702",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-246191",
+      "ea_id": 246191,
+      "resource_id": 246191,
+      "name": "Julián Alvarez",
+      "version": "Gold Rare",
+      "rating": 86,
+      "position": "ST",
+      "club": "Atlético de Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Argentina",
+      "futgg_url": "https://www.fut.gg/players/246191-julian-alvarez/27-246191/",
+      "category": "meta",
+      "reason": "Gold ST 86 (LALIGA EA SPORTS); PS+ Dead Ball (realsport101); liquide Preisklasse, PS ~69.5k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 69.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/julian-alvarez/246191",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-265674",
+      "ea_id": 265674,
+      "resource_id": 265674,
+      "name": "Selma Bacha",
+      "version": "Gold Rare",
+      "rating": 86,
+      "position": "LB",
+      "club": "OL",
+      "league": "Arkema PL",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/265674-selma-bacha/27-265674/",
+      "category": "meta",
+      "reason": "Gold LB 86 (Arkema PL); PS+ Dead Ball (realsport101); liquide Preisklasse, PS ~39.2k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 39.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/selma-bacha/265674",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-271421",
+      "ea_id": 271421,
+      "resource_id": 271421,
+      "name": "Désiré Doué",
+      "version": "Gold Rare",
+      "rating": 86,
+      "position": "RW",
+      "club": "PSG",
+      "league": "Ligue 1 McDonald's",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/271421-desire-doue/27-271421/",
+      "category": "meta",
+      "reason": "Gold RW 86 (Ligue 1 McDonald's); PS+ Trickster (realsport101); liquide Preisklasse, PS ~22.2k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 22.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/desire-doue/271421",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-241486",
+      "ea_id": 241486,
+      "resource_id": 241486,
+      "name": "Jules Koundé",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "RB",
+      "club": "FC Barcelona",
+      "league": "LALIGA EA SPORTS",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/241486-jules-kounde/27-241486/",
+      "category": "trading",
+      "reason": "Gold RB 85 (LALIGA EA SPORTS); ohne PS+ (realsport101); liquide Preisklasse, PS ~32.8k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 32.750 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/jules-kounde/241486",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-257289",
+      "ea_id": 257289,
+      "resource_id": 257289,
+      "name": "Hugo Ekitiké",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "ST",
+      "club": "Liverpool",
+      "league": "Premier League",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/257289-hugo-ekitike/27-257289/",
+      "category": "trading",
+      "reason": "Gold ST 85 (Premier League); ohne PS+ (realsport101); liquide Preisklasse, PS ~16.5k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 16.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/hugo-ekitike/257289",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-246104",
+      "ea_id": 246104,
+      "resource_id": 246104,
+      "name": "Ryan Gravenberch",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "CDM",
+      "club": "Liverpool",
+      "league": "Premier League",
+      "nation": "Netherlands",
+      "futgg_url": "https://www.fut.gg/players/246104-ryan-gravenberch/27-246104/",
+      "category": "trading",
+      "reason": "Gold CDM 85 (Premier League); ohne PS+ (realsport101); liquide Preisklasse, PS ~10.2k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/ryan-gravenberch/246104",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-271446",
+      "ea_id": 271446,
+      "resource_id": 271446,
+      "name": "Vicky López",
+      "version": "Gold Rare",
+      "rating": 84,
+      "position": "RW",
+      "club": "FC Barcelona",
+      "league": "Liga F Moeve",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/271446-vicky-lopez/27-271446/",
+      "category": "trading",
+      "reason": "Gold RW 84 (Liga F Moeve); ohne PS+ (realsport101); liquide Preisklasse, PS ~19k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 19.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/vicky-lopez/271446",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-237197",
+      "ea_id": 237197,
+      "resource_id": 237197,
+      "name": "Grace Geyoro",
+      "version": "Gold Rare",
+      "rating": 84,
+      "position": "CM",
+      "club": "London City",
+      "league": "Barclays WSL",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/237197-grace-geyoro/27-237197/",
+      "category": "trading",
+      "reason": "Gold CM 84 (Barclays WSL); ohne PS+ (realsport101); liquide Preisklasse, PS ~16.5k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 16.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/grace-geyoro/237197",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-244067",
+      "ea_id": 244067,
+      "resource_id": 244067,
+      "name": "Maxence Lacroix",
+      "version": "Gold Rare",
+      "rating": 82,
+      "position": "CB",
+      "club": "Chelsea",
+      "league": "Premier League",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/244067-maxence-lacroix/27-244067/",
+      "category": "trading",
+      "reason": "Gold CB 82 (Premier League); ohne PS+ (realsport101); liquide Preisklasse, PS ~10.2k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 10.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/maxence-lacroix/244067",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67331529",
+      "ea_id": 222665,
+      "resource_id": 67331529,
+      "name": "Martin Ødegaard",
+      "version": "Team of the Week (Holo)",
+      "rating": 87,
+      "position": "CM",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "nation": "Norway",
+      "futgg_url": "https://www.fut.gg/players/222665-martin-odegaard/27-67331529/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50554313 (CM 87; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~152k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 152.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/martin-odegaard/67331529",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67350100",
+      "ea_id": 241236,
+      "resource_id": 67350100,
+      "name": "Antoine Semenyo",
+      "version": "Team of the Week (Holo)",
+      "rating": 86,
+      "position": "RW",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "nation": "Ghana",
+      "futgg_url": "https://www.fut.gg/players/241236-antoine-semenyo/27-67350100/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50572884 (RW 86; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~107k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 107.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/antoine-semenyo/67350100",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67350515",
+      "ea_id": 241651,
+      "resource_id": 67350515,
+      "name": "Viktor Gyökeres",
+      "version": "Team of the Week (Holo)",
+      "rating": 87,
+      "position": "ST",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "nation": "Sweden",
+      "futgg_url": "https://www.fut.gg/players/241651-viktor-gyokeres/27-67350515/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50573299 (ST 87; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~101k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 101.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/viktor-gyokeres/67350515",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67373252",
+      "ea_id": 264388,
+      "resource_id": 67373252,
+      "name": "Moleiro",
+      "version": "Team of the Week (Holo)",
+      "rating": 84,
+      "position": "LM",
+      "club": "Villarreal CF",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/264388-moleiro/27-67373252/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50596036 (LM 84; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~85.5k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 85.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/moleiro/67373252",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67308968",
+      "ea_id": 200104,
+      "resource_id": 67308968,
+      "name": "Son Heung Min",
+      "version": "Team of the Week (Holo)",
+      "rating": 83,
+      "position": "ST",
+      "club": "LAFC",
+      "league": "Major League Soccer",
+      "nation": "Korea Republic",
+      "futgg_url": "https://www.fut.gg/players/200104-heung-min-son/27-67308968/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50531752 (ST 83; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~73.5k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 73.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/heung-min-son/67308968",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67285867",
+      "ea_id": 177003,
+      "resource_id": 67285867,
+      "name": "Luka Modrić",
+      "version": "Team of the Week (Holo)",
+      "rating": 86,
+      "position": "CM",
+      "club": "Milano FC",
+      "league": "Serie A Enilive",
+      "nation": "Croatia",
+      "futgg_url": "https://www.fut.gg/players/177003-luka-modric/27-67285867/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50508651 (CM 86; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~69k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 69.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/luka-modric/67285867",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67386733",
+      "ea_id": 277869,
+      "resource_id": 67386733,
+      "name": "Michael Kayode",
+      "version": "Team of the Week (Holo)",
+      "rating": 83,
+      "position": "RB",
+      "club": "Brentford",
+      "league": "Premier League",
+      "nation": "Italy",
+      "futgg_url": "https://www.fut.gg/players/277869-michael-kayode/27-67386733/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50609517 (RB 83; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~49k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 49.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/michael-kayode/67386733",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67348894",
+      "ea_id": 240030,
+      "resource_id": 67348894,
+      "name": "Ellie Carpenter",
+      "version": "Team of the Week (Holo)",
+      "rating": 86,
+      "position": "RB",
+      "club": "Chelsea",
+      "league": "Barclays Women’s Super League",
+      "nation": "Australia",
+      "futgg_url": "https://www.fut.gg/players/240030-ellie-carpenter/27-67348894/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50571678 (RB 86; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~39.8k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 39.750 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/ellie-carpenter/67348894",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67328547",
+      "ea_id": 219683,
+      "resource_id": 67328547,
+      "name": "Corentin Tolisso",
+      "version": "Team of the Week (Holo)",
+      "rating": 84,
+      "position": "CM",
+      "club": "OL",
+      "league": "Ligue 1 McDonald's",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/219683-corentin-tolisso/27-67328547/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50551331 (CM 84; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~36.5k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 36.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/corentin-tolisso/67328547",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67366143",
+      "ea_id": 257279,
+      "resource_id": 67366143,
+      "name": "Álex Baena",
+      "version": "Team of the Week (Holo)",
+      "rating": 84,
+      "position": "LM",
+      "club": "Atlético de Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/257279-alex-baena/27-67366143/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50588927 (LM 84; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~30.5k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 30.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/alex-baena/67366143",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-84129710",
+      "ea_id": 243630,
+      "resource_id": 84129710,
+      "name": "Jonathan David",
+      "version": "Team of the Week (Holo)",
+      "rating": 82,
+      "position": "ST",
+      "club": "Atlético de Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Canada",
+      "futgg_url": "https://www.fut.gg/players/243630-jonathan-david/27-84129710/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-67352494 (ST 82; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~28.8k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 28.750 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/jonathan-david/84129710",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67297214",
+      "ea_id": 188350,
+      "resource_id": 67297214,
+      "name": "Marco Reus",
+      "version": "Team of the Week (Holo)",
+      "rating": 80,
+      "position": "CAM",
+      "club": "LA Galaxy",
+      "league": "MLS",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/188350-marco-reus/27-67297214/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50519998 (CAM 80; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~18.8k",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 18.750 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/marco-reus/67297214",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67179590",
+      "ea_id": 70726,
+      "resource_id": 67179590,
+      "name": "Anis Hadj Moussa",
+      "version": "Team of the Week (Holo)",
+      "rating": 80,
+      "position": "RW",
+      "club": "Feyenoord",
+      "league": "Eredivisie",
+      "nation": "Algeria",
+      "futgg_url": "https://www.fut.gg/players/70726-anis-hadj-moussa/27-67179590/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50402374 (RW 80; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~18.8k",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 18.750 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/anis-hadj-moussa/67179590",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67346935",
+      "ea_id": 238071,
+      "resource_id": 67346935,
+      "name": "Dujon Sterling",
+      "version": "Team of the Week (Holo)",
+      "rating": 80,
+      "position": "RB",
+      "club": "Rangers",
+      "league": "Scottish Prem",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/238071-dujon-sterling/27-67346935/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50569719 (RB 80; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~17.8k",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 17.750 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/dujon-sterling/67346935",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67370729",
+      "ea_id": 261865,
+      "resource_id": 67370729,
+      "name": "Miguel Gutiérrez",
+      "version": "Team of the Week (Holo)",
+      "rating": 82,
+      "position": "LB",
+      "club": "Leverkusen",
+      "league": "Bundesliga",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/261865-miguel-gutierrez/27-67370729/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50593513 (LB 82; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~17.8k",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 17.750 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/miguel-gutierrez/67370729",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67361416",
+      "ea_id": 252552,
+      "resource_id": 67361416,
+      "name": "Konstantinos Tzolakis",
+      "version": "Team of the Week (Holo)",
+      "rating": 81,
+      "position": "GK",
+      "club": "Hull City",
+      "league": "Premier League",
+      "nation": "Greece",
+      "futgg_url": "https://www.fut.gg/players/252552-konstantinos-tzolakis/27-67361416/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50584200 (GK 81; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~17.5k",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 17.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/konstantinos-tzolakis/67361416",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67299629",
+      "ea_id": 190765,
+      "resource_id": 67299629,
+      "name": "Pascal Groß",
+      "version": "Team of the Week (Holo)",
+      "rating": 81,
+      "position": "CDM",
+      "club": "Brighton",
+      "league": "Premier League",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/190765-pascal-gross/27-67299629/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50522413 (CDM 81; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~17.2k",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 17.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/pascal-gross/67299629",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67194136",
+      "ea_id": 85272,
+      "resource_id": 67194136,
+      "name": "Felicia Schröder",
+      "version": "Team of the Week (Holo)",
+      "rating": 82,
+      "position": "ST",
+      "club": "Real Madrid",
+      "league": "Liga F",
+      "nation": "Sweden",
+      "futgg_url": "https://www.fut.gg/players/85272-felicia-schroder/27-67194136/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50416920 (ST 82; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~16.2k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 16.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/felicia-schroder/67194136",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67385589",
+      "ea_id": 276725,
+      "resource_id": 67385589,
+      "name": "Lorenzo Palmisani",
+      "version": "Team of the Week (Holo)",
+      "rating": 82,
+      "position": "GK",
+      "club": "Frosinone Calcio",
+      "league": "Serie A Enilive",
+      "nation": "Italy",
+      "futgg_url": "https://www.fut.gg/players/276725-lorenzo-palmisani/27-67385589/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50608373 (GK 82; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~15.8k",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 15.750 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/lorenzo-palmisani/67385589",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67189094",
+      "ea_id": 80230,
+      "resource_id": 67189094,
+      "name": "Bella Andersson",
+      "version": "Team of the Week (Holo)",
+      "rating": 80,
+      "position": "CB",
+      "club": "Real Madrid",
+      "league": "Liga F Moeve",
+      "nation": "Sweden",
+      "futgg_url": "https://www.fut.gg/players/80230-bella-andersson/27-67189094/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50411878 (CB 80; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~15.2k",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 15.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/bella-andersson/67189094",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67376838",
+      "ea_id": 267974,
+      "resource_id": 67376838,
+      "name": "Mexx Meerdink",
+      "version": "Team of the Week (Holo)",
+      "rating": 80,
+      "position": "ST",
+      "club": "AZ",
+      "league": "Eredivisie",
+      "nation": "Netherlands",
+      "futgg_url": "https://www.fut.gg/players/267974-mexx-meerdink/27-67376838/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50599622 (ST 80; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~14.8k",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 14.750 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/mexx-meerdink/67376838",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67382431",
+      "ea_id": 273567,
+      "resource_id": 67382431,
+      "name": "Chiara Hahn",
+      "version": "Team of the Week (Holo)",
+      "rating": 80,
+      "position": "CDM",
+      "club": "TSG Hoffenheim",
+      "league": "GPFBL",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/273567-chiara-hahn/27-67382431/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50605215 (CDM 80; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~14.5k",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 14.500 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/chiara-hahn/67382431",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67343998",
+      "ea_id": 235134,
+      "resource_id": 67343998,
+      "name": "Pablo Rosario",
+      "version": "Team of the Week (Holo)",
+      "rating": 80,
+      "position": "CDM",
+      "club": "FC Porto",
+      "league": "Liga Portugal",
+      "nation": "Dominican Republic",
+      "futgg_url": "https://www.fut.gg/players/235134-pablo-rosario/27-67343998/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50566782 (CDM 80; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~14.2k",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 14.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/pablo-rosario/67343998",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67346304",
+      "ea_id": 237440,
+      "resource_id": 67346304,
+      "name": "Hannes Delcroix",
+      "version": "Team of the Week (Holo)",
+      "rating": 80,
+      "position": "CB",
+      "club": "FC Lugano",
+      "league": "Brack Super League",
+      "nation": "Haiti",
+      "futgg_url": "https://www.fut.gg/players/237440-hannes-delcroix/27-67346304/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50569088 (CB 80; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~14.2k",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 14.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/hannes-delcroix/67346304",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67364069",
+      "ea_id": 255205,
+      "resource_id": 67364069,
+      "name": "Sebastian Berhalter",
+      "version": "Team of the Week (Holo)",
+      "rating": 80,
+      "position": "CDM",
+      "club": "Middlesbrough",
+      "league": "EFL Championship",
+      "nation": "United States",
+      "futgg_url": "https://www.fut.gg/players/255205-sebastian-berhalter/27-67364069/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50586853 (CDM 80; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~14.2k",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 14.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/sebastian-berhalter/67364069",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67370725",
+      "ea_id": 261861,
+      "resource_id": 67370725,
+      "name": "Jack Moylan",
+      "version": "Team of the Week (Holo)",
+      "rating": 80,
+      "position": "CAM",
+      "club": "Cardiff City",
+      "league": "EFL Championship",
+      "nation": "Republic of Ireland",
+      "futgg_url": "https://www.fut.gg/players/261861-jack-moylan/27-67370725/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50593509 (CAM 80; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~14.2k",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 14.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/jack-moylan/67370725",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67382041",
+      "ea_id": 273177,
+      "resource_id": 67382041,
+      "name": "Olivia Holdt",
+      "version": "Team of the Week (Holo)",
+      "rating": 81,
+      "position": "LM",
+      "club": "Spurs",
+      "league": "Barclays WSL",
+      "nation": "Denmark",
+      "futgg_url": "https://www.fut.gg/players/273177-olivia-holdt/27-67382041/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50604825 (LM 81; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~14.2k",
+      "sources": [
+        {
+          "title": "fifplay: FC 27 TOTW 2 - alle 23 Spieler",
+          "url": "https://www.fifplay.com/fc-27-totw-2/",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 14.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/olivia-holdt/67382041",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67385559",
+      "ea_id": 276695,
+      "resource_id": 67385559,
+      "name": "Shea Charles",
+      "version": "Team of the Week (Holo)",
+      "rating": 80,
+      "position": "CM",
+      "club": "Fulham",
+      "league": "Premier League",
+      "nation": "Northern Ireland",
+      "futgg_url": "https://www.fut.gg/players/276695-shea-charles/27-67385559/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50608343 (CM 80; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~14.2k",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 14.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/shea-charles/67385559",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67332574",
+      "ea_id": 223710,
+      "resource_id": 67332574,
+      "name": "Vedat Muriqi",
+      "version": "Team of the Week (Holo)",
+      "rating": 83,
+      "position": "ST",
+      "club": "Fenerbahçe",
+      "league": "Trendyol Süper Lig",
+      "nation": "Kosovo",
+      "futgg_url": "https://www.fut.gg/players/223710-vedat-muriqi/27-67332574/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50555358 (ST 83; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~14.2k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 14.250 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/vedat-muriqi/67332574",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67319761",
+      "ea_id": 210897,
+      "resource_id": 67319761,
+      "name": "Chancel Mbemba",
+      "version": "Team of the Week (Holo)",
+      "rating": 80,
+      "position": "CB",
+      "club": "Diriyah",
+      "league": "ROSHN Saudi League",
+      "nation": "DR Congo",
+      "futgg_url": "https://www.fut.gg/players/210897-chancel-mbemba/27-67319761/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50542545 (CB 80; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~14k",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 14.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/chancel-mbemba/67319761",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67325139",
+      "ea_id": 216275,
+      "resource_id": 67325139,
+      "name": "Phillipp Mwene",
+      "version": "Team of the Week (Holo)",
+      "rating": 80,
+      "position": "LB",
+      "club": "1. FSV Mainz 05",
+      "league": "Bundesliga",
+      "nation": "Austria",
+      "futgg_url": "https://www.fut.gg/players/216275-phillipp-mwene/27-67325139/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50547923 (LB 80; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~14k",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 14.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/phillipp-mwene/67325139",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67333015",
+      "ea_id": 224151,
+      "resource_id": 67333015,
+      "name": "Henry Martín",
+      "version": "Team of the Week (Holo)",
+      "rating": 80,
+      "position": "ST",
+      "club": "Club América",
+      "league": "Liga BBVA MX",
+      "nation": "Mexico",
+      "futgg_url": "https://www.fut.gg/players/224151-henry-martin/27-67333015/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-50555799 (ST 80; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~14k",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 14.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/henry-martin/67333015",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-84138242",
+      "ea_id": 252162,
+      "resource_id": 84138242,
+      "name": "Ayase Ueda",
+      "version": "Team of the Week (Holo)",
+      "rating": 80,
+      "position": "ST",
+      "club": "LOSC",
+      "league": "Ligue 1 McDonald's",
+      "nation": "Japan",
+      "futgg_url": "https://www.fut.gg/players/252162-ayase-ueda/27-84138242/",
+      "category": "promo",
+      "reason": "Holografische Variante der TOTW-Karte 27-67361026 (ST 80; fut.gg: holographicType/standardItemEaId), eigener Markt mit Aufpreis; PS ~14k",
+      "sources": [
+        {
+          "title": "gamewave.fr: FC 27 TOTW 3 - Chawinga, Ødegaard et Ueda se distinguent",
+          "url": "https://gamewave.fr/fc-27/fc-27-totw-3-chawinga-degaard-et-ueda-se-distinguent/",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 14.000 Coins. abgerufen)",
+          "url": "https://www.futnext.com/players/ayase-ueda/84138242",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-227361",
+      "ea_id": 227361,
+      "resource_id": 227361,
+      "name": "Kadidiatou Diani",
+      "version": "Gold Rare",
+      "rating": 87,
+      "position": "RM",
+      "club": "London City",
+      "league": "Barclays Women’s Super League",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/227361-kadidiatou-diani/27-227361/",
+      "category": "trading",
+      "reason": "Basis-Gold (RM 87) einer DFG-Team-2-Spielerin: Live-Upgrades der Promo ziehen Nachfrage auf die Gold-Version; PS ~61k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 61.000 Coins. Collector-Abruf)",
+          "url": "https://www.futnext.com/players/kadidiatou-diani/227361",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-273153",
+      "ea_id": 273153,
+      "resource_id": 273153,
+      "name": "Linda Caicedo",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "LW",
+      "club": "Real Madrid",
+      "league": "Liga F",
+      "nation": "Colombia",
+      "futgg_url": "https://www.fut.gg/players/273153-linda-caicedo/27-273153/",
+      "category": "trading",
+      "reason": "Basis-Gold (LW 85) einer DFG-Team-2-Spielerin: Live-Upgrades der Promo ziehen Nachfrage auf die Gold-Version; PS ~24.5k",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUTNext Spielerseite (PS-Preis 24.500 Coins. Collector-Abruf)",
+          "url": "https://www.futnext.com/players/linda-caicedo/273153",
           "date": "2026-10-05"
         }
       ]
