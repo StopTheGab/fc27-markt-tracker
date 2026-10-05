@@ -231,7 +231,7 @@ class MailTest(Base):
             self.assertRegex(subject, r"^\[FC27 SIGNAL\] Kauf: Test 99 -\d+ %$")
             self.assertIn("KAUFEN: Test 99", text)
             self.assertIn("Erwarteter Gewinn nach Steuer", text)
-            self.assertIn("Zum Dashboard", html_body)
+            self.assertIn("Futbin öffnen", html_body)
             # zwei neue Signale -> eine gesammelte Mail
             two = dict(res, new_signals=[res["new_signals"][0], dict(res["new_signals"][0], card_id="27-2", name="B")])
             mailer.signal_mail(self.con, s, two)
