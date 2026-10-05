@@ -56,6 +56,14 @@ def cmd_test_mail(_args) -> None:
     sys.exit(0 if ok else 1)
 
 
+def cmd_notify(args) -> None:
+    """Push a short note to the user's phone (ntfy). Used by the analysis round for important news."""
+    settings = Settings()
+    con = db.connect()
+    ok = mailer.push(con, settings, "signal" if args.important else "hourly", args.title, args.text)
+    print("Push gesendet." if ok else "Push nicht gesendet (NTFY_TOPIC fehlt oder Fehler, siehe Log).")
+
+
 def cmd_tips(_args) -> None:
     con = db.connect()
     for t in con.execute("SELECT * FROM tips ORDER BY id DESC LIMIT 50"):
@@ -100,6 +108,11 @@ def main() -> None:
     a.set_defaults(fn=cmd_assess)
     sub.add_parser("test-mail").set_defaults(fn=cmd_test_mail)
     sub.add_parser("tips").set_defaults(fn=cmd_tips)
+    n = sub.add_parser("notify")
+    n.add_argument("--title", required=True)
+    n.add_argument("--text", required=True)
+    n.add_argument("--important", action="store_true")
+    n.set_defaults(fn=cmd_notify)
     r = sub.add_parser("report")
     r.add_argument("--hours", type=int, default=2)
     r.add_argument("--top", type=int, default=40)
