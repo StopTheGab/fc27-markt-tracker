@@ -12,3 +12,4 @@ Offen (Stand 05.10. 19:00): Jonathan David TOTW (Kauf 14.000), Mbappé DfG (Kauf
 bestätigenden Messpunkt sind deshalb höchstens „mittel“ – bei teuren Karten zusätzlich Filter 30 %.
 | 05.10. 18:45 | Kylian Mbappé (DfG) | 6.700.000 | 7.450.000 | **Treffer** (+377.500 nach Steuer) | 2 Messpunkte bei 6,7 Mio., danach 7,45 Mio. – echte Bewegung |
 | 05.10. 19:32 | Martin Ødegaard (TOTW) | 4.000 | 5.400 | **ungültig** | Einzelner Messpunkt zwischen 5.300/5.400 – unbestätigt. Seit 19:55 werden nur bestätigte Kaufsignale (≥ 2 Punkte) als Tipp gezählt. |
+| 05.10. 21:00 | Rückwirkende Prüfung | – | – | – | Jonathan David (14.000→15.500), Mapi León (7.700→9.500) und offene Tipps Maza, Alisson, Cherki: Kaufpreis war jeweils ein einzelner, sofort wieder verschwundener Tiefpunkt ⇒ **ungültig**. Echte Bilanz: 1 Treffer (Mbappé DfG), 0 Fehlschläge. |
