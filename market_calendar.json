@@ -1,0 +1,1066 @@
+{
+  "generated_at": "2026-10-05T08:40:43Z",
+  "timezone_note": "Alle time_local/week_phases in Europe/Berlin. Bis 25.10.2026 gilt MESZ (UTC+2), danach MEZ (UTC+1); UK wechselt am selben Tag von BST auf GMT, die USA erst am 01.11.2026. EA verankert Content-Drops und Promo-Starts an 18:00 UK / 10:00 PT und Champions an Fr 19:00 – Mo 08:00 UK: in Berlin bleibt es daher bei 19:00 bzw. 20:00–09:00. Rivals (Do 06:59 UTC) und Squad Battles (So ~06:59 UTC) hängen an UTC und rücken ab 25.10. lokal auf 07:59. Unsicher: in der Woche 25.10.–31.10. könnte der 10:00-PT-Drop lokal schon um 18:00 MEZ kommen (US noch Sommerzeit). time_local_cet = Ortszeit nach der Umstellung.",
+  "fc27_vs_fc26": "Zeiten unverändert: Champions-Finals starten wie in FC 26 freitags 19:00 UK (FC 26 S1R1: 03.10.2025), Promos Fr 18:00 UK, Rivals Do 06:59 UTC. Strukturänderungen FC 27 (EA Pitch Notes 14.09.2026): Div-6-Pflicht entfällt, Qualifikationspunkte auch aus Squad Battles, deutlich mehr Coins pro Match (FC 26: ~500–600), alle Rivals-Packs handelbar, mehr handelbare Rewards, ca. 5 Kampagnenwochen weniger, max. 3 PS+, langsamere Power-Curve. Widerspruch: timesaver (26.09.) meldet, Play-Off-Einträge setzen pro Season statt wöchentlich zurück und ein klassisches Fr–Mo-WL-Format sei nicht dokumentiert; fifauteam-Kalender und Südostschweiz (30.09.) zeigen dagegen wöchentliche Finals Fr 19:00 – Mo 08:00 UK.",
+  "weekly_cycle": [
+    {
+      "id": "content_drop",
+      "weekday": "daily",
+      "time_local": "19:00",
+      "time_utc": "17:00",
+      "time_local_cet": "19:00 (ab 01.11.; 25.10.–31.10. evtl. 18:00, s. timezone_note)",
+      "label": "Täglicher Content-Drop (SBCs, Objectives, Evolutions, Packs) – 18:00 UK / 10:00 PT",
+      "price_effect": "Neue SBCs lassen gezielt Fodder-Ratings/Ligen/Nationen springen; neue Store-Packs bringen Angebot. Kurzfristige Ausschläge in den ersten 1–2 h.",
+      "tendency": "volatile",
+      "applies_to": "all",
+      "certainty": "sicher",
+      "sources": [
+        {
+          "title": "realsport101 – FC 27 Promo Calendar: Confirmed & Expected Dates",
+          "url": "https://realsport101.com/article/fc-27-promo-calendar-confirmed-expected-dates-for-every-ultimate-team-campaign",
+          "date": "2026-09-15"
+        },
+        {
+          "title": "Dexerto – EA FC 27 Promo Calendar (Wiki)",
+          "url": "https://www.dexerto.com/wikis/ea-fc-27/promo-calendar/",
+          "date": "2026-10"
+        }
+      ]
+    },
+    {
+      "id": "totw_release",
+      "weekday": 3,
+      "time_local": "19:00",
+      "time_utc": "17:00",
+      "time_local_cet": "19:00",
+      "label": "Team of the Week (Mittwoch, mit dem Content-Drop)",
+      "price_effect": "Alte TOTW-Karten verfallen im Preis, sobald die neue TOTW in Packs ist – alte TOTW vor 19:00 verkaufen.",
+      "tendency": "down",
+      "applies_to": "meta",
+      "certainty": "wahrscheinlich",
+      "sources": [
+        {
+          "title": "timesaver.gg – FC 27 Market Cycle: Best Time to Buy/Sell (Weekly Timeline)",
+          "url": "https://timesaver.gg/blog/fc-27-market-cycle-best-time-to-buy-sell-weekly-timeline",
+          "date": "2026-09-29"
+        }
+      ]
+    },
+    {
+      "id": "rivals_rewards",
+      "weekday": 4,
+      "time_local": "08:59",
+      "time_utc": "06:59",
+      "time_local_cet": "07:59",
+      "label": "Division-Rivals-Wochenrewards (FC 27: alle Rivals-Packs handelbar)",
+      "price_effect": "Viele (in FC 27 handelbare) Reward-Packs werden geöffnet → Fodder-Boden bei 80–84er Golds am Donnerstagvormittag; frische Coins erhöhen danach die Nachfrage nach Meta-Karten.",
+      "tendency": "down",
+      "applies_to": "fodder",
+      "certainty": "sicher",
+      "sources": [
+        {
+          "title": "timesaver.gg – FC 27 Reset Times, Rivals Rewards & Clock Change",
+          "url": "https://timesaver.gg/blog/fc-27-reset-times-rivals-rewards-clock-change",
+          "date": "2026-09-26"
+        },
+        {
+          "title": "timesaver.gg – FC 27 Market Cycle: Best Time to Buy/Sell (Weekly Timeline)",
+          "url": "https://timesaver.gg/blog/fc-27-market-cycle-best-time-to-buy-sell-weekly-timeline",
+          "date": "2026-09-29"
+        },
+        {
+          "title": "EA – Pitch Notes: FC 27 Launch Update",
+          "url": "https://www.ea.com/en/games/ea-sports-fc/fc-27/news/pitch-notes-fc27-launch-update",
+          "date": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "id": "pre_wl_buildup",
+      "weekday": 4,
+      "time_local": "18:00",
+      "time_utc": "16:00",
+      "time_local_cet": "18:00",
+      "label": "Squad-Bau vor Champions (Do-Abend bis Fr-Nachmittag)",
+      "price_effect": "Meta-Karten (86+, Icons, Kampagnen-Headliner) steigen; teuerstes Fenster Do-Nacht bis Fr – Verkaufsfenster für High-Rated.",
+      "tendency": "up",
+      "applies_to": "meta",
+      "certainty": "wahrscheinlich",
+      "sources": [
+        {
+          "title": "timesaver.gg – FC 27 Market Cycle: Best Time to Buy/Sell (Weekly Timeline)",
+          "url": "https://timesaver.gg/blog/fc-27-market-cycle-best-time-to-buy-sell-weekly-timeline",
+          "date": "2026-09-29"
+        },
+        {
+          "title": "GameCurrency – Best Times to Buy and Sell Players in FUT (FC 26)",
+          "url": "https://gamecurrency.net/blog/best-times-buy-sell-players-fut",
+          "date": "2025-08-27"
+        }
+      ]
+    },
+    {
+      "id": "promo_start",
+      "weekday": 5,
+      "time_local": "19:00",
+      "time_utc": "17:00",
+      "time_local_cet": "19:00",
+      "label": "Promo-/Kampagnen-Start (Freitag 18:00 UK / 10:00 PT)",
+      "price_effect": "Promo-Packs fluten den Markt; ältere Specials und Golds dippen am Freitagabend, gleichzeitig konkurriert WL-Nachfrage dagegen.",
+      "tendency": "down",
+      "applies_to": "all",
+      "certainty": "sicher",
+      "sources": [
+        {
+          "title": "realsport101 – FC 27 Promo Calendar: Confirmed & Expected Dates",
+          "url": "https://realsport101.com/article/fc-27-promo-calendar-confirmed-expected-dates-for-every-ultimate-team-campaign",
+          "date": "2026-09-15"
+        },
+        {
+          "title": "Dexerto – EA FC 27 Promo Calendar (Wiki)",
+          "url": "https://www.dexerto.com/wikis/ea-fc-27/promo-calendar/",
+          "date": "2026-10"
+        },
+        {
+          "title": "GameCurrency – Best Times to Buy and Sell Players in FUT (FC 26)",
+          "url": "https://gamecurrency.net/blog/best-times-buy-sell-players-fut",
+          "date": "2025-08-27"
+        }
+      ]
+    },
+    {
+      "id": "wl_start",
+      "weekday": 5,
+      "time_local": "20:00",
+      "time_utc": "18:00",
+      "time_local_cet": "20:00",
+      "label": "Champions Finals (Weekend League) öffnet – Fr 19:00 UK, bis zu 15 Spiele",
+      "price_effect": "Nachfragespitze für Meta-Karten kurz vor/bei Öffnung; danach lässt der Kaufdruck nach.",
+      "tendency": "up",
+      "applies_to": "meta",
+      "certainty": "sicher",
+      "sources": [
+        {
+          "title": "fifauteam – FC 27 Champions Finals Calendar (UK-Zeit)",
+          "url": "https://fifauteam.com/fc-27-champions-calendar/",
+          "date": "2026-10"
+        },
+        {
+          "title": "Südostschweiz – EA FC 27: Erste Weekend League startet",
+          "url": "https://www.suedostschweiz.ch/panorama/ea-fc-27-erste-weekend-league-startet-diese-rewards-sind-neu-2180394",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "timesaver.gg – FC 27 Market Cycle: Best Time to Buy/Sell (Weekly Timeline)",
+          "url": "https://timesaver.gg/blog/fc-27-market-cycle-best-time-to-buy-sell-weekly-timeline",
+          "date": "2026-09-29"
+        }
+      ]
+    },
+    {
+      "id": "wl_rewards",
+      "weekday": 6,
+      "time_local": "rollierend Sa–Mo",
+      "time_utc": "rollierend",
+      "time_local_cet": "rollierend",
+      "label": "Champions-Rewards: sofort nach dem 15. Spiel, sonst bei Ende (Mo 09:00)",
+      "price_effect": "Reward-Packs (FC 27: mehr handelbare Packs, 3× 88+ Rare tradeable für Rang 1) werden Sa–Mo geöffnet → steigendes Angebot, Abverkaufsdruck v. a. So-Abend.",
+      "tendency": "down",
+      "applies_to": "all",
+      "certainty": "wahrscheinlich",
+      "sources": [
+        {
+          "title": "fifauteam – FC 27 Champions Rewards",
+          "url": "https://fifauteam.com/champions-rewards-fc-27/",
+          "date": "2026-10"
+        },
+        {
+          "title": "timesaver.gg – FC 27 FUT Champions Season 1 Format, Schedule, Rewards",
+          "url": "https://timesaver.gg/blog/fc-27-fut-champions-season-1-format-schedule-rewards",
+          "date": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "squad_battles_rewards",
+      "weekday": 7,
+      "time_local": "08:59",
+      "time_utc": "06:59",
+      "time_local_cet": "07:59",
+      "label": "Squad-Battles-Wochenrewards (Sonntag, community-ermittelt)",
+      "price_effect": "Zweiter Gold-Dump der Woche → günstiger Zeitpunkt, Fodder nachzukaufen.",
+      "tendency": "down",
+      "applies_to": "fodder",
+      "certainty": "wahrscheinlich",
+      "sources": [
+        {
+          "title": "timesaver.gg – FC 27 Reset Times, Rivals Rewards & Clock Change",
+          "url": "https://timesaver.gg/blog/fc-27-reset-times-rivals-rewards-clock-change",
+          "date": "2026-09-26"
+        },
+        {
+          "title": "timesaver.gg – FC 27 Market Cycle: Best Time to Buy/Sell (Weekly Timeline)",
+          "url": "https://timesaver.gg/blog/fc-27-market-cycle-best-time-to-buy-sell-weekly-timeline",
+          "date": "2026-09-29"
+        }
+      ]
+    },
+    {
+      "id": "wl_selloff",
+      "weekday": 7,
+      "time_local": "22:00",
+      "time_utc": "20:00",
+      "time_local_cet": "21:00",
+      "label": "Abverkauf nach der Weekend League (So-Abend 20–23 UTC)",
+      "price_effect": "Spieler, die durch sind, verkaufen Squads – eines der verlässlichsten Kauffenster.",
+      "tendency": "down",
+      "applies_to": "meta",
+      "certainty": "wahrscheinlich",
+      "sources": [
+        {
+          "title": "GameCurrency – Best Times to Buy and Sell Players in FUT (FC 26)",
+          "url": "https://gamecurrency.net/blog/best-times-buy-sell-players-fut",
+          "date": "2025-08-27"
+        }
+      ]
+    },
+    {
+      "id": "wl_end",
+      "weekday": 1,
+      "time_local": "09:00",
+      "time_utc": "07:00",
+      "time_local_cet": "09:00",
+      "label": "Champions Finals enden (Mo 08:00 UK); Rest-Rewards werden ausgeschüttet",
+      "price_effect": "Letzte Reward-Welle; Specials driften Mo/Di nach unten (Tief der Woche für Specials).",
+      "tendency": "down",
+      "applies_to": "meta",
+      "certainty": "sicher",
+      "sources": [
+        {
+          "title": "fifauteam – FC 27 Champions Finals Calendar (UK-Zeit)",
+          "url": "https://fifauteam.com/fc-27-champions-calendar/",
+          "date": "2026-10"
+        },
+        {
+          "title": "timesaver.gg – FC 27 Market Cycle: Best Time to Buy/Sell (Weekly Timeline)",
+          "url": "https://timesaver.gg/blog/fc-27-market-cycle-best-time-to-buy-sell-weekly-timeline",
+          "date": "2026-09-29"
+        }
+      ]
+    },
+    {
+      "id": "qualification",
+      "weekday": "Mo–Fr",
+      "time_local": "laufend",
+      "time_utc": "laufend",
+      "time_local_cet": "laufend",
+      "label": "Champions-Qualifikation über Qualification Points aus Rivals UND Squad Battles (Div-6-Pflicht entfällt)",
+      "price_effect": "Kein eigener Preiseffekt belegt; mehr Spieler qualifizieren sich → potenziell breitere WL-Nachfrage am Freitag.",
+      "tendency": "flat",
+      "applies_to": "meta",
+      "certainty": "sicher",
+      "sources": [
+        {
+          "title": "EA – Pitch Notes: FC 27 Launch Update",
+          "url": "https://www.ea.com/en/games/ea-sports-fc/fc-27/news/pitch-notes-fc27-launch-update",
+          "date": "2026-09-14"
+        },
+        {
+          "title": "Südostschweiz – EA FC 27: Erste Weekend League startet",
+          "url": "https://www.suedostschweiz.ch/panorama/ea-fc-27-erste-weekend-league-startet-diese-rewards-sind-neu-2180394",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "timesaver.gg – FC 27 FUT Champions Season 1 Format, Schedule, Rewards",
+          "url": "https://timesaver.gg/blog/fc-27-fut-champions-season-1-format-schedule-rewards",
+          "date": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "midweek_trough",
+      "weekday": 2,
+      "time_local": "ganztägig",
+      "time_utc": "ganztägig",
+      "time_local_cet": "ganztägig",
+      "label": "Dienstag: wenig Content, schwächste Nachfrage",
+      "price_effect": "Bestes Kauffenster für Specials/TOTW-/Kampagnen-Reste; ab Mi Erholung vor TOTW/Rivals.",
+      "tendency": "flat",
+      "applies_to": "meta",
+      "certainty": "wahrscheinlich",
+      "sources": [
+        {
+          "title": "timesaver.gg – FC 27 Market Cycle: Best Time to Buy/Sell (Weekly Timeline)",
+          "url": "https://timesaver.gg/blog/fc-27-market-cycle-best-time-to-buy-sell-weekly-timeline",
+          "date": "2026-09-29"
+        },
+        {
+          "title": "GameCurrency – Best Times to Buy and Sell Players in FUT (FC 26)",
+          "url": "https://gamecurrency.net/blog/best-times-buy-sell-players-fut",
+          "date": "2025-08-27"
+        }
+      ]
+    }
+  ],
+  "week_phases": [
+    {
+      "id": "wl_final_hours",
+      "from": {
+        "weekday": 1,
+        "time": "00:00"
+      },
+      "to": {
+        "weekday": 1,
+        "time": "09:00"
+      },
+      "label": "WL-Endspurt",
+      "note": "Letzte Champions-Spiele und Reward-Packs drücken das Angebot nach oben; Preise bleiben schwach.",
+      "tendency": "down"
+    },
+    {
+      "id": "post_wl_trough",
+      "from": {
+        "weekday": 1,
+        "time": "09:00"
+      },
+      "to": {
+        "weekday": 3,
+        "time": "00:00"
+      },
+      "label": "Tief nach der WL",
+      "note": "Specials driften Mo/Di nach unten, Dienstag ist der nachfrageschwächste Tag – Kauffenster.",
+      "tendency": "down"
+    },
+    {
+      "id": "midweek_recovery",
+      "from": {
+        "weekday": 3,
+        "time": "00:00"
+      },
+      "to": {
+        "weekday": 3,
+        "time": "19:00"
+      },
+      "label": "Erholung vor TOTW",
+      "note": "Angebot sinkt, Preise erholen sich leicht; alte TOTW vor 19:00 verkaufen.",
+      "tendency": "up"
+    },
+    {
+      "id": "totw_release",
+      "from": {
+        "weekday": 3,
+        "time": "19:00"
+      },
+      "to": {
+        "weekday": 4,
+        "time": "09:00"
+      },
+      "label": "TOTW-Release",
+      "note": "Neue TOTW in Packs, alte TOTW verliert; Rivals-Rewards stehen über Nacht an.",
+      "tendency": "volatile"
+    },
+    {
+      "id": "rivals_rewards_dump",
+      "from": {
+        "weekday": 4,
+        "time": "09:00"
+      },
+      "to": {
+        "weekday": 4,
+        "time": "18:00"
+      },
+      "label": "Rivals-Rewards-Dump",
+      "note": "Geöffnete Rivals-Packs drücken 80–84er Fodder auf den Wochenboden – Fodder kaufen.",
+      "tendency": "down"
+    },
+    {
+      "id": "pre_wl_peak",
+      "from": {
+        "weekday": 4,
+        "time": "18:00"
+      },
+      "to": {
+        "weekday": 5,
+        "time": "19:00"
+      },
+      "label": "Aufbau vor Champions",
+      "note": "Squad-Bau für die WL: Meta-Karten steigen bis Freitagnachmittag – Verkaufsfenster für High-Rated.",
+      "tendency": "up"
+    },
+    {
+      "id": "promo_drop",
+      "from": {
+        "weekday": 5,
+        "time": "19:00"
+      },
+      "to": {
+        "weekday": 5,
+        "time": "20:00"
+      },
+      "label": "Promo-Drop",
+      "note": "Neue Kampagne/Packs um 19:00: Angebotsschub, ältere Specials dippen kurzfristig.",
+      "tendency": "volatile"
+    },
+    {
+      "id": "wl_running",
+      "from": {
+        "weekday": 5,
+        "time": "20:00"
+      },
+      "to": {
+        "weekday": 7,
+        "time": "00:00"
+      },
+      "label": "Weekend League läuft",
+      "note": "WL-Nachfrage trifft auf erste Reward-Packs; Samstag SBC-getriebene Einzelspitzen, insgesamt seitwärts bis leicht fallend.",
+      "tendency": "volatile"
+    },
+    {
+      "id": "wl_rewards_selloff",
+      "from": {
+        "weekday": 7,
+        "time": "00:00"
+      },
+      "to": {
+        "weekday": 7,
+        "time": "24:00"
+      },
+      "label": "Rewards & Abverkauf",
+      "note": "Squad-Battles-Rewards am Morgen und Abverkauf fertiger WL-Spieler am Abend – Preise fallen, Kaufgelegenheiten.",
+      "tendency": "down"
+    }
+  ],
+  "promos": [
+    {
+      "name": "Ones to Watch (FC 27, über Season Pass/SBC/Objectives, nicht in Packs)",
+      "start": "2026-09-17",
+      "end": "2026-10-22",
+      "status": "laufend",
+      "certainty": "wahrscheinlich",
+      "expected_effect": "Kaum Pack-Angebot, daher kein Crash-Treiber; OTW-Karten reagieren auf Live-Upgrades (Club-Ergebnisse). Startdatum je Quelle 16.09. 18:00 UK (fifauteam) bzw. 18.09. (Altchar); Season 1 startet laut EA-Deep-Dive am 17.09.",
+      "sources": [
+        {
+          "title": "fifauteam – FC 27 Ones to Watch",
+          "url": "https://fifauteam.com/?p=360598",
+          "date": "2026-09"
+        },
+        {
+          "title": "Altchar – EA FC 27 Ones to Watch: release date",
+          "url": "https://www.altchar.com/game-news/ea-sports-fc-27-ones-to-watch-leaked-players-release-date-and-upgrade-path-aDzPg6G5IUHe",
+          "date": "2026-09"
+        },
+        {
+          "title": "SoccerGaming – FC 27 Ultimate Team: All Major Changes Explained",
+          "url": "https://soccergaming.com/fc-27-ultimate-team-all-major-changes-explained/",
+          "date": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "name": "Destined for Glory Team 1",
+      "start": "2026-09-25",
+      "end": "2026-10-02",
+      "status": "vergangen",
+      "certainty": "sicher",
+      "expected_effect": "Startete mit dem weltweiten Launch (25.09., 18:00 UK) – laut timesaver der größte einzelne Angebotsschock der Saison.",
+      "sources": [
+        {
+          "title": "Prima Games – FC 27 Destined For Glory Team 1: Start Date",
+          "url": "https://primagames.com/gaming/ea-fc-27-destined-for-glory-leaked-players-date",
+          "date": "2026-09"
+        },
+        {
+          "title": "timesaver.gg – FC 27 Sell or Hold: Early Access Market Crash Timeline",
+          "url": "https://timesaver.gg/blog/fc-27-sell-or-hold-early-access-market-crash-timeline",
+          "date": "2026-09-19"
+        },
+        {
+          "title": "realsport101 – FC 27 Promo Calendar: Confirmed & Expected Dates",
+          "url": "https://realsport101.com/article/fc-27-promo-calendar-confirmed-expected-dates-for-every-ultimate-team-campaign",
+          "date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "Destined for Glory Team 2 (u. a. Haaland 91)",
+      "start": "2026-10-02",
+      "end": "2026-10-09",
+      "status": "laufend",
+      "certainty": "sicher",
+      "expected_effect": "In Packs bis 09.10.; Angebotsdruck auf ältere 85–88er Specials.",
+      "sources": [
+        {
+          "title": "realsport101 – FC 27 Destined for Glory Team 2 Leaked",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-10"
+        },
+        {
+          "title": "Insider Gaming – Destined for Glory Team 2 in FC 27",
+          "url": "https://insider-gaming.com/destined-for-glory-team-2-in-ea-fc-27-ultimate-team-leaked-players-upgrade-path-start-date/",
+          "date": "2026-10"
+        },
+        {
+          "title": "Dexerto – EA FC 27 Promo Calendar (Wiki)",
+          "url": "https://www.dexerto.com/wikis/ea-fc-27/promo-calendar/",
+          "date": "2026-10"
+        }
+      ]
+    },
+    {
+      "name": "Future Stars",
+      "start": "2026-10-09",
+      "end": "2026-10-23",
+      "status": "erwartet",
+      "certainty": "unsicher",
+      "expected_effect": "Erste große Promo nach DFG: Promo-Freitag-Dip am 09.10. 19:00. Früher Termin (traditionell Ende Januar, z. B. FC 26: 31.01.2026 laut realsport101-Prognose) stammt nur aus Leaks/Prognosen.",
+      "sources": [
+        {
+          "title": "realsport101 – FC 27 Promo Calendar: Confirmed & Expected Dates",
+          "url": "https://realsport101.com/article/fc-27-promo-calendar-confirmed-expected-dates-for-every-ultimate-team-campaign",
+          "date": "2026-09-15"
+        },
+        {
+          "title": "Dexerto – EA FC 27 Promo Calendar (Wiki)",
+          "url": "https://www.dexerto.com/wikis/ea-fc-27/promo-calendar/",
+          "date": "2026-10"
+        },
+        {
+          "title": "realsport101 – FC 27 Early Promo Leaks, Slower Power Curve, Season 1–4 Roadmap",
+          "url": "https://realsport101.com/article/fc-27-early-promo-leaks-slower-power-curve-season-1-4-roadmap",
+          "date": "2026-08-03"
+        }
+      ]
+    },
+    {
+      "name": "Ultimate Scream (Season-2-Start)",
+      "start": "2026-10-23",
+      "end": "2026-11-06",
+      "status": "erwartet",
+      "certainty": "unsicher",
+      "expected_effect": "Season-Wechsel + Promo am selben Freitag → doppelter Angebotsschub erwartbar.",
+      "sources": [
+        {
+          "title": "realsport101 – FC 27 Promo Calendar: Confirmed & Expected Dates",
+          "url": "https://realsport101.com/article/fc-27-promo-calendar-confirmed-expected-dates-for-every-ultimate-team-campaign",
+          "date": "2026-09-15"
+        },
+        {
+          "title": "Dexerto – EA FC 27 Promo Calendar (Wiki)",
+          "url": "https://www.dexerto.com/wikis/ea-fc-27/promo-calendar/",
+          "date": "2026-10"
+        },
+        {
+          "title": "realsport101 – FC 27 Early Promo Leaks, Slower Power Curve, Season 1–4 Roadmap",
+          "url": "https://realsport101.com/article/fc-27-early-promo-leaks-slower-power-curve-season-1-4-roadmap",
+          "date": "2026-08-03"
+        }
+      ]
+    },
+    {
+      "name": "UEFA Road to the Knockouts",
+      "start": "2026-11-06",
+      "end": "2026-11-20",
+      "status": "erwartet",
+      "certainty": "unsicher",
+      "expected_effect": "Live-Karten an Champions-League-Ergebnisse gekoppelt; normaler Promo-Freitag-Effekt.",
+      "sources": [
+        {
+          "title": "realsport101 – FC 27 Promo Calendar: Confirmed & Expected Dates",
+          "url": "https://realsport101.com/article/fc-27-promo-calendar-confirmed-expected-dates-for-every-ultimate-team-campaign",
+          "date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "Hall of FUT Unleashed (realsport101) / FC Pro Live (Dexerto) – widersprüchlich",
+      "start": "2026-11-20",
+      "end": "2026-11-27",
+      "status": "erwartet",
+      "certainty": "unsicher",
+      "expected_effect": "Vorwoche von Black Friday: in Vorjahren rutschten Meta-Preise bereits 1–2 Wochen vorher (FC 24, FC 25).",
+      "sources": [
+        {
+          "title": "realsport101 – FC 27 Promo Calendar: Confirmed & Expected Dates",
+          "url": "https://realsport101.com/article/fc-27-promo-calendar-confirmed-expected-dates-for-every-ultimate-team-campaign",
+          "date": "2026-09-15"
+        },
+        {
+          "title": "Dexerto – EA FC 27 Promo Calendar (Wiki)",
+          "url": "https://www.dexerto.com/wikis/ea-fc-27/promo-calendar/",
+          "date": "2026-10"
+        }
+      ]
+    },
+    {
+      "name": "Black Friday / Thunderstruck",
+      "start": "2026-11-27",
+      "end": "2026-12-04",
+      "status": "erwartet",
+      "certainty": "wahrscheinlich",
+      "expected_effect": "Größter Herbst-Crash: FC 26 am 28.11.2025 Index 85 −29,5 % an einem Tag, Fodder (81er) +8 %. Lightning Rounds = Angebotsflut.",
+      "sources": [
+        {
+          "title": "realsport101 – FC 27 Promo Calendar: Confirmed & Expected Dates",
+          "url": "https://realsport101.com/article/fc-27-promo-calendar-confirmed-expected-dates-for-every-ultimate-team-campaign",
+          "date": "2026-09-15"
+        },
+        {
+          "title": "Dexerto – EA FC 27 Promo Calendar (Wiki)",
+          "url": "https://www.dexerto.com/wikis/ea-fc-27/promo-calendar/",
+          "date": "2026-10"
+        },
+        {
+          "title": "FUTCast (beehiiv) – Thunderstruck is here, the market is bleeding",
+          "url": "https://futcastfromos.beehiiv.com/p/thunderstruck-is-here-the-market-is-bleeding-bellingham-is-scary",
+          "date": "2025-11-28"
+        }
+      ]
+    },
+    {
+      "name": "Winter Wildcards",
+      "start": "2026-12-11",
+      "end": "2026-12-25",
+      "status": "erwartet",
+      "certainty": "unsicher",
+      "expected_effect": "Pre-TOTY-Abverkauf beginnt typischerweise in dieser Phase.",
+      "sources": [
+        {
+          "title": "realsport101 – FC 27 Promo Calendar: Confirmed & Expected Dates",
+          "url": "https://realsport101.com/article/fc-27-promo-calendar-confirmed-expected-dates-for-every-ultimate-team-campaign",
+          "date": "2026-09-15"
+        },
+        {
+          "title": "realsport101 – FC 27 Early Promo Leaks, Slower Power Curve, Season 1–4 Roadmap",
+          "url": "https://realsport101.com/article/fc-27-early-promo-leaks-slower-power-curve-season-1-4-roadmap",
+          "date": "2026-08-03"
+        }
+      ]
+    },
+    {
+      "name": "Festive Showdowns (Futmas-Nachfolger?)",
+      "start": "2026-12-25",
+      "end": "2027-01-15",
+      "status": "erwartet",
+      "certainty": "unsicher",
+      "expected_effect": "Tägliche Inhalte/Packs über die Feiertage; Preise bröckeln Richtung TOTY.",
+      "sources": [
+        {
+          "title": "realsport101 – FC 27 Promo Calendar: Confirmed & Expected Dates",
+          "url": "https://realsport101.com/article/fc-27-promo-calendar-confirmed-expected-dates-for-every-ultimate-team-campaign",
+          "date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "name": "Team of the Year (TOTY)",
+      "start": "2027-01-15",
+      "end": null,
+      "status": "erwartet",
+      "certainty": "unsicher",
+      "expected_effect": "Zweiter großer Crash: FC 26 TOTY-Launch 16.01.2026 → 83er −22,7 %, 84er −18 % an einem Tag; Vorlauf-Crash ca. 1 Woche vorher (FC 25).",
+      "sources": [
+        {
+          "title": "realsport101 – FC 27 Promo Calendar: Confirmed & Expected Dates",
+          "url": "https://realsport101.com/article/fc-27-promo-calendar-confirmed-expected-dates-for-every-ultimate-team-campaign",
+          "date": "2026-09-15"
+        },
+        {
+          "title": "realsport101 – FC 27 Early Promo Leaks, Slower Power Curve, Season 1–4 Roadmap",
+          "url": "https://realsport101.com/article/fc-27-early-promo-leaks-slower-power-curve-season-1-4-roadmap",
+          "date": "2026-08-03"
+        },
+        {
+          "title": "FUTCast (beehiiv) – TOTY is live, the market has crashed",
+          "url": "https://futcastfromos.beehiiv.com/p/toty-is-live-don-t-open-the-350k-pack-the-market-has-crashed",
+          "date": "2026-01-16"
+        },
+        {
+          "title": "MrGeek – FC 25 first TOTY market crash",
+          "url": "https://www.mrgeek.net/blog/fc-25-first-toty-market-crash-price-dropping-reason-and-best-time-to-buy-players",
+          "date": "2025-01-08"
+        }
+      ]
+    },
+    {
+      "name": "Team of the Season (TOTS)",
+      "start": null,
+      "end": null,
+      "status": "erwartet",
+      "certainty": "unsicher",
+      "expected_effect": "Kein FC-27-Datum bekannt; FC 26 startete am 17.04.2026 (6 Wochen, Ultimate TOTS 22.05.). Tiefs ca. 24–48 h nach Angebotsspitzen.",
+      "sources": [
+        {
+          "title": "fut.gg News – FC 26 Team of the Season Release Dates",
+          "url": "https://www.fut.gg/news/fc-26-team-of-the-season-release-dates-full-tots-schedule-confirmed/",
+          "date": "2026-04"
+        },
+        {
+          "title": "itemd2r – FC 26 TOTS Market Crash Guide",
+          "url": "https://www.itemd2r.com/blog/fc-26/fc-26-tots-market-crash-guide-best-time-to-buy-sell-meta-cards",
+          "date": "2026-05-06"
+        }
+      ]
+    },
+    {
+      "name": "Trailblazers / Rulebreakers / Centurions",
+      "start": null,
+      "end": null,
+      "status": "erwartet",
+      "certainty": "unsicher",
+      "expected_effect": "In keinem gefundenen FC-27-Kalender gelistet (EA: ca. 5 Kampagnenwochen weniger als FC 26). FC 26 Trailblazers war für 24.10.2025 prognostiziert.",
+      "sources": [
+        {
+          "title": "realsport101 – FC 26 Promo Schedule (erwartete Daten)",
+          "url": "https://realsport101.com/article/fc-26-promo-schedule-all-expected-dates-events",
+          "date": "2025"
+        },
+        {
+          "title": "SoccerGaming – FC 27 Ultimate Team: All Major Changes Explained",
+          "url": "https://soccergaming.com/fc-27-ultimate-team-all-major-changes-explained/",
+          "date": "2026-09-14"
+        }
+      ]
+    }
+  ],
+  "crashes": [
+    {
+      "game": "FC 24",
+      "event": "Pre-Black-Friday-Slide / Thunderstruck",
+      "date": "2023-11-24",
+      "magnitude": "Schon vor BF über ~2 Wochen: Vinícius 1 Mio → 750k (−25 %), Mbappé 3,2 → 2,6 Mio (−19 %), Neymar 300k → 175k (−42 %), van Dijk 280k → 190k (−32 %). BF-Start 24.11.2023 10:00 PT.",
+      "drop_pct_estimate": -25,
+      "certainty": "wahrscheinlich",
+      "sources": [
+        {
+          "title": "AOEAH – FC 24 Black Friday Market Crash",
+          "url": "https://www.aoeah.com/news/2911--fc-24-black-friday-market-crash--should-you-sell--buy-your-players-now",
+          "date": "2023-11-10"
+        },
+        {
+          "title": "SI Videogames – EA FC 24 Thunderstruck leaks and start time",
+          "url": "https://videogames.si.com/guides/ea-fc-24-thunderstruck-leaks",
+          "date": "2023-11"
+        }
+      ]
+    },
+    {
+      "game": "FC 24",
+      "event": "TOTY",
+      "date": "2024-01-19",
+      "magnitude": "Laut Händlerseite Topspieler am TOTY-Reveal-Tag 'bis 50 % oder mehr' unter Normalpreis; keine Einzelwerte belegt. Fodder (88er) stieg 15k → 20k.",
+      "drop_pct_estimate": -50,
+      "certainty": "unsicher",
+      "sources": [
+        {
+          "title": "MTMMO – FC 24 TOTY Market Crash",
+          "url": "https://www.mtmmo.com/news/1851--fc-24-toty-market-crash--should-you-sell--buy-your-players-now",
+          "date": "2024-01-09"
+        }
+      ]
+    },
+    {
+      "game": "FC 25",
+      "event": "Black Friday / Thunderstruck",
+      "date": "2024-11-29",
+      "magnitude": "Vinícius 1,5 Mio → 840k über mehrere Wochen (−44 %), Trinity Rodman 480k → 380k an einem Tag (−21 %), Mbappé 2,3 → ~2,0 Mio (−13 %). Event 29.11.–06.12.2024.",
+      "drop_pct_estimate": -25,
+      "certainty": "wahrscheinlich",
+      "sources": [
+        {
+          "title": "gamer.org – Black Friday FC 25 market crash review (nur Suchtreffer, Seite 404)",
+          "url": "https://www.gamer.org/black-friday-fc-25-market-crash-review-key-trading-tips-and-sbcs/",
+          "date": "2024-11"
+        }
+      ]
+    },
+    {
+      "game": "FC 25",
+      "event": "Pre-TOTY-Crash",
+      "date": "2025-01-08",
+      "magnitude": "Vinícius 3 → 2,5 Mio an einem Tag (−17 %), Mbappé auf 1,4 Mio; zweite Crash-Welle kurz vor TOTY durch Leaks/SBCs. Tiefpunkt laut Quelle in der Woche vor dem Start.",
+      "drop_pct_estimate": -17,
+      "certainty": "wahrscheinlich",
+      "sources": [
+        {
+          "title": "MrGeek – FC 25 first TOTY market crash",
+          "url": "https://www.mrgeek.net/blog/fc-25-first-toty-market-crash-price-dropping-reason-and-best-time-to-buy-players",
+          "date": "2025-01-08"
+        }
+      ]
+    },
+    {
+      "game": "FC 25",
+      "event": "Pre-TOTS-Crash",
+      "date": "2025-04-21",
+      "magnitude": "Berbatov 1,1 Mio → 810k (−26 %), Javi 1 Mio → 650k von So auf Mo (−35 %), Rodri 4,8 → 1,8 Mio seit Anfang März (−62 %). Auslöser: TOTS-/Evo-Leaks.",
+      "drop_pct_estimate": -30,
+      "certainty": "wahrscheinlich",
+      "sources": [
+        {
+          "title": "gamer.org – Massive FC 25 market crash hits ahead of Team of the Season",
+          "url": "https://www.gamer.org/massive-fc-25-market-crash-hits-ahead-of-team-of-the-season/",
+          "date": "2025-04-22"
+        }
+      ]
+    },
+    {
+      "game": "FC 26",
+      "event": "Release-Crash (erster Monat)",
+      "date": "2025-09-18",
+      "magnitude": "18.09.–14.10.2025: Salah 725k → 285k (−60 %), Wirtz 260k → 143k (−45 %), Gyökeres 279k → 78,5k (−72 %), Kane 200k → 21k (−90 %). Ursachen: 100k-Packs ab Early Access, viele Untradeables, Promo-Überangebot.",
+      "drop_pct_estimate": -60,
+      "certainty": "wahrscheinlich",
+      "sources": [
+        {
+          "title": "Football Gaming Zone – EA has killed EA FC 26's transfer market in one month",
+          "url": "https://footballgamingzone.com/ea-sports-fc/ea-has-killed-ea-fc-26s-transfer-market-in-one-month/",
+          "date": "2025-10-15"
+        }
+      ]
+    },
+    {
+      "game": "FC 26",
+      "event": "Black Friday / Thunderstruck",
+      "date": "2025-11-28",
+      "magnitude": "An einem Tag: Index 100 −12,9 %, Index 85 −29,5 % (85–88er aus Lightning-Round-Packs); Index 81 +8,3 % (SBC-Fodder).",
+      "drop_pct_estimate": -30,
+      "certainty": "wahrscheinlich",
+      "sources": [
+        {
+          "title": "FUTCast (beehiiv) – Thunderstruck is here, the market is bleeding",
+          "url": "https://futcastfromos.beehiiv.com/p/thunderstruck-is-here-the-market-is-bleeding-bellingham-is-scary",
+          "date": "2025-11-28"
+        }
+      ]
+    },
+    {
+      "game": "FC 26",
+      "event": "TOTY",
+      "date": "2026-01-16",
+      "magnitude": "Launch-Tag: Gesamtindex −6,9 %, 83er −22,7 %, 84er −18,0 %, 86er nur −3,7 %; Erholung erwartet mit Upgrade-SBCs.",
+      "drop_pct_estimate": -20,
+      "certainty": "wahrscheinlich",
+      "sources": [
+        {
+          "title": "FUTCast (beehiiv) – TOTY is live, the market has crashed",
+          "url": "https://futcastfromos.beehiiv.com/p/toty-is-live-don-t-open-the-350k-pack-the-market-has-crashed",
+          "date": "2026-01-16"
+        }
+      ]
+    },
+    {
+      "game": "FC 26",
+      "event": "TOTS",
+      "date": "2026-04-17",
+      "magnitude": "Größter Rückgang zur ersten großen Liga (PL-TOTS 24.04.2026); Tiefs ca. 24–48 h nach Angebotsspitzen, mittlere Informs (85–88) am stärksten. Keine Prozentwerte belegt.",
+      "drop_pct_estimate": null,
+      "certainty": "unsicher",
+      "sources": [
+        {
+          "title": "itemd2r – FC 26 TOTS Market Crash Guide",
+          "url": "https://www.itemd2r.com/blog/fc-26/fc-26-tots-market-crash-guide-best-time-to-buy-sell-meta-cards",
+          "date": "2026-05-06"
+        },
+        {
+          "title": "fut.gg News – FC 26 Team of the Season Release Dates",
+          "url": "https://www.fut.gg/news/fc-26-team-of-the-season-release-dates-full-tots-schedule-confirmed/",
+          "date": "2026-04"
+        }
+      ]
+    },
+    {
+      "game": "FC 26 → FC 27",
+      "event": "Pre-Season / Pre-Launch-Slide",
+      "date": "2026-09",
+      "magnitude": "Nachfrage im alten Spiel fällt Wochen vor dem neuen Release; teure Promo-Karten fallen am stärksten. Keine Zahlen.",
+      "drop_pct_estimate": null,
+      "certainty": "unsicher",
+      "sources": [
+        {
+          "title": "FIFPlay – The FUT Market Around a Launch: First Six Weeks",
+          "url": "https://www.fifplay.com/article-fut-market-around-launch-time/",
+          "date": "2026-09"
+        }
+      ]
+    },
+    {
+      "game": "FC 27",
+      "event": "Launch + Destined for Glory",
+      "date": "2026-09-25",
+      "magnitude": "'Größter einzelner Angebotsschock' (~90 % der Spieler kommen dazu); danach langsamere zweite Abwärtswelle im 81–84er-Bereich (02./09./16./23.10.). Keine Prozentwerte.",
+      "drop_pct_estimate": null,
+      "certainty": "wahrscheinlich",
+      "sources": [
+        {
+          "title": "timesaver.gg – FC 27 Sell or Hold: Early Access Market Crash Timeline",
+          "url": "https://timesaver.gg/blog/fc-27-sell-or-hold-early-access-market-crash-timeline",
+          "date": "2026-09-19"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-10-05",
+      "name": "Champions Finals S1R3 enden 09:00 MESZ",
+      "type": "wl",
+      "certainty": "sicher"
+    },
+    {
+      "date": "2026-10-07",
+      "name": "TOTW 19:00 MESZ",
+      "type": "promo",
+      "certainty": "wahrscheinlich"
+    },
+    {
+      "date": "2026-10-08",
+      "name": "Rivals-Rewards 08:59 MESZ",
+      "type": "rewards",
+      "certainty": "sicher"
+    },
+    {
+      "date": "2026-10-09",
+      "name": "Destined for Glory Team 2 verlässt Packs; erwarteter Promo-Start Future Stars 19:00 MESZ",
+      "type": "promo",
+      "certainty": "unsicher"
+    },
+    {
+      "date": "2026-10-09",
+      "name": "Champions Finals S1R4 öffnen 20:00 MESZ (bis 12.10. 09:00)",
+      "type": "wl",
+      "certainty": "sicher"
+    },
+    {
+      "date": "2026-10-11",
+      "name": "Squad-Battles-Rewards ~08:59 MESZ",
+      "type": "rewards",
+      "certainty": "wahrscheinlich"
+    },
+    {
+      "date": "2026-10-14",
+      "name": "TOTW 19:00 MESZ",
+      "type": "promo",
+      "certainty": "wahrscheinlich"
+    },
+    {
+      "date": "2026-10-15",
+      "name": "Rivals-Rewards 08:59 MESZ",
+      "type": "rewards",
+      "certainty": "sicher"
+    },
+    {
+      "date": "2026-10-16",
+      "name": "Champions Finals S1R5 öffnen 20:00 MESZ (bis 19.10. 09:00); Promo-Freitag 19:00",
+      "type": "wl",
+      "certainty": "sicher"
+    },
+    {
+      "date": "2026-10-18",
+      "name": "Squad-Battles-Rewards ~08:59 MESZ",
+      "type": "rewards",
+      "certainty": "wahrscheinlich"
+    },
+    {
+      "date": "2026-10-21",
+      "name": "TOTW 19:00 MESZ",
+      "type": "promo",
+      "certainty": "wahrscheinlich"
+    },
+    {
+      "date": "2026-10-22",
+      "name": "Season 1 endet; Ones to Watch endet (18:00 UK laut fifauteam); Rivals-Rewards 08:59 MESZ",
+      "type": "rewards",
+      "certainty": "sicher"
+    },
+    {
+      "date": "2026-10-23",
+      "name": "Season 2 + erwarteter Promo-Start Ultimate Scream 19:00 MESZ",
+      "type": "promo",
+      "certainty": "unsicher"
+    },
+    {
+      "date": "2026-10-23",
+      "name": "Champions Finals S2R1 öffnen 20:00 MESZ (bis 26.10. 09:00 MEZ)",
+      "type": "wl",
+      "certainty": "sicher"
+    },
+    {
+      "date": "2026-10-25",
+      "name": "Zeitumstellung EU (MESZ → MEZ); Squad-Battles-Rewards ~08:59 MESZ → ab jetzt 07:59 MEZ",
+      "type": "patch",
+      "certainty": "sicher"
+    },
+    {
+      "date": "2026-10-28",
+      "name": "TOTW (19:00 MEZ, evtl. 18:00 bis US-Umstellung)",
+      "type": "promo",
+      "certainty": "unsicher"
+    },
+    {
+      "date": "2026-10-29",
+      "name": "Rivals-Rewards 07:59 MEZ",
+      "type": "rewards",
+      "certainty": "sicher"
+    },
+    {
+      "date": "2026-10-30",
+      "name": "Champions Finals S2R2 öffnen 20:00 MEZ (bis 02.11. 09:00); Promo-Freitag",
+      "type": "wl",
+      "certainty": "sicher"
+    },
+    {
+      "date": "2026-11-01",
+      "name": "Zeitumstellung USA – Content-Drops wieder sicher 19:00 MEZ",
+      "type": "patch",
+      "certainty": "sicher"
+    },
+    {
+      "date": "2026-11-04",
+      "name": "TOTW 19:00 MEZ",
+      "type": "promo",
+      "certainty": "wahrscheinlich"
+    },
+    {
+      "date": "2026-11-05",
+      "name": "Rivals-Rewards 07:59 MEZ",
+      "type": "rewards",
+      "certainty": "sicher"
+    },
+    {
+      "date": "2026-11-06",
+      "name": "Erwarteter Promo-Start UEFA Road to the Knockouts 19:00 MEZ",
+      "type": "promo",
+      "certainty": "unsicher"
+    },
+    {
+      "date": "2026-11-06",
+      "name": "Champions Finals S2R3 öffnen 20:00 MEZ (bis 09.11. 09:00)",
+      "type": "wl",
+      "certainty": "sicher"
+    },
+    {
+      "date": "2026-11-11",
+      "name": "TOTW 19:00 MEZ",
+      "type": "promo",
+      "certainty": "wahrscheinlich"
+    },
+    {
+      "date": "2026-11-12",
+      "name": "Rivals-Rewards 07:59 MEZ",
+      "type": "rewards",
+      "certainty": "sicher"
+    },
+    {
+      "date": "2026-11-13",
+      "name": "Champions Finals S2R4 öffnen 20:00 MEZ (bis 16.11. 09:00); Promo-Freitag",
+      "type": "wl",
+      "certainty": "sicher"
+    },
+    {
+      "date": "2026-11-16",
+      "name": "Champions Finals S2R4 enden 09:00 MEZ",
+      "type": "wl",
+      "certainty": "sicher"
+    }
+  ]
+}

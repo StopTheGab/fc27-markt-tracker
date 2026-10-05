@@ -1,0 +1,4135 @@
+{
+  "generated_at": "2026-10-05T09:00:00Z",
+  "game": "FC27",
+  "platform": "ps",
+  "method": "WebSearch/WebFetch nach FC-27-Quellen ab 2026-09-21 (realsport101 PlayStyles/TOTW 2+3/Destined for Glory 1+2, earlygame Starter-Karten, allthings.how 25k-Team, timesaver.gg Launch-Trading + Item-Score). Kandidaten über fut.gg sitemap-player-detail-27.xml auf eaId gemappt, dann je Spieler die fut.gg-HTML-Seite (3 s Pause, eigener User-Agent, kein /api/) ausgelesen: Rating, Position, Verein, Liga, Nation und resourceIds der Promo-Versionen. Basis-Gold-Ratings aus fut.gg; Preise nicht erhoben.",
+  "cards": [
+    {
+      "id": "27-227203",
+      "ea_id": 227203,
+      "resource_id": 227203,
+      "name": "Alexia Putellas",
+      "version": "Gold Rare",
+      "rating": 91,
+      "position": "CM",
+      "club": "London City",
+      "league": "Barclays Women’s Super League",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/227203-alexia-putellas/27-227203/",
+      "category": "meta",
+      "reason": "Top-Mittelfeld (Rating 91); Pinged/Incisive Pass bzw. Finesse/Technical (CAM) gefragt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/227203-alexia-putellas/27-227203/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-239085",
+      "ea_id": 239085,
+      "resource_id": 239085,
+      "name": "Erling Haaland",
+      "version": "Gold Rare",
+      "rating": 91,
+      "position": "ST",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "nation": "Norway",
+      "futgg_url": "https://www.fut.gg/players/239085-erling-haaland/27-239085/",
+      "category": "meta",
+      "reason": "Top-ST (Rating 91); Pace + Abschluss sind Kern der ST-Meta (Finesse/Low Driven laut realsport101), Endgame-Karte",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/239085-erling-haaland/27-239085/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-231747",
+      "ea_id": 231747,
+      "resource_id": 231747,
+      "name": "Kylian Mbappé",
+      "version": "Gold Rare",
+      "rating": 91,
+      "position": "ST",
+      "club": "Real Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/231747-kylian-mbappe/27-231747/",
+      "category": "meta",
+      "reason": "Top-ST (Rating 91); Pace + Abschluss sind Kern der ST-Meta (Finesse/Low Driven laut realsport101), Endgame-Karte",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/231747-kylian-mbappe/27-231747/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-241667",
+      "ea_id": 241667,
+      "resource_id": 241667,
+      "name": "Aitana Bonmatí",
+      "version": "Gold Rare",
+      "rating": 90,
+      "position": "CM",
+      "club": "FC Barcelona",
+      "league": "Liga F",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/241667-aitana-bonmati/27-241667/",
+      "category": "meta",
+      "reason": "Top-Mittelfeld (Rating 90); Pinged/Incisive Pass bzw. Finesse/Technical (CAM) gefragt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/241667-aitana-bonmati/27-241667/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-202126",
+      "ea_id": 202126,
+      "resource_id": 202126,
+      "name": "Harry Kane",
+      "version": "Gold Rare",
+      "rating": 90,
+      "position": "ST",
+      "club": "FC Bayern München",
+      "league": "Bundesliga",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/202126-harry-kane/27-202126/",
+      "category": "meta",
+      "reason": "Top-ST (Rating 90); Pace + Abschluss sind Kern der ST-Meta (Finesse/Low Driven laut realsport101), Endgame-Karte",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/202126-harry-kane/27-202126/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-252371",
+      "ea_id": 252371,
+      "resource_id": 252371,
+      "name": "Jude Bellingham",
+      "version": "Gold Rare",
+      "rating": 90,
+      "position": "CAM",
+      "club": "Real Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/252371-jude-bellingham/27-252371/",
+      "category": "meta",
+      "reason": "Top-Mittelfeld (Rating 90); Pinged/Incisive Pass bzw. Finesse/Technical (CAM) gefragt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/252371-jude-bellingham/27-252371/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-246219",
+      "ea_id": 246219,
+      "resource_id": 246219,
+      "name": "Khadija Shaw",
+      "version": "Gold Rare",
+      "rating": 90,
+      "position": "ST",
+      "club": "Manchester City",
+      "league": "Barclays Women’s Super League",
+      "nation": "Jamaica",
+      "futgg_url": "https://www.fut.gg/players/246219-khadija-shaw/27-246219/",
+      "category": "meta",
+      "reason": "Top-Frauenkarte (Rating 90); hohe Pace-/Abschlusswerte, im Meta-Pool",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/246219-khadija-shaw/27-246219/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-277643",
+      "ea_id": 277643,
+      "resource_id": 277643,
+      "name": "Lamine Yamal",
+      "version": "Gold Rare",
+      "rating": 90,
+      "position": "RW",
+      "club": "FC Barcelona",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/277643-lamine-yamal-lamine-yamal/27-277643/",
+      "category": "meta",
+      "reason": "Top-Flügel (Rating 90); Finesse Shot/Rapid = Meta-PS für Flügel, 4-2-1-3 nutzt Inside Forwards",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/277643-lamine-yamal-lamine-yamal/27-277643/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-247827",
+      "ea_id": 247827,
+      "resource_id": 247827,
+      "name": "Michael Olise",
+      "version": "Gold Rare",
+      "rating": 90,
+      "position": "RM",
+      "club": "FC Bayern München",
+      "league": "Bundesliga",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/247827-michael-olise/27-247827/",
+      "category": "meta",
+      "reason": "Top-Flügel (Rating 90); Finesse Shot/Rapid = Meta-PS für Flügel, 4-2-1-3 nutzt Inside Forwards",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/247827-michael-olise/27-247827/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-231443",
+      "ea_id": 231443,
+      "resource_id": 231443,
+      "name": "Ousmane Dembélé",
+      "version": "Gold Rare",
+      "rating": 90,
+      "position": "ST",
+      "club": "PSG",
+      "league": "Ligue 1 McDonald's",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/231443-ousmane-dembele/27-231443/",
+      "category": "meta",
+      "reason": "Top-ST (Rating 90); Pace + Abschluss sind Kern der ST-Meta (Finesse/Low Driven laut realsport101), Endgame-Karte",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/231443-ousmane-dembele/27-231443/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-251854",
+      "ea_id": 251854,
+      "resource_id": 251854,
+      "name": "Pedri",
+      "version": "Gold Rare",
+      "rating": 90,
+      "position": "CM",
+      "club": "FC Barcelona",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/251854-pedri/27-251854/",
+      "category": "meta",
+      "reason": "Top-Mittelfeld (Rating 90); Pinged/Incisive Pass bzw. Finesse/Technical (CAM) gefragt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/251854-pedri/27-251854/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-231866",
+      "ea_id": 231866,
+      "resource_id": 231866,
+      "name": "Rodri",
+      "version": "Gold Rare",
+      "rating": 90,
+      "position": "CDM",
+      "club": "FC Barcelona",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/231866-rodri/27-231866/",
+      "category": "meta",
+      "reason": "Top-CDM (Rating 90); Intercept/Pinged Pass = Meta-PS, 4-2-1-3 braucht zwei CDM",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/231866-rodri/27-231866/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-192119",
+      "ea_id": 192119,
+      "resource_id": 192119,
+      "name": "Thibaut Courtois",
+      "version": "Gold Rare",
+      "rating": 90,
+      "position": "GK",
+      "club": "Real Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Belgium",
+      "futgg_url": "https://www.fut.gg/players/192119-thibaut-courtois/27-192119/",
+      "category": "meta",
+      "reason": "Top-TW (Rating 90); Footwork/Far Reach als TW-Meta-PS",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/192119-thibaut-courtois/27-192119/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-255253",
+      "ea_id": 255253,
+      "resource_id": 255253,
+      "name": "Vitinha",
+      "version": "Gold Rare",
+      "rating": 90,
+      "position": "CM",
+      "club": "PSG",
+      "league": "Ligue 1 McDonald's",
+      "nation": "Portugal",
+      "futgg_url": "https://www.fut.gg/players/255253-vitinha/27-255253/",
+      "category": "meta",
+      "reason": "Top-Mittelfeld (Rating 90); Pinged/Incisive Pass bzw. Finesse/Technical (CAM) gefragt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/255253-vitinha/27-255253/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-212198",
+      "ea_id": 212198,
+      "resource_id": 212198,
+      "name": "Bruno Fernandes",
+      "version": "Gold Rare",
+      "rating": 89,
+      "position": "CAM",
+      "club": "Man Utd",
+      "league": "Premier League",
+      "nation": "Portugal",
+      "futgg_url": "https://www.fut.gg/players/212198-bruno-fernandes/27-212198/",
+      "category": "meta",
+      "reason": "Top-Mittelfeld (Rating 89); Pinged/Incisive Pass bzw. Finesse/Technical (CAM) gefragt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/212198-bruno-fernandes/27-212198/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-227102",
+      "ea_id": 227102,
+      "resource_id": 227102,
+      "name": "Caroline Graham Hansen",
+      "version": "Gold Rare",
+      "rating": 89,
+      "position": "RW",
+      "club": "FC Barcelona",
+      "league": "Liga F",
+      "nation": "Norway",
+      "futgg_url": "https://www.fut.gg/players/227102-caroline-graham-hansen/27-227102/",
+      "category": "meta",
+      "reason": "Top-Frauenkarte (Rating 89); hohe Pace-/Abschlusswerte, im Meta-Pool",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/227102-caroline-graham-hansen/27-227102/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-262531",
+      "ea_id": 262531,
+      "resource_id": 262531,
+      "name": "Claudia Pina",
+      "version": "Gold Rare",
+      "rating": 89,
+      "position": "LW",
+      "club": "FC Barcelona",
+      "league": "Liga F",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/262531-claudia-pina/27-262531/",
+      "category": "meta",
+      "reason": "Top-Frauenkarte (Rating 89); hohe Pace-/Abschlusswerte, im Meta-Pool",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/262531-claudia-pina/27-262531/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-232580",
+      "ea_id": 232580,
+      "resource_id": 232580,
+      "name": "Gabriel",
+      "version": "Gold Rare",
+      "rating": 89,
+      "position": "CB",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "nation": "Brazil",
+      "futgg_url": "https://www.fut.gg/players/232580-gabriel/27-232580/",
+      "category": "meta",
+      "reason": "Top-CB (Rating 89); Bruiser/Intercept, schnelle CBs für hohe Linie gefragt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/232580-gabriel/27-232580/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-230621",
+      "ea_id": 230621,
+      "resource_id": 230621,
+      "name": "Gianluigi Donnarumma",
+      "version": "Gold Rare",
+      "rating": 89,
+      "position": "GK",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "nation": "Italy",
+      "futgg_url": "https://www.fut.gg/players/230621-gianluigi-donnarumma/27-230621/",
+      "category": "meta",
+      "reason": "Top-TW (Rating 89); Footwork/Far Reach als TW-Meta-PS",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/230621-gianluigi-donnarumma/27-230621/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-247635",
+      "ea_id": 247635,
+      "resource_id": 247635,
+      "name": "Khvicha Kvaratskhelia",
+      "version": "Gold Rare",
+      "rating": 89,
+      "position": "LW",
+      "club": "PSG",
+      "league": "Ligue 1 McDonald's",
+      "nation": "Georgia",
+      "futgg_url": "https://www.fut.gg/players/247635-khvicha-kvaratskhelia/27-247635/",
+      "category": "meta",
+      "reason": "Top-Flügel (Rating 89); Finesse Shot/Rapid = Meta-PS für Flügel, 4-2-1-3 nutzt Inside Forwards",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/247635-khvicha-kvaratskhelia/27-247635/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-252145",
+      "ea_id": 252145,
+      "resource_id": 252145,
+      "name": "Nuno Mendes",
+      "version": "Gold Rare",
+      "rating": 89,
+      "position": "LB",
+      "club": "PSG",
+      "league": "Ligue 1 McDonald's",
+      "nation": "Portugal",
+      "futgg_url": "https://www.fut.gg/players/252145-nuno-mendes/27-252145/",
+      "category": "meta",
+      "reason": "Top-AV (Rating 89); Quick Step/Pace auf AV-Position Meta",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/252145-nuno-mendes/27-252145/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-279799",
+      "ea_id": 279799,
+      "resource_id": 279799,
+      "name": "Temwa Chawinga",
+      "version": "Gold Rare",
+      "rating": 89,
+      "position": "LM",
+      "club": "KC Current",
+      "league": "National Women's Soccer League",
+      "nation": "Malawi",
+      "futgg_url": "https://www.fut.gg/players/279799-temwa-chawinga/27-279799/",
+      "category": "meta",
+      "reason": "Top-Frauenkarte (Rating 89); hohe Pace-/Abschlusswerte, im Meta-Pool",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/279799-temwa-chawinga/27-279799/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-238794",
+      "ea_id": 238794,
+      "resource_id": 238794,
+      "name": "Vini Jr.",
+      "version": "Gold Rare",
+      "rating": 89,
+      "position": "LW",
+      "club": "Real Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Brazil",
+      "futgg_url": "https://www.fut.gg/players/238794-vinicius-jr/27-238794/",
+      "category": "meta",
+      "reason": "Top-Flügel (Rating 89); Finesse Shot/Rapid = Meta-PS für Flügel, 4-2-1-3 nutzt Inside Forwards",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/238794-vinicius-jr/27-238794/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-256196",
+      "ea_id": 256196,
+      "resource_id": 256196,
+      "name": "Willian Pacho",
+      "version": "Gold Rare",
+      "rating": 89,
+      "position": "CB",
+      "club": "PSG",
+      "league": "Ligue 1 McDonald's",
+      "nation": "Ecuador",
+      "futgg_url": "https://www.fut.gg/players/256196-william-pacho/27-256196/",
+      "category": "meta",
+      "reason": "Top-CB (Rating 89); Bruiser/Intercept, schnelle CBs für hohe Linie gefragt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/256196-william-pacho/27-256196/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-235212",
+      "ea_id": 235212,
+      "resource_id": 235212,
+      "name": "Achraf Hakimi",
+      "version": "Gold Rare",
+      "rating": 88,
+      "position": "RB",
+      "club": "PSG",
+      "league": "Ligue 1 McDonald's",
+      "nation": "Morocco",
+      "futgg_url": "https://www.fut.gg/players/235212-achraf-hakimi/27-235212/",
+      "category": "meta",
+      "reason": "Top-AV (Rating 88); Quick Step/Pace auf AV-Position Meta",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/235212-achraf-hakimi/27-235212/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-220901",
+      "ea_id": 220901,
+      "resource_id": 220901,
+      "name": "David Raya",
+      "version": "Gold Rare",
+      "rating": 88,
+      "position": "GK",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/220901-david-raya/27-220901/",
+      "category": "meta",
+      "reason": "Top-TW (Rating 88); Footwork/Far Reach als TW-Meta-PS",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/220901-david-raya/27-220901/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-234378",
+      "ea_id": 234378,
+      "resource_id": 234378,
+      "name": "Declan Rice",
+      "version": "Gold Rare",
+      "rating": 88,
+      "position": "CDM",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/234378-declan-rice/27-234378/",
+      "category": "meta",
+      "reason": "Top-CDM (Rating 88); Intercept/Pinged Pass = Meta-PS, 4-2-1-3 braucht zwei CDM",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/234378-declan-rice/27-234378/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-212622",
+      "ea_id": 212622,
+      "resource_id": 212622,
+      "name": "Joshua Kimmich",
+      "version": "Gold Rare",
+      "rating": 88,
+      "position": "CDM",
+      "club": "FC Bayern München",
+      "league": "Bundesliga",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/212622-joshua-kimmich/27-212622/",
+      "category": "meta",
+      "reason": "Top-CDM (Rating 88); Intercept/Pinged Pass = Meta-PS, 4-2-1-3 braucht zwei CDM",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/212622-joshua-kimmich/27-212622/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-236479",
+      "ea_id": 236479,
+      "resource_id": 236479,
+      "name": "Mapi León",
+      "version": "Gold Rare",
+      "rating": 88,
+      "position": "CB",
+      "club": "London City",
+      "league": "Barclays Women’s Super League",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/236479-mapi-leon/27-236479/",
+      "category": "meta",
+      "reason": "Top-CB (Rating 88); Bruiser/Intercept, schnelle CBs für hohe Linie gefragt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/236479-mapi-leon/27-236479/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-233419",
+      "ea_id": 233419,
+      "resource_id": 233419,
+      "name": "Raphinha",
+      "version": "Gold Rare",
+      "rating": 88,
+      "position": "LW",
+      "club": "FC Barcelona",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Brazil",
+      "futgg_url": "https://www.fut.gg/players/233419-raphinha/27-233419/",
+      "category": "meta",
+      "reason": "Top-Flügel (Rating 88); Finesse Shot/Rapid = Meta-PS für Flügel, 4-2-1-3 nutzt Inside Forwards",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/233419-raphinha/27-233419/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-264012",
+      "ea_id": 264012,
+      "resource_id": 264012,
+      "name": "Sophia Wilson",
+      "version": "Gold Rare",
+      "rating": 88,
+      "position": "ST",
+      "club": "Portland Timbers",
+      "league": "National Women's Soccer League",
+      "nation": "United States",
+      "futgg_url": "https://www.fut.gg/players/264012-sophia-wilson/27-264012/",
+      "category": "meta",
+      "reason": "Top-Frauenkarte (Rating 88); hohe Pace-/Abschlusswerte, im Meta-Pool",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/264012-sophia-wilson/27-264012/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-203376",
+      "ea_id": 203376,
+      "resource_id": 203376,
+      "name": "Virgil van Dijk",
+      "version": "Gold Rare",
+      "rating": 88,
+      "position": "CB",
+      "club": "Liverpool",
+      "league": "Premier League",
+      "nation": "Netherlands",
+      "futgg_url": "https://www.fut.gg/players/203376-virgil-van-dijk/27-203376/",
+      "category": "meta",
+      "reason": "Top-CB (Rating 88); Bruiser/Intercept, schnelle CBs für hohe Linie gefragt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/203376-virgil-van-dijk/27-203376/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-243715",
+      "ea_id": 243715,
+      "resource_id": 243715,
+      "name": "William Saliba",
+      "version": "Gold Rare",
+      "rating": 88,
+      "position": "CB",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/243715-william-saliba/27-243715/",
+      "category": "meta",
+      "reason": "Top-CB (Rating 88); Bruiser/Intercept, schnelle CBs für hohe Linie gefragt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/243715-william-saliba/27-243715/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-212831",
+      "ea_id": 212831,
+      "resource_id": 212831,
+      "name": "Alisson",
+      "version": "Gold Rare",
+      "rating": 87,
+      "position": "GK",
+      "club": "Liverpool",
+      "league": "Premier League",
+      "nation": "Brazil",
+      "futgg_url": "https://www.fut.gg/players/212831-alisson/27-212831/",
+      "category": "meta",
+      "reason": "Top-TW (Rating 87); Footwork/Far Reach als TW-Meta-PS",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/212831-alisson/27-212831/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-209331",
+      "ea_id": 209331,
+      "resource_id": 209331,
+      "name": "Mohamed Salah",
+      "version": "Gold Rare",
+      "rating": 87,
+      "position": "RM",
+      "club": "Trabzonspor",
+      "league": "Trendyol Süper Lig",
+      "nation": "Egypt",
+      "futgg_url": "https://www.fut.gg/players/209331-mohamed-salah/27-209331/",
+      "category": "meta",
+      "reason": "Top-Flügel (Rating 87); Finesse Shot/Rapid = Meta-PS für Flügel, 4-2-1-3 nutzt Inside Forwards",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/209331-mohamed-salah/27-209331/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-236772",
+      "ea_id": 236772,
+      "resource_id": 236772,
+      "name": "Dominik Szoboszlai",
+      "version": "Gold Rare",
+      "rating": 86,
+      "position": "CAM",
+      "club": "Liverpool",
+      "league": "Premier League",
+      "nation": "Hungary",
+      "futgg_url": "https://www.fut.gg/players/236772-dominik-szoboszlai/27-236772/",
+      "category": "meta",
+      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 86",
+      "sources": [
+        {
+          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
+          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/236772-dominik-szoboszlai/27-236772/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-278046",
+      "ea_id": 278046,
+      "resource_id": 278046,
+      "name": "Pau Cubarsí",
+      "version": "Gold Rare",
+      "rating": 86,
+      "position": "CB",
+      "club": "FC Barcelona",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/278046-pau-cubarsi-paredes-pau-cubarsi/27-278046/",
+      "category": "meta",
+      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 86",
+      "sources": [
+        {
+          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
+          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/278046-pau-cubarsi-paredes-pau-cubarsi/27-278046/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-251570",
+      "ea_id": 251570,
+      "resource_id": 251570,
+      "name": "Rayan Cherki",
+      "version": "Gold Rare",
+      "rating": 86,
+      "position": "RW",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/251570-rayan-cherki/27-251570/",
+      "category": "meta",
+      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 86",
+      "sources": [
+        {
+          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
+          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/251570-rayan-cherki/27-251570/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-251517",
+      "ea_id": 251517,
+      "resource_id": 251517,
+      "name": "Joško Gvardiol",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "CB",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "nation": "Croatia",
+      "futgg_url": "https://www.fut.gg/players/251517-josko-gvardiol/27-251517/",
+      "category": "meta",
+      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 85",
+      "sources": [
+        {
+          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
+          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/251517-josko-gvardiol/27-251517/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-265249",
+      "ea_id": 265249,
+      "resource_id": 265249,
+      "name": "Lauren James",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "LM",
+      "club": "Chelsea",
+      "league": "Barclays Women’s Super League",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/265249-lauren-james/27-265249/",
+      "category": "meta",
+      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 85",
+      "sources": [
+        {
+          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
+          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/265249-lauren-james/27-265249/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-256516",
+      "ea_id": 256516,
+      "resource_id": 256516,
+      "name": "Nico Williams",
+      "version": "Gold Rare",
+      "rating": 84,
+      "position": "LW",
+      "club": "Athletic Club",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/256516-nico-williams/27-256516/",
+      "category": "meta",
+      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 84",
+      "sources": [
+        {
+          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
+          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/256516-nico-williams/27-256516/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-259480",
+      "ea_id": 259480,
+      "resource_id": 259480,
+      "name": "Ismael Saibari",
+      "version": "Gold Rare",
+      "rating": 83,
+      "position": "CAM",
+      "club": "FC Bayern München",
+      "league": "Bundesliga",
+      "nation": "Morocco",
+      "futgg_url": "https://www.fut.gg/players/259480-ismael-saibari/27-259480/",
+      "category": "meta",
+      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 83",
+      "sources": [
+        {
+          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
+          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/259480-ismael-saibari/27-259480/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-261855",
+      "ea_id": 261855,
+      "resource_id": 261855,
+      "name": "Kika Nazareth",
+      "version": "Gold Rare",
+      "rating": 83,
+      "position": "CM",
+      "club": "FC Barcelona",
+      "league": "Liga F",
+      "nation": "Portugal",
+      "futgg_url": "https://www.fut.gg/players/261855-kika-nazareth/27-261855/",
+      "category": "meta",
+      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 83",
+      "sources": [
+        {
+          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
+          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/261855-kika-nazareth/27-261855/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-240717",
+      "ea_id": 240717,
+      "resource_id": 240717,
+      "name": "Lineth Beerensteyn",
+      "version": "Gold Rare",
+      "rating": 83,
+      "position": "ST",
+      "club": "Real Madrid",
+      "league": "Liga F",
+      "nation": "Netherlands",
+      "futgg_url": "https://www.fut.gg/players/240717-lineth-beerensteyn/27-240717/",
+      "category": "meta",
+      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 83",
+      "sources": [
+        {
+          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
+          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/240717-lineth-beerensteyn/27-240717/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-206113",
+      "ea_id": 206113,
+      "resource_id": 206113,
+      "name": "Serge Gnabry",
+      "version": "Gold Rare",
+      "rating": 83,
+      "position": "CAM",
+      "club": "FC Bayern München",
+      "league": "Bundesliga",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/206113-serge-gnabry/27-206113/",
+      "category": "meta",
+      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 83",
+      "sources": [
+        {
+          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
+          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/206113-serge-gnabry/27-206113/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-264453",
+      "ea_id": 264453,
+      "resource_id": 264453,
+      "name": "Micky van de Ven",
+      "version": "Gold Rare",
+      "rating": 81,
+      "position": "CB",
+      "club": "Spurs",
+      "league": "Premier League",
+      "nation": "Netherlands",
+      "futgg_url": "https://www.fut.gg/players/264453-micky-van-de-ven/27-264453/",
+      "category": "meta",
+      "reason": "Top-CB (Rating 81); Bruiser/Intercept, schnelle CBs für hohe Linie gefragt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/264453-micky-van-de-ven/27-264453/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-270531",
+      "ea_id": 270531,
+      "resource_id": 270531,
+      "name": "Ousmane Diomande",
+      "version": "Gold Rare",
+      "rating": 81,
+      "position": "CB",
+      "club": "Nott'm Forest",
+      "league": "Premier League",
+      "nation": "Ivory Coast",
+      "futgg_url": "https://www.fut.gg/players/270531-ousmane-diomande/27-270531/",
+      "category": "meta",
+      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 81",
+      "sources": [
+        {
+          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
+          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/270531-ousmane-diomande/27-270531/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-238616",
+      "ea_id": 238616,
+      "resource_id": 238616,
+      "name": "Pedro Neto",
+      "version": "Gold Rare",
+      "rating": 81,
+      "position": "RM",
+      "club": "Chelsea",
+      "league": "Premier League",
+      "nation": "Portugal",
+      "futgg_url": "https://www.fut.gg/players/238616-pedro-neto/27-238616/",
+      "category": "meta",
+      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 81",
+      "sources": [
+        {
+          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
+          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/238616-pedro-neto/27-238616/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-237942",
+      "ea_id": 237942,
+      "resource_id": 237942,
+      "name": "Pervis Estupiñán",
+      "version": "Gold Rare",
+      "rating": 78,
+      "position": "LB",
+      "club": "Milano FC",
+      "league": "Serie A Enilive",
+      "nation": "Ecuador",
+      "futgg_url": "https://www.fut.gg/players/237942-pervis-estupinan/27-237942/",
+      "category": "meta",
+      "reason": "Von earlygame als starke Starter-/Value-Karte empfohlen (Statverteilung/Pace), Rating 78",
+      "sources": [
+        {
+          "title": "earlygame: EA FC 27 - Diese Starter-Karten solltet ihr euch von Anfang an sichern",
+          "url": "https://earlygame.com/de/guides/fifa/ea-fc-27-diese-starter-karten-solltet-ihr-euch-von-anfang-an-sichern",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Best PlayStyles+ - Top Meta PS for Every Position & Role",
+          "url": "https://realsport101.com/article/fc-27-best-playstyles-top-meta-ps-for-every-position-role",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/237942-pervis-estupinan/27-237942/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50570733",
+      "ea_id": 239085,
+      "resource_id": 50570733,
+      "name": "Erling Haaland",
+      "version": "Destined for Glory",
+      "rating": 91,
+      "position": "ST",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "nation": "Norway",
+      "futgg_url": "https://www.fut.gg/players/239085-erling-haaland/27-50570733/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (91), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/239085-erling-haaland/27-50570733/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50563395",
+      "ea_id": 231747,
+      "resource_id": 50563395,
+      "name": "Kylian Mbappé",
+      "version": "Destined for Glory",
+      "rating": 91,
+      "position": "ST",
+      "club": "Real Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/231747-kylian-mbappe/27-50563395/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (91), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/231747-kylian-mbappe/27-50563395/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50579475",
+      "ea_id": 247827,
+      "resource_id": 50579475,
+      "name": "Michael Olise",
+      "version": "Team of the Week",
+      "rating": 91,
+      "position": "RM",
+      "club": "FC Bayern München",
+      "league": "Bundesliga",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/247827-michael-olise/27-50579475/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (91), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/247827-michael-olise/27-50579475/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50611447",
+      "ea_id": 279799,
+      "resource_id": 50611447,
+      "name": "Temwa Chawinga",
+      "version": "Team of the Week",
+      "rating": 90,
+      "position": "LM",
+      "club": "KC Current",
+      "league": "National Women's Soccer League",
+      "nation": "Malawi",
+      "futgg_url": "https://www.fut.gg/players/279799-temwa-chawinga/27-50611447/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (90), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/279799-temwa-chawinga/27-50611447/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50561206",
+      "ea_id": 229558,
+      "resource_id": 50561206,
+      "name": "Dayot Upamecano",
+      "version": "Destined for Glory",
+      "rating": 89,
+      "position": "CB",
+      "club": "FC Bayern München",
+      "league": "Bundesliga",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/229558-dayot-upamecano/27-50561206/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (89), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/229558-dayot-upamecano/27-50561206/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50583793",
+      "ea_id": 252145,
+      "resource_id": 50583793,
+      "name": "Nuno Mendes",
+      "version": "Destined for Glory",
+      "rating": 89,
+      "position": "LB",
+      "club": "PSG",
+      "league": "Ligue 1 McDonald's",
+      "nation": "Portugal",
+      "futgg_url": "https://www.fut.gg/players/252145-nuno-mendes/27-50583793/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (89), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/252145-nuno-mendes/27-50583793/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50565067",
+      "ea_id": 233419,
+      "resource_id": 50565067,
+      "name": "Raphinha",
+      "version": "Team of the Week",
+      "rating": 89,
+      "position": "LW",
+      "club": "FC Barcelona",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Brazil",
+      "futgg_url": "https://www.fut.gg/players/233419-raphinha/27-50565067/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (89), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/233419-raphinha/27-50565067/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50595660",
+      "ea_id": 264012,
+      "resource_id": 50595660,
+      "name": "Sophia Wilson",
+      "version": "Team of the Week",
+      "rating": 89,
+      "position": "ST",
+      "club": "Portland Timbers",
+      "league": "National Women's Soccer League",
+      "nation": "United States",
+      "futgg_url": "https://www.fut.gg/players/264012-sophia-wilson/27-50595660/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (89), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/264012-sophia-wilson/27-50595660/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50565379",
+      "ea_id": 233731,
+      "resource_id": 50565379,
+      "name": "Alexander Isak",
+      "version": "Destined for Glory",
+      "rating": 88,
+      "position": "ST",
+      "club": "Liverpool",
+      "league": "Premier League",
+      "nation": "Sweden",
+      "futgg_url": "https://www.fut.gg/players/233731-alexander-isak/27-50565379/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (88), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/233731-alexander-isak/27-50565379/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50570879",
+      "ea_id": 239231,
+      "resource_id": 50570879,
+      "name": "Cucurella",
+      "version": "Destined for Glory",
+      "rating": 88,
+      "position": "LB",
+      "club": "Real Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/239231-cucurella/27-50570879/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (88), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/239231-cucurella/27-50570879/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50559009",
+      "ea_id": 227361,
+      "resource_id": 50559009,
+      "name": "Kadidiatou Diani",
+      "version": "Destined for Glory",
+      "rating": 88,
+      "position": "RM",
+      "club": "London City",
+      "league": "Barclays Women’s Super League",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/227361-kadidiatou-diani/27-50559009/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (88), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/227361-kadidiatou-diani/27-50559009/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50539513",
+      "ea_id": 207865,
+      "resource_id": 50539513,
+      "name": "Marquinhos",
+      "version": "Team of the Week",
+      "rating": 88,
+      "position": "CB",
+      "club": "PSG",
+      "league": "Ligue 1 McDonald's",
+      "nation": "Brazil",
+      "futgg_url": "https://www.fut.gg/players/207865-marquinhos/27-50539513/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (88), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/207865-marquinhos/27-50539513/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50540979",
+      "ea_id": 209331,
+      "resource_id": 50540979,
+      "name": "Mohamed Salah",
+      "version": "Team of the Week",
+      "rating": 88,
+      "position": "RM",
+      "club": "Trabzonspor",
+      "league": "Trendyol Süper Lig",
+      "nation": "Egypt",
+      "futgg_url": "https://www.fut.gg/players/209331-mohamed-salah/27-50540979/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (88), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/209331-mohamed-salah/27-50540979/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50590935",
+      "ea_id": 259287,
+      "resource_id": 50590935,
+      "name": "Pernille Harder",
+      "version": "Destined for Glory",
+      "rating": 88,
+      "position": "CAM",
+      "club": "FC Bayern München",
+      "league": "Google Pixel Frauen-Bundesliga",
+      "nation": "Denmark",
+      "futgg_url": "https://www.fut.gg/players/259287-pernille-harder/27-50590935/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (88), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/259287-pernille-harder/27-50590935/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50575824",
+      "ea_id": 244176,
+      "resource_id": 50575824,
+      "name": "Deniz Undav",
+      "version": "Destined for Glory",
+      "rating": 87,
+      "position": "ST",
+      "club": "VfB Stuttgart",
+      "league": "Bundesliga",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/244176-deniz-undav/27-50575824/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (87), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/244176-deniz-undav/27-50575824/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50604801",
+      "ea_id": 273153,
+      "resource_id": 50604801,
+      "name": "Linda Caicedo",
+      "version": "Destined for Glory",
+      "rating": 87,
+      "position": "LW",
+      "club": "Real Madrid",
+      "league": "Liga F",
+      "nation": "Colombia",
+      "futgg_url": "https://www.fut.gg/players/273153-linda-caicedo/27-50604801/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (87), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/273153-linda-caicedo/27-50604801/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50554313",
+      "ea_id": 222665,
+      "resource_id": 50554313,
+      "name": "Martin Ødegaard",
+      "version": "Team of the Week",
+      "rating": 87,
+      "position": "CM",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "nation": "Norway",
+      "futgg_url": "https://www.fut.gg/players/222665-martin-odegaard/27-50554313/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (87), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/222665-martin-odegaard/27-50554313/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50591895",
+      "ea_id": 260247,
+      "resource_id": 50591895,
+      "name": "Morgan Rogers",
+      "version": "Destined for Glory",
+      "rating": 87,
+      "position": "CAM",
+      "club": "Chelsea",
+      "league": "Premier League",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/260247-morgan-rogers/27-50591895/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (87), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/260247-morgan-rogers/27-50591895/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50609494",
+      "ea_id": 277846,
+      "resource_id": 50609494,
+      "name": "Nico Paz",
+      "version": "Destined for Glory",
+      "rating": 87,
+      "position": "CAM",
+      "club": "Como 1907",
+      "league": "Serie A Enilive",
+      "nation": "Argentina",
+      "futgg_url": "https://www.fut.gg/players/277846-nicolas-paz-martinez-nico-paz/27-50609494/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (87), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/277846-nicolas-paz-martinez-nico-paz/27-50609494/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50573299",
+      "ea_id": 241651,
+      "resource_id": 50573299,
+      "name": "Viktor Gyökeres",
+      "version": "Team of the Week",
+      "rating": 87,
+      "position": "ST",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "nation": "Sweden",
+      "futgg_url": "https://www.fut.gg/players/241651-viktor-gyokeres/27-50573299/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (87), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/241651-viktor-gyokeres/27-50573299/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50562547",
+      "ea_id": 230899,
+      "resource_id": 50562547,
+      "name": "Ademola Lookman",
+      "version": "Destined for Glory",
+      "rating": 86,
+      "position": "ST",
+      "club": "Atlético de Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Nigeria",
+      "futgg_url": "https://www.fut.gg/players/230899-ademola-lookman/27-50562547/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (86), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/230899-ademola-lookman/27-50562547/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50574612",
+      "ea_id": 242964,
+      "resource_id": 50574612,
+      "name": "Anthony Gordon",
+      "version": "Destined for Glory",
+      "rating": 86,
+      "position": "LW",
+      "club": "FC Barcelona",
+      "league": "LALIGA EA SPORTS",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/242964-anthony-gordon/27-50574612/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (86), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/242964-anthony-gordon/27-50574612/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50572884",
+      "ea_id": 241236,
+      "resource_id": 50572884,
+      "name": "Antoine Semenyo",
+      "version": "Team of the Week",
+      "rating": 86,
+      "position": "RW",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "nation": "Ghana",
+      "futgg_url": "https://www.fut.gg/players/241236-antoine-semenyo/27-50572884/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (86), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/241236-antoine-semenyo/27-50572884/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50574662",
+      "ea_id": 243014,
+      "resource_id": 50574662,
+      "name": "Bryan Mbeumo",
+      "version": "Destined for Glory",
+      "rating": 86,
+      "position": "RM",
+      "club": "Man Utd",
+      "league": "Premier League",
+      "nation": "Cameroon",
+      "futgg_url": "https://www.fut.gg/players/243014-bryan-mbeumo/27-50574662/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (86), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/243014-bryan-mbeumo/27-50574662/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50571678",
+      "ea_id": 240030,
+      "resource_id": 50571678,
+      "name": "Ellie Carpenter",
+      "version": "Team of the Week",
+      "rating": 86,
+      "position": "RB",
+      "club": "Chelsea",
+      "league": "Barclays Women’s Super League",
+      "nation": "Australia",
+      "futgg_url": "https://www.fut.gg/players/240030-ellie-carpenter/27-50571678/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (86), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/240030-ellie-carpenter/27-50571678/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50559326",
+      "ea_id": 227678,
+      "resource_id": 50559326,
+      "name": "Ezri Konsa",
+      "version": "Destined for Glory",
+      "rating": 86,
+      "position": "CB",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/227678-ezri-konsa/27-50559326/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (86), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/227678-ezri-konsa/27-50559326/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50597341",
+      "ea_id": 265693,
+      "resource_id": 50597341,
+      "name": "Jakub Kiwior",
+      "version": "Destined for Glory",
+      "rating": 86,
+      "position": "CB",
+      "club": "FC Porto",
+      "league": "Liga Portugal",
+      "nation": "Poland",
+      "futgg_url": "https://www.fut.gg/players/265693-jakub-kiwior/27-50597341/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (86), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/265693-jakub-kiwior/27-50597341/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50593503",
+      "ea_id": 261855,
+      "resource_id": 50593503,
+      "name": "Kika Nazareth",
+      "version": "Destined for Glory",
+      "rating": 86,
+      "position": "CM",
+      "club": "FC Barcelona",
+      "league": "Liga F",
+      "nation": "Portugal",
+      "futgg_url": "https://www.fut.gg/players/261855-kika-nazareth/27-50593503/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (86), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/261855-kika-nazareth/27-50593503/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50508651",
+      "ea_id": 177003,
+      "resource_id": 50508651,
+      "name": "Luka Modrić",
+      "version": "Team of the Week",
+      "rating": 86,
+      "position": "CM",
+      "club": "Milano FC",
+      "league": "Serie A Enilive",
+      "nation": "Croatia",
+      "futgg_url": "https://www.fut.gg/players/177003-luka-modric/27-50508651/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (86), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/177003-luka-modric/27-50508651/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50574893",
+      "ea_id": 243245,
+      "resource_id": 50574893,
+      "name": "Orkun Kökçü",
+      "version": "Destined for Glory",
+      "rating": 86,
+      "position": "CM",
+      "club": "Beşiktaş",
+      "league": "Trendyol Süper Lig",
+      "nation": "Türkiye",
+      "futgg_url": "https://www.fut.gg/players/243245-orkun-kokcu/27-50574893/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (86), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/243245-orkun-kokcu/27-50574893/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50520215",
+      "ea_id": 188567,
+      "resource_id": 50520215,
+      "name": "Pierre-Emerick Aubameyang",
+      "version": "Destined for Glory",
+      "rating": 86,
+      "position": "ST",
+      "club": "RC Deportivo",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Gabon",
+      "futgg_url": "https://www.fut.gg/players/188567-pierre-emerick-aubameyang/27-50520215/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (86), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/188567-pierre-emerick-aubameyang/27-50520215/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50579813",
+      "ea_id": 248165,
+      "resource_id": 50579813,
+      "name": "Andrei Rațiu",
+      "version": "Destined for Glory",
+      "rating": 85,
+      "position": "RB",
+      "club": "Rayo Vallecano",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Romania",
+      "futgg_url": "https://www.fut.gg/players/248165-andrei-ratiu/27-50579813/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (85), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/248165-andrei-ratiu/27-50579813/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50585769",
+      "ea_id": 254121,
+      "resource_id": 50585769,
+      "name": "Charlie Cresswell",
+      "version": "Destined for Glory",
+      "rating": 85,
+      "position": "CB",
+      "club": "Stade Rennais FC",
+      "league": "Ligue 1 McDonald's",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/254121-charlie-cresswell/27-50585769/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (85), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/254121-charlie-cresswell/27-50585769/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50606677",
+      "ea_id": 275029,
+      "resource_id": 50606677,
+      "name": "Ibrahim Maza",
+      "version": "Destined for Glory",
+      "rating": 85,
+      "position": "CAM",
+      "club": "Leverkusen",
+      "league": "Bundesliga",
+      "nation": "Algeria",
+      "futgg_url": "https://www.fut.gg/players/275029-ibrahim-maza/27-50606677/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (85), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/275029-ibrahim-maza/27-50606677/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50611252",
+      "ea_id": 279604,
+      "resource_id": 50611252,
+      "name": "Jauregizar",
+      "version": "Destined for Glory",
+      "rating": 85,
+      "position": "CM",
+      "club": "Athletic Club",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/279604-mikel-jauregizar-alboniga-jauregizar/27-50611252/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (85), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/279604-mikel-jauregizar-alboniga-jauregizar/27-50611252/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50584757",
+      "ea_id": 253109,
+      "resource_id": 50584757,
+      "name": "Joey Veerman",
+      "version": "Destined for Glory",
+      "rating": 85,
+      "position": "CM",
+      "club": "Borussia Dortmund",
+      "league": "Bundesliga",
+      "nation": "Netherlands",
+      "futgg_url": "https://www.fut.gg/players/253109-joey-veerman/27-50584757/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (85), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/253109-joey-veerman/27-50584757/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50602505",
+      "ea_id": 270857,
+      "resource_id": 50602505,
+      "name": "Mateus Fernandes",
+      "version": "Destined for Glory",
+      "rating": 85,
+      "position": "CM",
+      "club": "Spurs",
+      "league": "Premier League",
+      "nation": "Portugal",
+      "futgg_url": "https://www.fut.gg/players/270857-mateus-goncalo-espanha-fernandes-mateus-fernandes/27-50602505/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (85), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/270857-mateus-goncalo-espanha-fernandes-mateus-fernandes/27-50602505/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50555345",
+      "ea_id": 223697,
+      "resource_id": 50555345,
+      "name": "Robin Gosens",
+      "version": "Destined for Glory",
+      "rating": 85,
+      "position": "LB",
+      "club": "FC Schalke 04",
+      "league": "Bundesliga",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/223697-robin-gosens/27-50555345/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (85), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/223697-robin-gosens/27-50555345/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50578336",
+      "ea_id": 246688,
+      "resource_id": 50578336,
+      "name": "Saud Abdulhamid",
+      "version": "Destined for Glory",
+      "rating": 85,
+      "position": "RB",
+      "club": "RC Lens",
+      "league": "Ligue 1 McDonald's",
+      "nation": "Saudi Arabia",
+      "futgg_url": "https://www.fut.gg/players/246688-saud-abdulhamid/27-50578336/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (85), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/246688-saud-abdulhamid/27-50578336/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50570392",
+      "ea_id": 238744,
+      "resource_id": 50570392,
+      "name": "Weston McKennie",
+      "version": "Destined for Glory",
+      "rating": 85,
+      "position": "CM",
+      "club": "Juventus FC",
+      "league": "Serie A Enilive",
+      "nation": "United States",
+      "futgg_url": "https://www.fut.gg/players/238744-weston-mckennie/27-50570392/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (85), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/238744-weston-mckennie/27-50570392/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50573384",
+      "ea_id": 241736,
+      "resource_id": 50573384,
+      "name": "Yann Aurel Bisseck",
+      "version": "Destined for Glory",
+      "rating": 85,
+      "position": "CB",
+      "club": "Lombardia FC",
+      "league": "Serie A Enilive",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/241736-yann-aurel-bisseck/27-50573384/",
+      "category": "promo",
+      "reason": "Destined-for-Glory-Live-Karte (85), aktuelle Promo; Upgrades nach Ligaleistung → Preisbewegung je Upgrade-Fortschritt",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/241736-yann-aurel-bisseck/27-50573384/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50551331",
+      "ea_id": 219683,
+      "resource_id": 50551331,
+      "name": "Corentin Tolisso",
+      "version": "Team of the Week",
+      "rating": 84,
+      "position": "CM",
+      "club": "OL",
+      "league": "Ligue 1 McDonald's",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/219683-corentin-tolisso/27-50551331/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (84), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/219683-corentin-tolisso/27-50551331/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50574092",
+      "ea_id": 242444,
+      "resource_id": 50574092,
+      "name": "João Félix",
+      "version": "Team of the Week",
+      "rating": 84,
+      "position": "CAM",
+      "club": "Al Nassr",
+      "league": "ROSHN Saudi League",
+      "nation": "Portugal",
+      "futgg_url": "https://www.fut.gg/players/242444-joao-felix/27-50574092/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (84), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/242444-joao-felix/27-50574092/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50596036",
+      "ea_id": 264388,
+      "resource_id": 50596036,
+      "name": "Moleiro",
+      "version": "Team of the Week",
+      "rating": 84,
+      "position": "LM",
+      "club": "Villarreal CF",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/264388-moleiro/27-50596036/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (84), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/264388-moleiro/27-50596036/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50588927",
+      "ea_id": 257279,
+      "resource_id": 50588927,
+      "name": "Álex Baena",
+      "version": "Team of the Week",
+      "rating": 84,
+      "position": "LM",
+      "club": "Atlético de Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/257279-alex-baena/27-50588927/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (84), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/257279-alex-baena/27-50588927/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50609517",
+      "ea_id": 277869,
+      "resource_id": 50609517,
+      "name": "Michael Kayode",
+      "version": "Team of the Week",
+      "rating": 83,
+      "position": "RB",
+      "club": "Brentford",
+      "league": "Premier League",
+      "nation": "Italy",
+      "futgg_url": "https://www.fut.gg/players/277869-michael-kayode/27-50609517/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (83), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/277869-michael-kayode/27-50609517/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50531752",
+      "ea_id": 200104,
+      "resource_id": 50531752,
+      "name": "Son Heung Min",
+      "version": "Team of the Week",
+      "rating": 83,
+      "position": "ST",
+      "club": "LAFC",
+      "league": "Major League Soccer",
+      "nation": "Korea Republic",
+      "futgg_url": "https://www.fut.gg/players/200104-heung-min-son/27-50531752/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (83), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/200104-heung-min-son/27-50531752/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50555358",
+      "ea_id": 223710,
+      "resource_id": 50555358,
+      "name": "Vedat Muriqi",
+      "version": "Team of the Week",
+      "rating": 83,
+      "position": "ST",
+      "club": "Fenerbahçe",
+      "league": "Trendyol Süper Lig",
+      "nation": "Kosovo",
+      "futgg_url": "https://www.fut.gg/players/223710-vedat-muriqi/27-50555358/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (83), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/223710-vedat-muriqi/27-50555358/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-50416920",
+      "ea_id": 85272,
+      "resource_id": 50416920,
+      "name": "Felicia Schröder",
+      "version": "Team of the Week",
+      "rating": 82,
+      "position": "ST",
+      "club": "Real Madrid",
+      "league": "Liga F",
+      "nation": "Sweden",
+      "futgg_url": "https://www.fut.gg/players/85272-felicia-schroder/27-50416920/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (82), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/85272-felicia-schroder/27-50416920/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67352494",
+      "ea_id": 243630,
+      "resource_id": 67352494,
+      "name": "Jonathan David",
+      "version": "Team of the Week",
+      "rating": 82,
+      "position": "ST",
+      "club": "Atlético de Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Canada",
+      "futgg_url": "https://www.fut.gg/players/243630-jonathan-david/27-67352494/",
+      "category": "promo",
+      "reason": "Aktuelle TOTW-Karte (82), nur ca. 1 Woche in Packs → nach Rotation oft Preisanstieg",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/243630-jonathan-david/27-67352494/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-272834",
+      "ea_id": 272834,
+      "resource_id": 272834,
+      "name": "João Neves",
+      "version": "Gold Rare",
+      "rating": 88,
+      "position": "CM",
+      "club": "PSG",
+      "league": "Ligue 1 McDonald's",
+      "nation": "Portugal",
+      "futgg_url": "https://www.fut.gg/players/272834-joao-neves/27-272834/",
+      "category": "trading",
+      "reason": "Gold-Basis eines aktuellen TOTW-Spielers; liquide Karte, Rating 88",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/272834-joao-neves/27-272834/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-229558",
+      "ea_id": 229558,
+      "resource_id": 229558,
+      "name": "Dayot Upamecano",
+      "version": "Gold Rare",
+      "rating": 87,
+      "position": "CB",
+      "club": "FC Bayern München",
+      "league": "Bundesliga",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/229558-dayot-upamecano/27-229558/",
+      "category": "trading",
+      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 87",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/229558-dayot-upamecano/27-229558/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-239053",
+      "ea_id": 239053,
+      "resource_id": 239053,
+      "name": "Federico Valverde",
+      "version": "Gold Rare",
+      "rating": 87,
+      "position": "CM",
+      "club": "Real Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Uruguay",
+      "futgg_url": "https://www.fut.gg/players/239053-federico-valverde/27-239053/",
+      "category": "trading",
+      "reason": "Gold-Basis eines aktuellen TOTW-Spielers; liquide Karte, Rating 87",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/239053-federico-valverde/27-239053/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-207865",
+      "ea_id": 207865,
+      "resource_id": 207865,
+      "name": "Marquinhos",
+      "version": "Gold Rare",
+      "rating": 87,
+      "position": "CB",
+      "club": "PSG",
+      "league": "Ligue 1 McDonald's",
+      "nation": "Brazil",
+      "futgg_url": "https://www.fut.gg/players/207865-marquinhos/27-207865/",
+      "category": "trading",
+      "reason": "Gold-Basis eines aktuellen TOTW-Spielers; liquide Karte, Rating 87",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/207865-marquinhos/27-207865/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-233731",
+      "ea_id": 233731,
+      "resource_id": 233731,
+      "name": "Alexander Isak",
+      "version": "Gold Rare",
+      "rating": 86,
+      "position": "ST",
+      "club": "Liverpool",
+      "league": "Premier League",
+      "nation": "Sweden",
+      "futgg_url": "https://www.fut.gg/players/233731-alexander-isak/27-233731/",
+      "category": "trading",
+      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 86",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/233731-alexander-isak/27-233731/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-239231",
+      "ea_id": 239231,
+      "resource_id": 239231,
+      "name": "Cucurella",
+      "version": "Gold Rare",
+      "rating": 86,
+      "position": "LB",
+      "club": "Real Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/239231-cucurella/27-239231/",
+      "category": "trading",
+      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 86",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/239231-cucurella/27-239231/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-222665",
+      "ea_id": 222665,
+      "resource_id": 222665,
+      "name": "Martin Ødegaard",
+      "version": "Gold Rare",
+      "rating": 86,
+      "position": "CM",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "nation": "Norway",
+      "futgg_url": "https://www.fut.gg/players/222665-martin-odegaard/27-222665/",
+      "category": "trading",
+      "reason": "Gold-Basis eines aktuellen TOTW-Spielers; liquide Karte, Rating 86",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/222665-martin-odegaard/27-222665/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-241651",
+      "ea_id": 241651,
+      "resource_id": 241651,
+      "name": "Viktor Gyökeres",
+      "version": "Gold Rare",
+      "rating": 86,
+      "position": "ST",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "nation": "Sweden",
+      "futgg_url": "https://www.fut.gg/players/241651-viktor-gyokeres/27-241651/",
+      "category": "trading",
+      "reason": "Gold-Basis eines aktuellen TOTW-Spielers; liquide Karte, Rating 86",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/241651-viktor-gyokeres/27-241651/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-210008",
+      "ea_id": 210008,
+      "resource_id": 210008,
+      "name": "Adrien Rabiot",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "CM",
+      "club": "Milano FC",
+      "league": "Serie A Enilive",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/210008-adrien-rabiot/27-210008/",
+      "category": "trading",
+      "reason": "Teil eines verbreiteten 25k-Starterteams → hohes Handelsvolumen im unteren/mittleren Preisbereich, Rating 85",
+      "sources": [
+        {
+          "title": "allthings.how: EA FC 27 Best Ultimate Team Starter Squad Under 25,000 Coins",
+          "url": "https://allthings.how/?p=219957",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/210008-adrien-rabiot/27-210008/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-273466",
+      "ea_id": 273466,
+      "resource_id": 273466,
+      "name": "Alyssa Thompson",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "LM",
+      "club": "Chelsea",
+      "league": "Barclays Women’s Super League",
+      "nation": "United States",
+      "futgg_url": "https://www.fut.gg/players/273466-alyssa-thompson/27-273466/",
+      "category": "trading",
+      "reason": "Teil eines verbreiteten 25k-Starterteams → hohes Handelsvolumen im unteren/mittleren Preisbereich, Rating 85",
+      "sources": [
+        {
+          "title": "allthings.how: EA FC 27 Best Ultimate Team Starter Squad Under 25,000 Coins",
+          "url": "https://allthings.how/?p=219957",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/273466-alyssa-thompson/27-273466/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-241236",
+      "ea_id": 241236,
+      "resource_id": 241236,
+      "name": "Antoine Semenyo",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "RW",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "nation": "Ghana",
+      "futgg_url": "https://www.fut.gg/players/241236-antoine-semenyo/27-241236/",
+      "category": "trading",
+      "reason": "Gold-Basis eines aktuellen TOTW-Spielers; liquide Karte, Rating 85",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/241236-antoine-semenyo/27-241236/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-244176",
+      "ea_id": 244176,
+      "resource_id": 244176,
+      "name": "Deniz Undav",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "ST",
+      "club": "VfB Stuttgart",
+      "league": "Bundesliga",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/244176-deniz-undav/27-244176/",
+      "category": "trading",
+      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 85",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/244176-deniz-undav/27-244176/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-240030",
+      "ea_id": 240030,
+      "resource_id": 240030,
+      "name": "Ellie Carpenter",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "RB",
+      "club": "Chelsea",
+      "league": "Barclays Women’s Super League",
+      "nation": "Australia",
+      "futgg_url": "https://www.fut.gg/players/240030-ellie-carpenter/27-240030/",
+      "category": "trading",
+      "reason": "Gold-Basis eines aktuellen TOTW-Spielers; liquide Karte, Rating 85",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/240030-ellie-carpenter/27-240030/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-177003",
+      "ea_id": 177003,
+      "resource_id": 177003,
+      "name": "Luka Modrić",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "CM",
+      "club": "Milano FC",
+      "league": "Serie A Enilive",
+      "nation": "Croatia",
+      "futgg_url": "https://www.fut.gg/players/177003-luka-modric/27-177003/",
+      "category": "trading",
+      "reason": "Gold-Basis eines aktuellen TOTW-Spielers; liquide Karte, Rating 85",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/177003-luka-modric/27-177003/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-227095",
+      "ea_id": 227095,
+      "resource_id": 227095,
+      "name": "Manuela Giugliano",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "CM",
+      "club": "AS Roma",
+      "league": "Calcio A Femminile",
+      "nation": "Italy",
+      "futgg_url": "https://www.fut.gg/players/227095-manuela-giugliano/27-227095/",
+      "category": "trading",
+      "reason": "Teil eines verbreiteten 25k-Starterteams → hohes Handelsvolumen im unteren/mittleren Preisbereich, Rating 85",
+      "sources": [
+        {
+          "title": "allthings.how: EA FC 27 Best Ultimate Team Starter Squad Under 25,000 Coins",
+          "url": "https://allthings.how/?p=219957",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/227095-manuela-giugliano/27-227095/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-265293",
+      "ea_id": 265293,
+      "resource_id": 265293,
+      "name": "Maya Le Tissier",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "CB",
+      "club": "Man Utd",
+      "league": "Barclays Women’s Super League",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/265293-maya-le-tissier/27-265293/",
+      "category": "trading",
+      "reason": "Teil eines verbreiteten 25k-Starterteams → hohes Handelsvolumen im unteren/mittleren Preisbereich, Rating 85",
+      "sources": [
+        {
+          "title": "allthings.how: EA FC 27 Best Ultimate Team Starter Squad Under 25,000 Coins",
+          "url": "https://allthings.how/?p=219957",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/265293-maya-le-tissier/27-265293/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-211110",
+      "ea_id": 211110,
+      "resource_id": 211110,
+      "name": "Paulo Dybala",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "CAM",
+      "club": "AS Roma",
+      "league": "Serie A Enilive",
+      "nation": "Argentina",
+      "futgg_url": "https://www.fut.gg/players/211110-paulo-dybala/27-211110/",
+      "category": "trading",
+      "reason": "Teil eines verbreiteten 25k-Starterteams → hohes Handelsvolumen im unteren/mittleren Preisbereich, Rating 85",
+      "sources": [
+        {
+          "title": "allthings.how: EA FC 27 Best Ultimate Team Starter Squad Under 25,000 Coins",
+          "url": "https://allthings.how/?p=219957",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/211110-paulo-dybala/27-211110/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-216393",
+      "ea_id": 216393,
+      "resource_id": 216393,
+      "name": "Youri Tielemans",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "CM",
+      "club": "Man Utd",
+      "league": "Premier League",
+      "nation": "Belgium",
+      "futgg_url": "https://www.fut.gg/players/216393-youri-tielemans/27-216393/",
+      "category": "trading",
+      "reason": "OTW-Spieler (OTW-Version untradeable) → handelbare Gold-Basis als Spekulationsziel rund um OTW-Upgrades, Rating 85",
+      "sources": [
+        {
+          "title": "timesaver.gg: FC 27 FUT Market Launch Week - Trading 85s & OTW Prep (aktualisiert)",
+          "url": "https://timesaver.gg/blog/fc-27-fut-market-launch-week-trading-85s-otw-prep",
+          "date": "2026-09-24"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/216393-youri-tielemans/27-216393/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-243014",
+      "ea_id": 243014,
+      "resource_id": 243014,
+      "name": "Bryan Mbeumo",
+      "version": "Gold Rare",
+      "rating": 84,
+      "position": "RM",
+      "club": "Man Utd",
+      "league": "Premier League",
+      "nation": "Cameroon",
+      "futgg_url": "https://www.fut.gg/players/243014-bryan-mbeumo/27-243014/",
+      "category": "trading",
+      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 84",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/243014-bryan-mbeumo/27-243014/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-254243",
+      "ea_id": 254243,
+      "resource_id": 254243,
+      "name": "Elliot Anderson",
+      "version": "Gold Rare",
+      "rating": 84,
+      "position": "CDM",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/254243-elliot-anderson/27-254243/",
+      "category": "trading",
+      "reason": "OTW-Spieler (OTW-Version untradeable) → handelbare Gold-Basis als Spekulationsziel rund um OTW-Upgrades, Rating 84",
+      "sources": [
+        {
+          "title": "timesaver.gg: FC 27 FUT Market Launch Week - Trading 85s & OTW Prep (aktualisiert)",
+          "url": "https://timesaver.gg/blog/fc-27-fut-market-launch-week-trading-85s-otw-prep",
+          "date": "2026-09-24"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/254243-elliot-anderson/27-254243/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-227678",
+      "ea_id": 227678,
+      "resource_id": 227678,
+      "name": "Ezri Konsa",
+      "version": "Gold Rare",
+      "rating": 84,
+      "position": "CB",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/227678-ezri-konsa/27-227678/",
+      "category": "trading",
+      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 84",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/227678-ezri-konsa/27-227678/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-241461",
+      "ea_id": 241461,
+      "resource_id": 241461,
+      "name": "Ferran Torres",
+      "version": "Gold Rare",
+      "rating": 84,
+      "position": "ST",
+      "club": "PSG",
+      "league": "Ligue 1 McDonald's",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/241461-ferran-torres/27-241461/",
+      "category": "trading",
+      "reason": "OTW-Spieler (OTW-Version untradeable) → handelbare Gold-Basis als Spekulationsziel rund um OTW-Upgrades, Rating 84",
+      "sources": [
+        {
+          "title": "timesaver.gg: FC 27 FUT Market Launch Week - Trading 85s & OTW Prep (aktualisiert)",
+          "url": "https://timesaver.gg/blog/fc-27-fut-market-launch-week-trading-85s-otw-prep",
+          "date": "2026-09-24"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/241461-ferran-torres/27-241461/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-264936",
+      "ea_id": 264936,
+      "resource_id": 264936,
+      "name": "Géraldine Reuteler",
+      "version": "Gold Rare",
+      "rating": 84,
+      "position": "CM",
+      "club": "Arsenal",
+      "league": "Barclays Women’s Super League",
+      "nation": "Switzerland",
+      "futgg_url": "https://www.fut.gg/players/264936-geraldine-reuteler/27-264936/",
+      "category": "trading",
+      "reason": "Teil eines verbreiteten 25k-Starterteams → hohes Handelsvolumen im unteren/mittleren Preisbereich, Rating 84",
+      "sources": [
+        {
+          "title": "allthings.how: EA FC 27 Best Ultimate Team Starter Squad Under 25,000 Coins",
+          "url": "https://allthings.how/?p=219957",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/264936-geraldine-reuteler/27-264936/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-260247",
+      "ea_id": 260247,
+      "resource_id": 260247,
+      "name": "Morgan Rogers",
+      "version": "Gold Rare",
+      "rating": 84,
+      "position": "CAM",
+      "club": "Chelsea",
+      "league": "Premier League",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/260247-morgan-rogers/27-260247/",
+      "category": "trading",
+      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 84",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/260247-morgan-rogers/27-260247/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-277846",
+      "ea_id": 277846,
+      "resource_id": 277846,
+      "name": "Nico Paz",
+      "version": "Gold Rare",
+      "rating": 84,
+      "position": "CAM",
+      "club": "Como 1907",
+      "league": "Serie A Enilive",
+      "nation": "Argentina",
+      "futgg_url": "https://www.fut.gg/players/277846-nicolas-paz-martinez-nico-paz/27-277846/",
+      "category": "trading",
+      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 84",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/277846-nicolas-paz-martinez-nico-paz/27-277846/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-264947",
+      "ea_id": 264947,
+      "resource_id": 264947,
+      "name": "Nicole Anyomi",
+      "version": "Gold Rare",
+      "rating": 84,
+      "position": "ST",
+      "club": "London City",
+      "league": "Barclays Women’s Super League",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/264947-nicole-anyomi/27-264947/",
+      "category": "trading",
+      "reason": "Teil eines verbreiteten 25k-Starterteams → hohes Handelsvolumen im unteren/mittleren Preisbereich, Rating 84",
+      "sources": [
+        {
+          "title": "allthings.how: EA FC 27 Best Ultimate Team Starter Squad Under 25,000 Coins",
+          "url": "https://allthings.how/?p=219957",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/264947-nicole-anyomi/27-264947/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-210676",
+      "ea_id": 210676,
+      "resource_id": 210676,
+      "name": "Wladimiro Falcone",
+      "version": "Gold Rare",
+      "rating": 84,
+      "position": "GK",
+      "club": "US Lecce",
+      "league": "Serie A Enilive",
+      "nation": "Italy",
+      "futgg_url": "https://www.fut.gg/players/210676-wladimiro-falcone/27-210676/",
+      "category": "trading",
+      "reason": "Teil eines verbreiteten 25k-Starterteams → hohes Handelsvolumen im unteren/mittleren Preisbereich, Rating 84",
+      "sources": [
+        {
+          "title": "allthings.how: EA FC 27 Best Ultimate Team Starter Squad Under 25,000 Coins",
+          "url": "https://allthings.how/?p=219957",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/210676-wladimiro-falcone/27-210676/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-78012",
+      "ea_id": 78012,
+      "resource_id": 78012,
+      "name": "Yan Diomande",
+      "version": "Gold Rare",
+      "rating": 84,
+      "position": "RW",
+      "club": "Real Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Ivory Coast",
+      "futgg_url": "https://www.fut.gg/players/78012-yan-diomande/27-78012/",
+      "category": "trading",
+      "reason": "OTW-Spieler (OTW-Version untradeable) → handelbare Gold-Basis als Spekulationsziel rund um OTW-Upgrades, Rating 84",
+      "sources": [
+        {
+          "title": "timesaver.gg: FC 27 FUT Market Launch Week - Trading 85s & OTW Prep (aktualisiert)",
+          "url": "https://timesaver.gg/blog/fc-27-fut-market-launch-week-trading-85s-otw-prep",
+          "date": "2026-09-24"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/78012-yan-diomande/27-78012/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-230899",
+      "ea_id": 230899,
+      "resource_id": 230899,
+      "name": "Ademola Lookman",
+      "version": "Gold Rare",
+      "rating": 83,
+      "position": "ST",
+      "club": "Atlético de Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Nigeria",
+      "futgg_url": "https://www.fut.gg/players/230899-ademola-lookman/27-230899/",
+      "category": "trading",
+      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 83",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/230899-ademola-lookman/27-230899/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-205452",
+      "ea_id": 205452,
+      "resource_id": 205452,
+      "name": "Antonio Rüdiger",
+      "version": "Gold Rare",
+      "rating": 83,
+      "position": "CB",
+      "club": "Real Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/205452-antonio-rudiger/27-205452/",
+      "category": "trading",
+      "reason": "Teil eines verbreiteten 25k-Starterteams → hohes Handelsvolumen im unteren/mittleren Preisbereich, Rating 83",
+      "sources": [
+        {
+          "title": "allthings.how: EA FC 27 Best Ultimate Team Starter Squad Under 25,000 Coins",
+          "url": "https://allthings.how/?p=219957",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/205452-antonio-rudiger/27-205452/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-242444",
+      "ea_id": 242444,
+      "resource_id": 242444,
+      "name": "João Félix",
+      "version": "Gold Rare",
+      "rating": 83,
+      "position": "CAM",
+      "club": "Al Nassr",
+      "league": "ROSHN Saudi League",
+      "nation": "Portugal",
+      "futgg_url": "https://www.fut.gg/players/242444-joao-felix/27-242444/",
+      "category": "trading",
+      "reason": "Gold-Basis eines aktuellen TOTW-Spielers; liquide Karte, Rating 83",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/242444-joao-felix/27-242444/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-257279",
+      "ea_id": 257279,
+      "resource_id": 257279,
+      "name": "Álex Baena",
+      "version": "Gold Rare",
+      "rating": 83,
+      "position": "LM",
+      "club": "Atlético de Madrid",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/257279-alex-baena/27-257279/",
+      "category": "trading",
+      "reason": "Gold-Basis eines aktuellen TOTW-Spielers; liquide Karte, Rating 83",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/257279-alex-baena/27-257279/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-242964",
+      "ea_id": 242964,
+      "resource_id": 242964,
+      "name": "Anthony Gordon",
+      "version": "Gold Rare",
+      "rating": 82,
+      "position": "LW",
+      "club": "FC Barcelona",
+      "league": "LALIGA EA SPORTS",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/242964-anthony-gordon/27-242964/",
+      "category": "trading",
+      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 82",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/242964-anthony-gordon/27-242964/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-251852",
+      "ea_id": 251852,
+      "resource_id": 251852,
+      "name": "Karim Adeyemi",
+      "version": "Gold Rare",
+      "rating": 82,
+      "position": "RM",
+      "club": "FC Barcelona",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/251852-karim-adeyemi/27-251852/",
+      "category": "trading",
+      "reason": "OTW-Spieler (OTW-Version untradeable) → handelbare Gold-Basis als Spekulationsziel rund um OTW-Upgrades, Rating 82",
+      "sources": [
+        {
+          "title": "timesaver.gg: FC 27 FUT Market Launch Week - Trading 85s & OTW Prep (aktualisiert)",
+          "url": "https://timesaver.gg/blog/fc-27-fut-market-launch-week-trading-85s-otw-prep",
+          "date": "2026-09-24"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/251852-karim-adeyemi/27-251852/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-264388",
+      "ea_id": 264388,
+      "resource_id": 264388,
+      "name": "Moleiro",
+      "version": "Gold Rare",
+      "rating": 82,
+      "position": "LM",
+      "club": "Villarreal CF",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/264388-moleiro/27-264388/",
+      "category": "trading",
+      "reason": "Gold-Basis eines aktuellen TOTW-Spielers; liquide Karte, Rating 82",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/264388-moleiro/27-264388/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-243245",
+      "ea_id": 243245,
+      "resource_id": 243245,
+      "name": "Orkun Kökçü",
+      "version": "Gold Rare",
+      "rating": 82,
+      "position": "CM",
+      "club": "Beşiktaş",
+      "league": "Trendyol Süper Lig",
+      "nation": "Türkiye",
+      "futgg_url": "https://www.fut.gg/players/243245-orkun-kokcu/27-243245/",
+      "category": "trading",
+      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 82",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/243245-orkun-kokcu/27-243245/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-277869",
+      "ea_id": 277869,
+      "resource_id": 277869,
+      "name": "Michael Kayode",
+      "version": "Gold Rare",
+      "rating": 81,
+      "position": "RB",
+      "club": "Brentford",
+      "league": "Premier League",
+      "nation": "Italy",
+      "futgg_url": "https://www.fut.gg/players/277869-michael-kayode/27-277869/",
+      "category": "trading",
+      "reason": "Gold-Basis eines aktuellen TOTW-Spielers; liquide Karte, Rating 81",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Team of the Week 2 - All Players & Card Stats",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-2-all-leaked-players-card-stats-release-time",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "realsport101: FC 27 Team of the Week 3 - Ødegaard & Chawinga Lead",
+          "url": "https://realsport101.com/article/fc-27-team-of-the-week-3-leaked-degaard-chawinga-lead-massive-new-squad",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/277869-michael-kayode/27-277869/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-278901",
+      "ea_id": 278901,
+      "resource_id": 278901,
+      "name": "Ayyoub Bouaddi",
+      "version": "Gold Rare",
+      "rating": 80,
+      "position": "CDM",
+      "club": "LOSC",
+      "league": "Ligue 1 McDonald's",
+      "nation": "Morocco",
+      "futgg_url": "https://www.fut.gg/players/278901-ayyoub-bouaddi/27-278901/",
+      "category": "trading",
+      "reason": "OTW-Spieler (OTW-Version untradeable) → handelbare Gold-Basis als Spekulationsziel rund um OTW-Upgrades, Rating 80",
+      "sources": [
+        {
+          "title": "timesaver.gg: FC 27 FUT Market Launch Week - Trading 85s & OTW Prep (aktualisiert)",
+          "url": "https://timesaver.gg/blog/fc-27-fut-market-launch-week-trading-85s-otw-prep",
+          "date": "2026-09-24"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/278901-ayyoub-bouaddi/27-278901/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-243702",
+      "ea_id": 243702,
+      "resource_id": 243702,
+      "name": "Djed Spence",
+      "version": "Gold Rare",
+      "rating": 80,
+      "position": "LB",
+      "club": "Lombardia FC",
+      "league": "Serie A Enilive",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/243702-djed-spence/27-243702/",
+      "category": "trading",
+      "reason": "Teil eines verbreiteten 25k-Starterteams → hohes Handelsvolumen im unteren/mittleren Preisbereich, Rating 80",
+      "sources": [
+        {
+          "title": "allthings.how: EA FC 27 Best Ultimate Team Starter Squad Under 25,000 Coins",
+          "url": "https://allthings.how/?p=219957",
+          "date": "2026-09-25"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/243702-djed-spence/27-243702/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-241736",
+      "ea_id": 241736,
+      "resource_id": 241736,
+      "name": "Yann Aurel Bisseck",
+      "version": "Gold Rare",
+      "rating": 78,
+      "position": "CB",
+      "club": "Lombardia FC",
+      "league": "Serie A Enilive",
+      "nation": "Germany",
+      "futgg_url": "https://www.fut.gg/players/241736-yann-aurel-bisseck/27-241736/",
+      "category": "trading",
+      "reason": "Gold-Basis eines Destined-for-Glory-Spielers; Promo-Hype treibt Nachfrage, Rating 78",
+      "sources": [
+        {
+          "title": "realsport101: FC 27 Destined For Glory Team 1 - Full Player List & Release Schedule",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-1-leaked-full-player-list-release-schedule",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "realsport101: FC 27 Destined for Glory Team 2 Leaked - Erling Haaland Headlines",
+          "url": "https://realsport101.com/article/fc-27-destined-for-glory-team-2-leaked-erling-haaland-headlines-stacked-squad",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/241736-yann-aurel-bisseck/27-241736/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-72997",
+      "ea_id": 72997,
+      "resource_id": 72997,
+      "name": "Rodrigo Mora",
+      "version": "Gold Rare",
+      "rating": 77,
+      "position": "CAM",
+      "club": "AS Roma",
+      "league": "Serie A Enilive",
+      "nation": "Portugal",
+      "futgg_url": "https://www.fut.gg/players/72997-rodrigo-mora-de-carvalho-rodrigo-mora/27-72997/",
+      "category": "trading",
+      "reason": "OTW-Spieler (OTW-Version untradeable) → handelbare Gold-Basis als Spekulationsziel rund um OTW-Upgrades, Rating 77",
+      "sources": [
+        {
+          "title": "timesaver.gg: FC 27 FUT Market Launch Week - Trading 85s & OTW Prep (aktualisiert)",
+          "url": "https://timesaver.gg/blog/fc-27-fut-market-launch-week-trading-85s-otw-prep",
+          "date": "2026-09-24"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/72997-rodrigo-mora-de-carvalho-rodrigo-mora/27-72997/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-67379273",
+      "ea_id": 270409,
+      "resource_id": 67379273,
+      "name": "Savinho",
+      "version": "Gold Rare",
+      "rating": 80,
+      "position": "RW",
+      "club": "Spurs",
+      "league": "Premier League",
+      "nation": "Brazil",
+      "futgg_url": "https://www.fut.gg/players/270409-savio/27-67379273/",
+      "category": "trading",
+      "reason": "OTW-Spieler (OTW-Version untradeable) → handelbare Gold-Karte (Rare 80) als Spekulationsziel rund um OTW-Upgrades",
+      "sources": [
+        {
+          "title": "timesaver.gg: FC 27 FUT Market Launch Week - Trading 85s & OTW Prep (aktualisiert)",
+          "url": "https://timesaver.gg/blog/fc-27-fut-market-launch-week-trading-85s-otw-prep",
+          "date": "2026-09-24"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Versionsliste Savinho, abgerufen)",
+          "url": "https://www.fut.gg/players/270409-savio/27-50602057/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-224293",
+      "ea_id": 224293,
+      "resource_id": 224293,
+      "name": "Rúben Neves",
+      "version": "Gold Rare",
+      "rating": 85,
+      "position": "CDM",
+      "club": "Al Hilal",
+      "league": "ROSHN Saudi League",
+      "nation": "Portugal",
+      "futgg_url": "https://www.fut.gg/players/224293-ruben-neves/27-224293/",
+      "category": "fodder",
+      "reason": "85er Gold Rare aus wenig gefragter Liga (ROSHN Saudi League) – SBC-Futter (Item Score 2900); Preis nicht verifiziert",
+      "sources": [
+        {
+          "title": "timesaver.gg: FC 27 Item Score Table - Cheapest Fodder (84s)",
+          "url": "https://timesaver.gg/blog/fc-27-item-score-table-cheapest-fodder-84s",
+          "date": "2026-09-26"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/224293-ruben-neves/27-224293/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-212218",
+      "ea_id": 212218,
+      "resource_id": 212218,
+      "name": "Aymeric Laporte",
+      "version": "Gold Rare",
+      "rating": 84,
+      "position": "CB",
+      "club": "Athletic Club",
+      "league": "LALIGA EA SPORTS",
+      "nation": "Spain",
+      "futgg_url": "https://www.fut.gg/players/212218-aymeric-laporte/27-212218/",
+      "category": "fodder",
+      "reason": "84er Gold Rare aus wenig gefragter Liga (LALIGA EA SPORTS) – SBC-Futter (Item Score 830); Preis nicht verifiziert",
+      "sources": [
+        {
+          "title": "timesaver.gg: FC 27 Item Score Table - Cheapest Fodder (84s)",
+          "url": "https://timesaver.gg/blog/fc-27-item-score-table-cheapest-fodder-84s",
+          "date": "2026-09-26"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/212218-aymeric-laporte/27-212218/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-247257",
+      "ea_id": 247257,
+      "resource_id": 247257,
+      "name": "Ibañez",
+      "version": "Gold Rare",
+      "rating": 83,
+      "position": "CB",
+      "club": "Al Ahli",
+      "league": "ROSHN Saudi League",
+      "nation": "Brazil",
+      "futgg_url": "https://www.fut.gg/players/247257-ibanez/27-247257/",
+      "category": "fodder",
+      "reason": "83er Gold Rare aus wenig gefragter Liga (ROSHN Saudi League) – SBC-Futter (Item Score 410); Preis nicht verifiziert",
+      "sources": [
+        {
+          "title": "timesaver.gg: FC 27 Item Score Table - Cheapest Fodder (84s)",
+          "url": "https://timesaver.gg/blog/fc-27-item-score-table-cheapest-fodder-84s",
+          "date": "2026-09-26"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/247257-ibanez/27-247257/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-212228",
+      "ea_id": 212228,
+      "resource_id": 212228,
+      "name": "Ivan Toney",
+      "version": "Gold Rare",
+      "rating": 83,
+      "position": "ST",
+      "club": "Al Ahli",
+      "league": "ROSHN Saudi League",
+      "nation": "England",
+      "futgg_url": "https://www.fut.gg/players/212228-ivan-toney/27-212228/",
+      "category": "fodder",
+      "reason": "83er Gold Rare aus wenig gefragter Liga (ROSHN Saudi League) – SBC-Futter (Item Score 410); Preis nicht verifiziert",
+      "sources": [
+        {
+          "title": "timesaver.gg: FC 27 Item Score Table - Cheapest Fodder (84s)",
+          "url": "https://timesaver.gg/blog/fc-27-item-score-table-cheapest-fodder-84s",
+          "date": "2026-09-26"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/212228-ivan-toney/27-212228/",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "27-215914",
+      "ea_id": 215914,
+      "resource_id": 215914,
+      "name": "N'Golo Kanté",
+      "version": "Gold Rare",
+      "rating": 83,
+      "position": "CDM",
+      "club": "Fenerbahçe",
+      "league": "Trendyol Süper Lig",
+      "nation": "France",
+      "futgg_url": "https://www.fut.gg/players/215914-ngolo-kante/27-215914/",
+      "category": "fodder",
+      "reason": "83er Gold Rare aus wenig gefragter Liga (Trendyol Süper Lig) – SBC-Futter (Item Score 410); Preis nicht verifiziert",
+      "sources": [
+        {
+          "title": "timesaver.gg: FC 27 Item Score Table - Cheapest Fodder (84s)",
+          "url": "https://timesaver.gg/blog/fc-27-item-score-table-cheapest-fodder-84s",
+          "date": "2026-09-26"
+        },
+        {
+          "title": "FUT.GG Kartenseite (Rating/Version/Verein/IDs, abgerufen)",
+          "url": "https://www.fut.gg/players/215914-ngolo-kante/27-215914/",
+          "date": "2026-10-05"
+        }
+      ]
+    }
+  ]
+}
