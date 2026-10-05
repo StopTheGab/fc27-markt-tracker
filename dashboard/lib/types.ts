@@ -106,6 +106,51 @@ export interface HistoryFile {
   points: HistoryPoint[];
 }
 
+export type CreatorPostKind = "buy" | "sell" | "market" | "info";
+
+export interface Creator {
+  id: string;
+  name: string;
+  /** 1 = Hauptquelle, höher = Zusatzquelle */
+  priority: number;
+  language?: string | null;
+  youtube?: string | null;
+  tiktok?: string | null;
+  instagram?: string | null;
+  discord_free?: string | null;
+  warning?: string | null;
+}
+
+export interface CreatorPostCard {
+  id: string;
+  name: string | null;
+  version?: string | null;
+  price_at_post: number | null;
+  price_now: number | null;
+  change_pct: number | null;
+}
+
+export interface CreatorPost {
+  video_id: string;
+  creator_id: string;
+  creator: string;
+  priority: number;
+  published: string;
+  title: string;
+  url: string;
+  kind: CreatorPostKind;
+  kind_label?: string | null;
+  is_new: boolean;
+  cards: CreatorPostCard[];
+}
+
+export interface CreatorsFile {
+  generated_at: string | null;
+  note?: string | null;
+  creators: Creator[];
+  posts: CreatorPost[];
+}
+
 /** Ergebnis eines Ladevorgangs: lädt, ok, fehlt (404) oder Fehler. */
 export type Loaded<T> =
   | { state: "loading" }

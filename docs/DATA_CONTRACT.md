@@ -100,3 +100,42 @@ erklärt, was fehlt. Das Dashboard zeigt dann einen klaren Hinweis statt Preisen
 { "card_id": "27-231747", "points": [ ["2026-10-05T08:15:00Z", 1250000], ... ] }
 ```
 Höchstens 14 Tage, stündlich verdichtet für ältere als 48 h.
+
+## creators.json  (optional, verschlüsselt wie market.json)
+Erzeugt von `collector/creators.py` (`export_data`) aus öffentlichen YouTube-Feeds der in
+`creators.json` (Repo-Wurzel) konfigurierten Creator. Enthält nur Videos der letzten 14 Tage.
+Fehlt die Datei (404), zeigt das Dashboard „Noch keine Creator-Daten“ statt eines Fehlers.
+```json
+{
+  "generated_at": "...",
+  "note": "Hinweistext zur Quelle/Erkennung (klein unter der Liste angezeigt)",
+  "creators": [
+    {
+      "id": "fifallstars", "name": "FIFAllstars",
+      "priority": 1,                       // 1 = Hauptquelle, sonst Zusatzquelle
+      "language": "de",
+      "youtube": "https://...", "tiktok": "https://...", "instagram": "https://...",
+      "discord_free": "https://..." ,      // optional
+      "warning": "Bezahlter Premium-Discord ..."   // optional, dezent gelb angezeigt
+    }
+  ],
+  "posts": [                               // neueste zuerst
+    {
+      "video_id": "abc123", "creator_id": "fifallstars", "creator": "FIFAllstars", "priority": 1,
+      "published": "2026-10-05T12:00:00Z",
+      "title": "...", "url": "https://www.youtube.com/watch?v=abc123",
+      "kind": "buy" | "sell" | "market" | "info",
+      "kind_label": "Kauf-Tipp" | "Verkaufs-Tipp" | "Marktanalyse" | "Sonstiges",
+      "is_new": true,                      // jünger als 24 h
+      "cards": [                           // im Titel/der Beschreibung erkannte Watchlist-Karten, sonst []
+        { "id": "27-231747", "name": "Kylian Mbappé" | null, "version": "Gold Rare" | null,
+          "price_at_post": 1100000 | null,  // erster Messpunkt nach Veröffentlichung
+          "price_now": 1250000 | null,
+          "change_pct": 13.64 | null }
+      ]
+    }
+  ]
+}
+```
+Das Dashboard verlinkt Videos und Profile nur (keine eingebetteten Player, keine fremden Bilder)
+und akzeptiert ausschließlich `https://`-Links.

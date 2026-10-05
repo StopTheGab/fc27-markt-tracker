@@ -12,6 +12,7 @@ export function Header() {
   const nav = [
     { href: "/", label: "Übersicht" },
     { href: "/karten", label: "Karten" },
+    { href: "/creator", label: "Creator-Tipps" },
   ];
   return (
     <header className="site-header">

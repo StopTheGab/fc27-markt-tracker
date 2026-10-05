@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo } from "react";
 import { useData, useHasPrices } from "@/components/DataProvider";
 import { ConfidenceBadge, LoadNotice, NoPricesNotice, Pct, SignalBadge } from "@/components/ui";
+import { PostItem, recentPosts } from "@/components/creators";
 import {
   coins,
   dateTime,
@@ -16,7 +17,7 @@ import {
   signedCoins,
   TENDENCY_LABEL,
 } from "@/lib/format";
-import type { Card, Market, Signal } from "@/lib/types";
+import type { Card, CreatorPost, CreatorsFile, Loaded, Market, Signal } from "@/lib/types";
 
 export default function HomePage() {
   const { market, signals, cards, status } = useData();
@@ -76,6 +77,8 @@ export default function HomePage() {
         {market.state !== "ok" ? <LoadNotice loaded={market} what="Marktdaten" /> : <MarketOverview market={market.data} />}
       </section>
 
+      <CreatorTips />
+
       {market.state === "ok" && (
         <section className="section">
           <div className="grid grid-2">
@@ -85,6 +88,44 @@ export default function HomePage() {
         </section>
       )}
     </>
+  );
+}
+
+function CreatorTips() {
+  const { creators, now } = useData();
+  const top = useMemo(() => {
+    if (creators.state !== "ok") return [];
+    const newest = recentPosts(creators.data, now)
+      .filter((p) => p.kind !== "info")
+      .slice(0, 3);
+    // Hauptquelle zuerst, innerhalb gleicher Priorität neueste zuerst (sort ist stabil)
+    return newest.sort((a, b) => (a.priority ?? 9) - (b.priority ?? 9));
+  }, [creators, now]);
+
+  return (
+    <section className="section">
+      <div className="section-head">
+        <h2>Neueste Creator-Tipps</h2>
+        <Link href="/creator" className="small">
+          Alle Creator-Tipps →
+        </Link>
+      </div>
+      <CreatorTipsBody creators={creators} top={top} now={now} />
+    </section>
+  );
+}
+
+function CreatorTipsBody({ creators, top, now }: { creators: Loaded<CreatorsFile>; top: CreatorPost[]; now: number }) {
+  if (creators.state === "missing") return <div className="panel empty">Noch keine Creator-Daten.</div>;
+  if (creators.state !== "ok") return <LoadNotice loaded={creators} what="Creator-Daten" />;
+  if (top.length === 0)
+    return <div className="panel empty">Keine Kauf-, Verkaufs- oder Markt-Tipps in den letzten 14 Tagen.</div>;
+  return (
+    <div className="post-list">
+      {top.map((p) => (
+        <PostItem key={p.video_id} p={p} now={now} compact />
+      ))}
+    </div>
   );
 }
 

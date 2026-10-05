@@ -721,3 +721,177 @@ table.cards tbody tr:last-child td {
 .sortbar .btn {
   white-space: nowrap;
 }
+
+/* Creator-Tipps */
+.creator-tiles {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.creator-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-left: 4px solid var(--border);
+}
+.creator-tile.primary {
+  border-left-color: var(--accent);
+}
+.creator-tile-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.creator-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.creator-links .btn {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+.creator-links .btn:hover {
+  text-decoration: none;
+}
+.creator-warning {
+  font-size: 0.82rem;
+  color: #e9c77f;
+  background: var(--warn-bg);
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+.badge-primary {
+  background: var(--info-bg);
+  color: #8fbdf2;
+  border-color: rgba(57, 135, 229, 0.45);
+}
+.badge-kind-buy {
+  background: var(--pos-bg);
+  color: var(--pos);
+  border-color: rgba(63, 191, 111, 0.4);
+}
+.badge-kind-sell {
+  background: var(--neg-bg);
+  color: var(--neg);
+  border-color: rgba(239, 100, 97, 0.4);
+}
+.badge-kind-market {
+  background: var(--info-bg);
+  color: #7fb3f0;
+  border-color: rgba(57, 135, 229, 0.4);
+}
+.badge-kind-info {
+  background: var(--surface-2);
+  color: var(--text-2);
+}
+.badge-new {
+  background: var(--warn);
+  color: #1a1300;
+}
+.creator-filters {
+  grid-template-columns: minmax(180px, 260px) 1fr;
+}
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.field-label {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.post-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.post-item.kind-buy {
+  border-left-color: var(--pos);
+}
+.post-item.kind-sell {
+  border-left-color: var(--neg);
+}
+.post-item.kind-market {
+  border-left-color: var(--accent);
+}
+.post-item.compact.primary {
+  background: linear-gradient(0deg, var(--info-bg), var(--info-bg)), var(--surface);
+}
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+}
+.post-creator {
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+.post-title {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.post-cards,
+.mention-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.post-cards li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 8px;
+  font-size: 0.9rem;
+  padding-top: 4px;
+  border-top: 1px solid var(--border);
+}
+.post-prices {
+  margin-left: auto;
+  white-space: nowrap;
+}
+.mention-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  overflow-wrap: anywhere;
+}
+.mention-list li:last-child {
+  border-bottom: none;
+}
+@media (max-width: 760px) {
+  .creator-tiles {
+    grid-template-columns: 1fr;
+  }
+  .creator-filters {
+    grid-template-columns: 1fr;
+  }
+  .header-row {
+    flex-wrap: wrap;
+  }
+  .nav {
+    flex-wrap: wrap;
+  }
+  .post-prices {
+    margin-left: 0;
+  }
+}

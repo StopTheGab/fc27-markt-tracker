@@ -6,6 +6,7 @@ import { Suspense, useEffect, useMemo, useState } from "react";
 import { useData, useHasPrices } from "@/components/DataProvider";
 import { PriceChart, withRollingAvg } from "@/components/PriceChart";
 import { ConfidenceBadge, LoadNotice, NoPricesNotice, Pct, SignalBadge } from "@/components/ui";
+import { KindBadge, PostTime, recentPosts, safeUrl } from "@/components/creators";
 import { loadJson } from "@/lib/data";
 import { coins, dateTime, isNum, num, relative, signedCoins } from "@/lib/format";
 import type { HistoryFile, Loaded } from "@/lib/types";
@@ -29,7 +30,7 @@ const RANGES = [
 function CardDetail() {
   const params = useSearchParams();
   const id = (params.get("id") || "").trim();
-  const { cards, signals, status, loadedAt, now } = useData();
+  const { cards, signals, status, creators, loadedAt, now } = useData();
   const hasPrices = useHasPrices();
   const [history, setHistory] = useState<Loaded<HistoryFile>>({ state: "loading" });
   const [range, setRange] = useState<(typeof RANGES)[number]["id"]>("all");
@@ -47,6 +48,14 @@ function CardDetail() {
 
   const card = cards.state === "ok" ? cards.data.cards.find((c) => c.id === id) : undefined;
   const signal = signals.state === "ok" ? signals.data.signals.find((s) => s.card_id === id) : undefined;
+
+  const mentions = useMemo(
+    () =>
+      creators.state === "ok"
+        ? recentPosts(creators.data, now).filter((p) => (p.cards || []).some((c) => c && c.id === id))
+        : [],
+    [creators, now, id],
+  );
 
   const points = useMemo(
     () => (history.state === "ok" && Array.isArray(history.data.points) ? withRollingAvg(history.data.points) : []),
@@ -251,6 +260,44 @@ function CardDetail() {
           </>
         )}
       </section>
+
+      {mentions.length > 0 && (
+        <section className="section panel">
+          <h2>Erwähnt von Creatorn</h2>
+          <ul className="mention-list">
+            {mentions.map((p) => {
+              const url = safeUrl(p.url);
+              const c = p.cards.find((x) => x && x.id === id);
+              return (
+                <li key={p.video_id}>
+                  <div className="post-meta">
+                    <PostTime ts={p.published} now={now} />
+                    <span className="post-creator">{p.creator}</span>
+                    <KindBadge kind={p.kind} label={p.kind_label} />
+                  </div>
+                  <div>
+                    {url ? (
+                      <a href={url} target="_blank" rel="noopener noreferrer">
+                        {p.title} ↗
+                      </a>
+                    ) : (
+                      p.title
+                    )}
+                  </div>
+                  {c && (isNum(c.price_at_post) || isNum(c.price_now)) && (
+                    <div className="small muted">
+                      Preis bei Post {coins(c.price_at_post)} → jetzt {coins(c.price_now)} <Pct value={c.change_pct} />
+                    </div>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+          <div className="small muted" style={{ marginTop: 6 }}>
+            <Link href="/creator">Alle Creator-Tipps →</Link>
+          </div>
+        </section>
+      )}
 
       {card.watch_reason && (
         <section className="section panel">

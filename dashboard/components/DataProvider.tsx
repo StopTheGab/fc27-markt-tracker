@@ -4,13 +4,15 @@ import { createContext, useCallback, useContext, useEffect, useRef, useState } f
 import { loadJson, REFRESH_MS, STALE_MINUTES } from "@/lib/data";
 import { ageMinutes } from "@/lib/format";
 import { captureKeyFromHash, setKey } from "@/lib/crypto";
-import type { CardsFile, Loaded, Market, SignalsFile, Status } from "@/lib/types";
+import type { CardsFile, CreatorsFile, Loaded, Market, SignalsFile, Status } from "@/lib/types";
 
 interface DataState {
   status: Loaded<Status>;
   market: Loaded<Market>;
   cards: Loaded<CardsFile>;
   signals: Loaded<SignalsFile>;
+  /** Creator-Tipps (optional, kann fehlen) */
+  creators: Loaded<CreatorsFile>;
   /** Zeitpunkt des letzten Ladeversuchs im Browser */
   loadedAt: number | null;
   /** Läuft gerade ein Ladevorgang? */
@@ -33,6 +35,7 @@ export function DataProvider({ children }: { children: React.ReactNode }) {
   const [market, setMarket] = useState<Loaded<Market>>(LOADING);
   const [cards, setCards] = useState<Loaded<CardsFile>>(LOADING);
   const [signals, setSignals] = useState<Loaded<SignalsFile>>(LOADING);
+  const [creators, setCreators] = useState<Loaded<CreatorsFile>>(LOADING);
   const [loadedAt, setLoadedAt] = useState<number | null>(null);
   const [busy, setBusy] = useState(false);
   const [now, setNow] = useState(() => Date.now());
@@ -43,11 +46,12 @@ export function DataProvider({ children }: { children: React.ReactNode }) {
     const ac = new AbortController();
     abortRef.current = ac;
     setBusy(true);
-    const [s, m, c, g] = await Promise.all([
+    const [s, m, c, g, cr] = await Promise.all([
       loadJson<Status>("status.json", ac.signal),
       loadJson<Market>("market.json", ac.signal),
       loadJson<CardsFile>("cards.json", ac.signal),
       loadJson<SignalsFile>("signals.json", ac.signal),
+      loadJson<CreatorsFile>("creators.json", ac.signal),
     ]);
     if (ac.signal.aborted) return;
     // Bei einem Fehler im Hintergrund-Neuladen bereits geladene Daten behalten
@@ -57,6 +61,7 @@ export function DataProvider({ children }: { children: React.ReactNode }) {
     setMarket((p) => keep(p, m));
     setCards((p) => keep(p, c));
     setSignals((p) => keep(p, g));
+    setCreators((p) => keep(p, cr));
     setLoadedAt(Date.now());
     setNow(Date.now());
     setBusy(false);
@@ -95,7 +100,7 @@ export function DataProvider({ children }: { children: React.ReactNode }) {
   }, [reload]);
 
   return (
-    <Ctx.Provider value={{ status, market, cards, signals, loadedAt, busy, now, reload, locked, applyKey }}>{children}</Ctx.Provider>
+    <Ctx.Provider value={{ status, market, cards, signals, creators, loadedAt, busy, now, reload, locked, applyKey }}>{children}</Ctx.Provider>
   );
 }
 
