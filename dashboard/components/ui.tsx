@@ -28,6 +28,12 @@ export function Pct({ value, invert = false }: { value: number | null | undefine
 export function LoadNotice({ loaded, what }: { loaded: Loaded<unknown>; what: string }) {
   if (loaded.state === "ok") return null;
   if (loaded.state === "loading") return <div className="panel empty">Lade {what} …</div>;
+  if (loaded.state === "locked")
+    return (
+      <div className="panel empty">
+        🔒 {what}: {loaded.reason === "invalid" ? "Schlüssel falsch" : "Schlüssel fehlt"} – siehe Hinweis oben.
+      </div>
+    );
   if (loaded.state === "missing")
     return <div className="panel empty">Noch keine Daten vom Collector ({what} fehlt).</div>;
   return (

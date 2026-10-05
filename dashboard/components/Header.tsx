@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { isStale, useData } from "./DataProvider";
 import { dateTime, durationMinutes, relative, shortDateTime } from "@/lib/format";
 import { DATA_BASE_URL } from "@/lib/data";
+import { KeyPrompt } from "./KeyPrompt";
 
 export function Header() {
   const pathname = usePathname() || "/";
@@ -34,8 +35,9 @@ export function Header() {
           })}
         </nav>
       </div>
-      <div className="wrap">
+      <div className="wrap status-stack">
         <StatusBar />
+        <KeyPrompt />
       </div>
     </header>
   );
@@ -63,6 +65,10 @@ function StatusBar() {
         <RetryButton busy={busy} onClick={reload} />
       </div>
     );
+  }
+
+  if (status.state === "locked") {
+    return <div className="statusbar muted">Status ist verschlüsselt.</div>;
   }
 
   const s = status.data;

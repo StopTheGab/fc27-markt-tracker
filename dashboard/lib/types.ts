@@ -111,4 +111,5 @@ export type Loaded<T> =
   | { state: "loading" }
   | { state: "ok"; data: T }
   | { state: "missing" }
+  | { state: "locked"; reason: "missing" | "invalid" }
   | { state: "error"; message: string };

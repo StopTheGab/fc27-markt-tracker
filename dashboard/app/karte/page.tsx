@@ -85,7 +85,7 @@ function CardDetail() {
         <Link href="/karten">← Alle Karten</Link>
       </div>
       <div className="detail-head">
-        {card.image && (
+        {card.image && /^https:\/\//.test(card.image) && !/futnext/i.test(card.image) && (
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={card.image}

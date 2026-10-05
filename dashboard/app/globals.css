@@ -696,3 +696,28 @@ table.cards tbody tr:last-child td {
     display: none;
   }
 }
+
+/* Schlüssel-Eingabe */
+.key-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.key-form input {
+  font: inherit;
+  flex: 1 1 240px;
+  min-width: 0;
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 10px;
+  min-height: 40px;
+}
+.sortbar select {
+  flex: 1 1 auto;
+}
+.sortbar .btn {
+  white-space: nowrap;
+}

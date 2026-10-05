@@ -3,6 +3,7 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState } from "react";
 import { loadJson, REFRESH_MS, STALE_MINUTES } from "@/lib/data";
 import { ageMinutes } from "@/lib/format";
+import { captureKeyFromHash, setKey } from "@/lib/crypto";
 import type { CardsFile, Loaded, Market, SignalsFile, Status } from "@/lib/types";
 
 interface DataState {
@@ -17,6 +18,10 @@ interface DataState {
   /** Aktuelle Uhrzeit, tickt alle 30 s (für "vor x min") */
   now: number;
   reload: () => void;
+  /** Preisdaten verschlüsselt und kein bzw. falscher Schlüssel */
+  locked: null | "missing" | "invalid";
+  /** Schlüssel lokal speichern (null = entfernen) und neu laden */
+  applyKey: (k: string | null) => void;
 }
 
 const LOADING = { state: "loading" } as const;
@@ -57,7 +62,23 @@ export function DataProvider({ children }: { children: React.ReactNode }) {
     setBusy(false);
   }, []);
 
+  const applyKey = useCallback(
+    (k: string | null) => {
+      setKey(k);
+      reload();
+    },
+    [reload],
+  );
+
+  const locked = (() => {
+    const states = [market, cards, signals];
+    if (states.some((x) => x.state === "locked" && x.reason === "invalid")) return "invalid" as const;
+    if (states.some((x) => x.state === "locked")) return "missing" as const;
+    return null;
+  })();
+
   useEffect(() => {
+    captureKeyFromHash();
     reload();
     const id = window.setInterval(reload, REFRESH_MS);
     const tick = window.setInterval(() => setNow(Date.now()), 30_000);
@@ -74,7 +95,7 @@ export function DataProvider({ children }: { children: React.ReactNode }) {
   }, [reload]);
 
   return (
-    <Ctx.Provider value={{ status, market, cards, signals, loadedAt, busy, now, reload }}>{children}</Ctx.Provider>
+    <Ctx.Provider value={{ status, market, cards, signals, loadedAt, busy, now, reload, locked, applyKey }}>{children}</Ctx.Provider>
   );
 }
 

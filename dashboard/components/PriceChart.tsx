@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useLayoutEffect, useMemo, useRef, useState } from "react";
 import { coins, dayLabel, isNum, shortDateTime, timeOnly } from "@/lib/format";
 import type { Gap } from "@/lib/types";
 
@@ -55,7 +55,7 @@ function segments(points: ChartPoint[], key: "p" | "avg", intervalMinutes: numbe
     }
     if (prev) {
       // ältere Daten (> 48 h) sind stündlich verdichtet
-      const base = now - pt.t > 48 * HOUR && now - prev.t > 48 * HOUR ? 60 : intervalMinutes;
+      const base = now - pt.t > 48 * HOUR || now - prev.t > 48 * HOUR ? 60 : intervalMinutes;
       if (pt.t - prev.t > base * 2.5 * 60_000) {
         out.push(cur);
         cur = [];
@@ -73,9 +73,10 @@ export function PriceChart({ points, from, to, intervalMinutes, priceMin, priceM
   const [width, setWidth] = useState(700);
   const [hover, setHover] = useState<ChartPoint | null>(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const el = boxRef.current;
     if (!el) return;
+    if (el.clientWidth > 0) setWidth(el.clientWidth);
     const ro = new ResizeObserver((entries) => {
       const w = Math.round(entries[0].contentRect.width);
       if (w > 0) setWidth(w);
