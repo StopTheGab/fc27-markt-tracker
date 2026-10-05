@@ -13,7 +13,13 @@ Sparsam: höchstens 3 Agents, kurze Berichte (≤ 15 Zeilen), WebSearch mode "st
 3. **Lern-Agent** – vergleicht Tipps (`tips`) mit der Preisentwicklung, hält die Trefferquote in
    `knowledge/trefferquote.md` fest; Regeländerungen nur mit Begründung in `rules.json` + `knowledge/regel_aenderungen.md`.
    Grundregel (15 %, Steuer 5 %) nie ändern.
-4. **Meta-Agent** – nur einmal täglich (siehe `data/last_meta_check.txt`): `prompts/watchlist_refresh.md`.
+4. **Creator-Transkripte** – für jedes NEUE Video (Tabelle `creator_posts`, kind ≠ info, noch nicht in
+   `knowledge/creator_tipps/`): im Chrome-Browser „Fifa“ öffnen (claude-in-chrome), Video stumm pausieren, „Transkript anzeigen“
+   (Panel `PAmodern_transcript_view`) auslesen; bei Shorts ohne Sprache die gezeigten Karten per Screenshot alle 3 s ablesen.
+   Nur Kauf-/Verkaufsaussagen + genannte Karten zusammenfassen (keine Volltexte), mit unseren Preisen abgleichen, in
+   `knowledge/creator_tipps/<datum>.md` schreiben, erkannte Karten-IDs in `creator_posts.cards` eintragen (Regel E nutzt sie),
+   Empfehlung als `assess` speichern. FIFAllstars (priority 1) zuerst. Keine Logins, nichts posten/kommentieren.
+5. **Meta-Agent** – nur einmal täglich (siehe `data/last_meta_check.txt`): `prompts/watchlist_refresh.md`.
 
 Abschluss: Einschätzung speichern mit
 `python -m collector.cli assess --author "Analyse-Runde" --text "<2–3 Sätze>"`
