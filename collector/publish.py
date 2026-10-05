@@ -13,6 +13,7 @@ import os
 import shutil
 import stat
 import subprocess
+import time
 
 from . import crypto
 from .config import EXPORT_DIR, PUBLISH_DIR, Settings
@@ -42,9 +43,18 @@ def publish(settings: Settings, message: str) -> tuple[bool, str]:
     if not settings.publish_enabled:
         return True, "Publish deaktiviert (DATA_PUBLISH_ENABLED=false)"
     try:
-        if PUBLISH_DIR.exists():
-            shutil.rmtree(PUBLISH_DIR, onexc=_force_remove)  # git objects are read-only on Windows
-        PUBLISH_DIR.mkdir(parents=True)
+        for _attempt in range(3):  # B5: Windows may briefly lock files
+            try:
+                if PUBLISH_DIR.exists():
+                    shutil.rmtree(PUBLISH_DIR, onexc=_force_remove)  # git objects are read-only on Windows
+                PUBLISH_DIR.mkdir(parents=True, exist_ok=True)
+                if not any(PUBLISH_DIR.iterdir()):
+                    break
+            except OSError:
+                pass
+            time.sleep(2)
+        else:
+            return False, "Publish-Ordner ließ sich nicht leeren (Datei gesperrt?)"
         # Everything except status.json is encrypted (source licence: no public mirroring)
         key = crypto.ensure_key(settings.env)
         for src in EXPORT_DIR.rglob("*.json"):

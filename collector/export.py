@@ -34,13 +34,14 @@ def compress_history(series, now):
     return old + out
 
 
-def gaps(con, now, days: int = 7, min_minutes: int = 40) -> list[dict]:
+def gaps(con, now, days: int = 7, min_minutes: int = 40, current: str | None = None) -> list[dict]:
     rows = con.execute("SELECT started_at FROM runs WHERE ok=1 AND started_at>=? ORDER BY started_at",
                        (db.iso(now - timedelta(days=days)),)).fetchall()
+    stamps = sorted({r["started_at"] for r in rows} | ({current} if current else set()))
     out = []
     prev = None
-    for r in rows:
-        t = db.parse(r["started_at"])
+    for ts in stamps:
+        t = db.parse(ts)
         if prev and (t - prev) > timedelta(minutes=min_minutes):
             out.append({"from": db.iso(prev), "to": db.iso(t), "minutes": round((t - prev).total_seconds() / 60)})
         prev = t
@@ -49,10 +50,13 @@ def gaps(con, now, days: int = 7, min_minutes: int = 40) -> list[dict]:
     return out[-20:]
 
 
-def export_all(con, cards: list[dict], result: dict | None, source_info: dict, run_errors: list[str]) -> None:
+def export_all(con, cards: list[dict], result: dict | None, source_info: dict, run_errors: list[str],
+               current_ok: str | None = None, interval: int = 15) -> None:
     now = db.utcnow()
     EXPORT_DIR.mkdir(parents=True, exist_ok=True)
     last_ok = con.execute("SELECT MAX(started_at) FROM runs WHERE ok=1 AND prices>0").fetchone()[0]
+    if current_ok and (last_ok is None or current_ok > last_ok):
+        last_ok = current_ok  # B6: the running run is not marked ok yet
     metrics = (result or {}).get("metrics", {})
     with_price = sum(1 for m in metrics.values() if m.get("price") is not None and not m.get("stale"))
 
@@ -61,11 +65,11 @@ def export_all(con, cards: list[dict], result: dict | None, source_info: dict, r
         "last_successful_fetch": last_ok,
         "source": source_info,
         "collector_version": VERSION,
-        "interval_minutes": 15,
+        "interval_minutes": interval,
         "cards_tracked": len(cards),
         "cards_with_price": with_price,
         "data_days": (result or {}).get("data_days", 0.0),
-        "gaps": gaps(con, now),
+        "gaps": gaps(con, now, current=current_ok),
         "errors_last_run": run_errors[:20],
     })
 
@@ -124,10 +128,16 @@ def export_all(con, cards: list[dict], result: dict | None, source_info: dict, r
         "signals": [{k: v for k, v in s.items()} for s in sigs],
     })
 
+    # B5: overwrite in place and delete orphans (no rmtree+mkdir race on Windows)
     hist_dir = EXPORT_DIR / "history"
-    if hist_dir.exists():
-        shutil.rmtree(hist_dir)
-    hist_dir.mkdir(parents=True)
+    hist_dir.mkdir(parents=True, exist_ok=True)
+    wanted = {f"{c['id']}.json" for c in cards}
+    for f in hist_dir.glob("*.json"):
+        if f.name not in wanted:
+            try:
+                f.unlink()
+            except OSError:
+                pass
     for c in cards:
         series = result["series"].get(c["id"]) or []
         _write(hist_dir / f"{c['id']}.json", {

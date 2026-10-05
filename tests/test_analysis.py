@@ -140,11 +140,6 @@ class AnalysisTest(unittest.TestCase):
         self.assertEqual(len(again2), 1)
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
-class IlliquidTest(AnalysisTest):
     def test_flat_price_blocks_buy(self):
         cards = self.flat_cards(25)
         target = card(99)
@@ -153,3 +148,7 @@ class IlliquidTest(AnalysisTest):
         # only one change in 24 h -> illiquid / frozen quote
         res = analysis.analyze(self.con, cards, NOW)
         self.assertNotIn(target["id"], res["signals"])
+
+
+if __name__ == "__main__":
+    unittest.main()

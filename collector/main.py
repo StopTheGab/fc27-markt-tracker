@@ -21,6 +21,7 @@ from . import analysis, db, export, mailer, publish
 from .config import (HEARTBEAT_FILE, LOG_DIR, PID_FILE, STOP_FILE, WATCHLIST_PATH, Settings, ensure_dirs)
 
 log = logging.getLogger("collector")
+STALE_SOURCE_HOURS = 6  # source timestamp older than this -> price not stored (B7)
 
 
 def setup_logging(console: bool) -> None:
@@ -104,9 +105,14 @@ def run_once(settings: Settings) -> None:
                     if q.error:
                         errors.append(f"{q.card_id}: {q.error}")
                     ts = db.iso(q.fetched_at.replace(second=0))
-                    if q.price is not None:
-                        db.insert_price(con, q.card_id, ts, int(q.price), "live", src.id, db.iso(q.source_updated_at))
-                        n_prices += 1
+                    stale_src = bool(q.source_updated_at and
+                                     db.utcnow() - q.source_updated_at > timedelta(hours=STALE_SOURCE_HOURS))
+                    if q.price is not None and stale_src:
+                        # B7: source has not refreshed this card for hours -> not a current market price
+                        errors.append(f"{q.card_id}: Quellpreis veraltet (Stand {db.iso(q.source_updated_at)})")
+                    elif q.price is not None:
+                        if db.insert_price(con, q.card_id, ts, int(q.price), "live", src.id, db.iso(q.source_updated_at)):
+                            n_prices += 1
                     sets, vals = [], []
                     if q.price_min is not None:
                         sets.append("price_min=?"); vals.append(q.price_min)
@@ -134,15 +140,26 @@ def run_once(settings: Settings) -> None:
                 cards = db.active_cards(con)
         if cards:
             result = analysis.analyze(con, cards, db.utcnow())
-        export.export_all(con, cards, result, source_info, errors)
+        # B4: mails first - signal state is already persisted, a later export error must not swallow them
+        if result is not None:
+            try:
+                if n_prices > 0:
+                    mailer.signal_mail(con, settings, result)
+            except Exception as e:
+                log.exception("Signal-Mail fehlgeschlagen")
+                errors.append(f"Signal-Mail: {e}")
+            try:
+                mailer.hourly_mail(con, settings, result, cards)
+            except Exception as e:
+                log.exception("Stunden-Mail fehlgeschlagen")
+                errors.append(f"Stunden-Mail: {e}")
+        current_ok = db.iso(started) if n_prices > 0 else None
+        export.export_all(con, cards, result, source_info, errors, current_ok=current_ok,
+                          interval=settings.interval_minutes)
         ok_pub, msg_pub = publish.publish(settings, f"data {db.iso(db.utcnow())}")
         if not ok_pub:
             errors.append(msg_pub)
             log.error(msg_pub)
-        if result is not None and n_prices > 0:
-            mailer.signal_mail(con, settings, result)
-        if result is not None:
-            mailer.hourly_mail(con, settings, result, cards)
     except Exception as e:
         log.error("Lauf fehlgeschlagen: %s\n%s", e, traceback.format_exc())
         errors.append(f"Lauf fehlgeschlagen: {e}")
@@ -176,22 +193,33 @@ def loop(settings: Settings) -> None:
         STOP_FILE.unlink()
     log.info("Collector gestartet (PID %s, Intervall %s min)", os.getpid(), settings.interval_minutes)
     try:
-        con = db.connect()
-        last = con.execute("SELECT MAX(started_at) FROM runs").fetchone()[0]
-        con.close()
-        last_dt = db.parse(last)
+        last = None
+        try:
+            con = db.connect()
+            last = con.execute("SELECT MAX(started_at) FROM runs").fetchone()[0]
+            con.close()
+            last_dt = db.parse(last)
+        except Exception:
+            log.exception("Datenbank beim Start nicht lesbar – versuche es im nächsten Takt")
+            last_dt = db.utcnow()
         if last_dt is None or db.utcnow() - last_dt > timedelta(minutes=settings.interval_minutes - 1):
             if last_dt:
                 log.info("Letzter Lauf %s – Lücke von %.0f min, mache sofort weiter.", last,
                          (db.utcnow() - last_dt).total_seconds() / 60)
-            run_once(Settings())
+            try:
+                run_once(Settings())
+            except Exception:
+                log.exception("Nachhol-Lauf fehlgeschlagen – weiter im normalen Takt")
         while True:
             target = next_slot(db.utcnow(), settings.interval_minutes)
             while db.utcnow() < target:
                 if STOP_FILE.exists():
                     log.info("Stopp-Datei gefunden – Collector beendet sich sauber.")
                     return
-                HEARTBEAT_FILE.write_text(db.iso(db.utcnow()) + f" next={db.iso(target)}")
+                try:
+                    HEARTBEAT_FILE.write_text(db.iso(db.utcnow()) + f" next={db.iso(target)}")
+                except OSError:
+                    pass  # e.g. file briefly locked by a virus scanner
                 time.sleep(5)
             try:
                 run_once(Settings())  # re-read .env each run

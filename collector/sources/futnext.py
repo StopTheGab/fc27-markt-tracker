@@ -114,7 +114,7 @@ def page_platform(html: str) -> str | None:
 
 class FutNextSource(PriceSource):
     id = "futnext"
-    name = "FUTNext (oeffentliche Spielerseiten)"
+    name = "FUTNext (öffentliche Spielerseiten)"
     url = BASE
 
     def __init__(self, env: dict | None = None):
@@ -123,7 +123,7 @@ class FutNextSource(PriceSource):
         # Optional (FUTNEXT_SMART_SKIP=1): Karte erst neu laden, wenn ein neuer Stunden-Stand faellig ist.
         # Standard aus, weil sich Preise auch innerhalb der Stunde aendern (timeStamp = Stunden-Bucket).
         self.smart_skip = env.get("FUTNEXT_SMART_SKIP", "0") == "1"
-        self.min_refetch = timedelta(minutes=float(env.get("FUTNEXT_MIN_REFETCH_MIN", "14")))
+        self.min_refetch = timedelta(minutes=float(env.get("FUTNEXT_MIN_REFETCH_MIN", "5")))
         self.budget_s = float(env.get("FUTNEXT_RUN_BUDGET_S", "720"))   # 12 min pro Lauf
         self.use_disk_cache = env.get("FUTNEXT_DISK_CACHE", "1") != "0"
         self._cache: dict[str, dict] = self._load_cache()

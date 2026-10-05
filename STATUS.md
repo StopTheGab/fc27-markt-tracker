@@ -1,6 +1,6 @@
 # STATUS – EA FC 27 Markt-Tracker
 
-_Stand: 2026-10-05, ca. 11:15. Die Sitzung wurde wegen des Nutzungslimits früher beendet. Der Collector läuft weiter._
+_Stand: 2026-10-05, ca. 14:55. Der Collector läuft seit 10:49 (neu gestartet 14:38 mit Fehlerkorrekturen)._
 
 ## Kurz
 - **Dashboard:** https://fc27-markt-tracker.vercel.app
@@ -22,6 +22,18 @@ _Stand: 2026-10-05, ca. 11:15. Die Sitzung wurde wegen des Nutzungslimits frühe
 - `market_calendar.json`: Wochenzyklus, 13 Promos, 11 frühere Crashs, Termine bis 16.11.
 - `watchlist.json`: 146 Karten (meta 49, promo 50, trading 42, fodder 5), jede mit Grund, Quelle und Datum (22.09.–05.10.). Neu recherchieren: `scripts\watchlist-refresh.ps1`.
 
+## Prüfung (Prüf-Agent, 14:40)
+- Daten echt: FUTNext-Gegenprobe Haaland 121.000 und Neves 2.300 exakt gleich, Mbappé 3,72 Mio. live gegen 3,739 Mio. 30 min vorher. Alle Preise ganzzahlig, keine Duplikate, keine Lücken.
+- Dashboard bei 1280 und 600 px: echte Preise, Aktualisierungszeit, Deutsch, keine Platzhalter. Der data-Branch ist verschlüsselt, keine Geheimnisse im Repo, kein Vercel-Build aus `data`.
+- 7 Fehler gefunden und behoben (14:38), 30 Tests grün:
+  - B1: Die meisten Karten wurden nur alle 30 statt 15 min neu abgerufen.
+  - B2: Der Collector konnte sich bei einem Fehler beim Start oder in der Wartezeit still beenden.
+  - B3: Ein Verkaufssignal konnte mit Verlust erscheinen.
+  - B4: Eine Signal-Mail konnte bei einem Exportfehler verloren gehen.
+  - B5: Windows-Dateisperren beim Publish.
+  - B6: `last_successful_fetch` hing einen Lauf hinterher.
+  - B7: Veraltete Quellpreise (z. B. Bouaddi, Stand 24.09.) galten als aktuell.
+
 ## Entscheidungen
 1. **Futbin geht nicht:** Es blockt Bots (403), und laut ToS §13 ist Scraping verboten. FUTWIZ blockt ebenfalls (403). FUT.GG verbietet laut ToS automatisierten Zugriff, und die Preise kommen nur über `/api/`, das robots.txt sperrt. FUT-DB ist nicht erreichbar, der Preis-Endpunkt ist dort „premium“. **Gewählt: FUTNext**, weil robots.txt `Allow: /` erlaubt und die ToS Bots nicht verbieten. Details: `collector/sources/README.md`.
 2. **Verschlüsselung:** Die FUTNext-Lizenz erlaubt nur „personal, non-commercial“ Nutzung und kein Spiegeln auf anderen Servern („mirror“). Deshalb liegen die Preise im öffentlichen Repo nur AES-256-GCM-verschlüsselt. Klartext ist nur `status.json`. Der Schlüssel `DATA_KEY` steht in `.env`.
@@ -41,9 +53,9 @@ _Stand: 2026-10-05, ca. 11:15. Die Sitzung wurde wegen des Nutzungslimits frühe
 4. Optional aufräumen: `dashboard\AGENTS.md` und `dashboard\CLAUDE.md` hat `next dev` erzeugt. Sie sind gitignoriert, ich durfte sie nicht löschen.
 
 ## Was nicht oder noch nicht läuft
-- **Prüf-Agent:** Gestartet, aber wegen des Nutzungslimits nach kurzer Zeit abgebrochen. Kein Ergebnis. Bei „weiter“ neu starten (Auftrag siehe Gesprächsverlauf bzw. Prüfliste in `prompts/`).
-- **Stündliche Analyse-Runde:** Wegen des Limits gestoppt. Bei „weiter“ wieder anlegen (`prompts/analysis_round.md`). Bis dahin zeigt das Dashboard die regelbasierte Einschätzung.
-- **Eigene Gegenprobe der Preise:** Nur Stichproben. Mbappé 3,8 Mio., Haaland 120k (der Agent hat den Haaland-Preis mit Futbin verglichen: passt).
+- **Vercel-Konnektor:** verlangt eine neue Anmeldung (403). Das Dashboard läuft trotzdem; nur für spätere Änderungen per Werkzeug nötig: im Claude-Chat `/mcp` → vercel → Authenticate.
+- **Analyse-Runde:** läuft stündlich um :23, aber nur solange diese Claude-Sitzung offen ist. Bei „weiter“ in einer neuen Sitzung neu anlegen (`prompts/analysis_round.md`).
+- Die Mail-Links enthalten den Dashboard-Schlüssel (`#k=…`), er läuft also über Resend und dein Postfach. Für ein privates Werkzeug vertretbar.
 - **Last auf FUTNext:** ca. 100–150 Seitenabrufe pro Lauf. Mit `FUTNEXT_SMART_SKIP=1` in `.env` sind es etwa ein Viertel davon, wenn du sie reduzieren willst.
 
 ## Befehle für die Sitzung

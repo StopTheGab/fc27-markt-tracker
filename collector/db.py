@@ -146,11 +146,12 @@ def active_cards(con: sqlite3.Connection) -> list[dict]:
 
 
 def insert_price(con, card_id: str, ts: str, price: int | None, origin: str, source: str | None,
-                 source_updated_at: str | None = None) -> None:
-    con.execute(
+                 source_updated_at: str | None = None) -> bool:
+    cur = con.execute(
         "INSERT OR IGNORE INTO prices(card_id,ts,price,origin,source,source_updated_at) VALUES(?,?,?,?,?,?)",
         (card_id, ts, price, origin, source, source_updated_at),
     )
+    return cur.rowcount > 0
 
 
 def price_series(con, card_id: str, since: str) -> list[tuple[datetime, int]]:

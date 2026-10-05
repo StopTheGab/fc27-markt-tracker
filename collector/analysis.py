@@ -362,8 +362,8 @@ def analyze(con, cards: list[dict], now: datetime) -> dict:
         if not m or m["price"] is None or m["avg_7d"] is None or m.get("stale"):
             continue
         created = db.parse(tip["created_at"])
-        if m["price"] >= m["avg_7d"]:
-            profit = round(m["price"] * (1 - r["ea_tax"]) - tip["buy_price"])
+        profit = round(m["price"] * (1 - r["ea_tax"]) - tip["buy_price"])
+        if m["price"] >= m["avg_7d"] and profit > 0:  # B3: no "sell" signal that realises a loss
             active[cid] = {
                 "card_id": cid, "name": by_id.get(cid, {}).get("name"), "type": "sell",
                 "price": m["price"], "avg_7d": m["avg_7d"], "deviation_pct": pct(m["price"], m["avg_7d"]),
@@ -384,8 +384,8 @@ def analyze(con, cards: list[dict], now: datetime) -> dict:
             m = metrics.get(cid)
             if since_dt and now - since_dt < timedelta(hours=r["sell_display_hours"]) and m and m["price"] and m["avg_7d"] and m["price"] >= m["avg_7d"]:
                 last = con.execute("SELECT * FROM tips WHERE card_id=? AND closed_at IS NOT NULL ORDER BY id DESC LIMIT 1", (cid,)).fetchone()
-                if last:
-                    profit = round(m["price"] * (1 - r["ea_tax"]) - last["buy_price"])
+                profit = round(m["price"] * (1 - r["ea_tax"]) - last["buy_price"]) if last else 0
+                if last and profit > 0:
                     active[cid] = {
                         "card_id": cid, "name": by_id.get(cid, {}).get("name"), "type": "sell",
                         "price": m["price"], "avg_7d": m["avg_7d"], "deviation_pct": pct(m["price"], m["avg_7d"]),
