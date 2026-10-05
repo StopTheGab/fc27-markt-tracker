@@ -41,6 +41,44 @@ _Stand: 2026-10-05, ca. 14:55. Der Collector läuft seit 10:49 (neu gestartet 14
 4. **Verkaufssignale nur nach eigenem Kaufsignal:** Bestände kennt das Tool nicht. Sonst wäre jede zweite Karte ein „Verkauf“. Daraus ergibt sich auch die Trefferquote.
 5. **Mail über Resend statt Outlook-SMTP:** Microsoft hat SMTP mit Passwort oder App-Passwort für Outlook.com am 16.09.2024 abgeschaltet. Es geht nur noch OAuth über eine Azure-App, und die hast du wegen der Kreditkarte abgelehnt. Ein Outlook-Konnektor war nicht verbunden, eine Testmail war deshalb nicht möglich.
 
+## Creator-Tipps (seit 05.10. 17:45)
+- **Hauptquelle FIFAllstars**, Zusatzquelle TheFutAccountant (Auswahl des Users). Der Collector liest bei jedem Lauf die öffentlichen
+  YouTube-Feeds beider Creator, ordnet Videos ein (Kauf-Tipp/Verkaufs-Tipp/Marktanalyse) und erkennt Watchlist-Karten im Titel oder in der Beschreibung.
+  Neues Tipp-Video von FIFAllstars ⇒ Signal-Mail, TheFutAccountant ⇒ Stunden-Update. Dashboard: Seite „Creator-Tipps“.
+- **Grenze:** FIFAllstars nennt Spieler meist nur im Video. Dann steht „Karten nicht im Titel genannt“.
+- **TikTok/Instagram:** ohne Login nicht automatisch lesbar ⇒ nicht eingebunden (nur Links im Dashboard).
+- **Live-Transkripte: nicht möglich.** Die YouTube-API gibt Untertitel nur an den Kanalbesitzer heraus, und Streams mitschneiden oder transkribieren
+  verstößt gegen die YouTube-Bedingungen. Stattdessen: **Live-Mail**, sobald FIFAllstars/TheFutAccountant live gehen. Dafür brauchst du einen kostenlosen API-Key (unten).
+  Was du im Stream hörst, kannst du mir in den Chat schreiben. Ich trage es mit Datum als Tipp ein.
+
+### Selbst einrichten (optional)
+1. **Live-Erkennung (ca. 5 min):**
+   - https://console.cloud.google.com → Projekt anlegen.
+   - „YouTube Data API v3“ aktivieren.
+   - Unter „Anmeldedaten“ einen API-Schlüssel erstellen.
+   - In `.env` eintragen: `YOUTUBE_API_KEY=…` (das Kontingent ist gratis, der Tracker braucht ca. 200 von 10.000 Einheiten pro Tag).
+2. **Discord von FIFAllstars (ca. 15 min):** Ich darf mich nicht in Discord anmelden, und ein automatisch mitlesendes Benutzerkonto verstößt gegen die Discord-Regeln.
+   Erlaubt ist ein **eigener Bot in deinem eigenen Server**:
+   - a) Dem kostenlosen FIFAllstars-Discord beitreten: https://discord.gg/n54GPN4UFs
+   - b) Einen eigenen Server anlegen (+ → „Eigenen Server erstellen“).
+   - c) Im FIFAllstars-Server beim Ankündigungskanal mit den Tipps auf **„Folgen“** klicken und als Ziel einen Kanal in deinem Server wählen.
+     Diese Funktion gibt es nur bei Ankündigungskanälen. Fehlt sie, geht dieser Weg nicht.
+   - d) https://discord.com/developers/applications → „New Application“ → „Bot“ → „Reset Token“ und den Token kopieren.
+     Unter „Privileged Gateway Intents“ **Message Content Intent** einschalten.
+   - e) Unter „OAuth2 → URL Generator“ die Scopes `bot` und die Berechtigungen „View Channels“ und „Read Message History“ wählen,
+     dann mit der erzeugten URL den Bot in **deinen** Server einladen.
+   - f) In Discord unter Einstellungen → Erweitert den Entwicklermodus einschalten, dann per Rechtsklick auf deinen Kanal → „Kanal-ID kopieren“
+     und auf deinen Server → „Server-ID kopieren“.
+   - g) In `.env` eintragen: `DISCORD_BOT_TOKEN=…`, `DISCORD_CHANNEL_IDS=<Kanal-ID>`, `DISCORD_GUILD_ID=<Server-ID>`. Danach liest der Collector die Posts bei jedem Lauf.
+   Premium-Inhalte (Patreon) bitte nicht so einbinden: Deren Weitergabe verbietet Patreon meist.
+
+## Signal-Logik v2 (seit 05.10. 17:45, Details in `knowledge/regel_aenderungen.md`)
+- Jede Karte hat ein **Kauflimit** (7-Tage-Schnitt minus 8–20 %, je nach Schwankung) und ein **Verkaufslimit** (7-Tage-Schnitt).
+  Kaufsignal, wenn der Preis unter das Kauflimit fällt, ab −15 % „starkes Signal“.
+- Dazu kommen Wochenzyklus (Kauf im Wochentief, Verkauf im Wochenhoch Do/Fr), Promo-Warnungen (vor Promos verkaufen) und Creator-Tipps.
+- Watchlist: 200 Karten (Karten unter 1.000 Coins entfernt, 76 gut gehandelte Karten von 10.000–200.000 neu). Ein Lauf dauert ca. 8 min.
+- **Futbin** bleibt außen vor: Die ToS (§ 13, Stand 24.02.2026) verbieten Scraping ohne schriftliche Erlaubnis. Erst mit Erlaubnis kann ich umstellen.
+
 ## Was du noch selbst tun musst
 1. **E-Mail einschalten (ca. 5 min):**
    - Auf https://resend.com kostenlos registrieren, **mit gabriel.anter123@outlook.com**. Der Absender `onboarding@resend.dev` darf nur an die Konto-Adresse senden.
