@@ -85,6 +85,8 @@ class Settings:
     def dashboard_link(self) -> str:
         """Dashboard URL incl. decryption key in the fragment (never sent to a server)."""
         key = self.env.get("DATA_KEY", "")
+        if not self.publish_enabled:  # dashboard removed 2026-10-05: link goes to Futbin, no key
+            return self.dashboard_url
         return f"{self.dashboard_url.rstrip('/')}/#k={key}" if key else self.dashboard_url
 
 

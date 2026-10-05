@@ -117,7 +117,7 @@ def _wrap(title: str, body_html: str, settings: Settings) -> str:
         f"<h2 style=\"font-size:18px;margin:0 0 10px\">{html.escape(title)}</h2>{body_html}"
         f"<p style=\"margin-top:16px\"><a href=\"{settings.dashboard_link}\" "
         "style=\"background:#16a34a;color:#fff;padding:9px 14px;border-radius:6px;text-decoration:none\">"
-        "Zum Dashboard</a></p>"
+        "Futbin öffnen</a></p>"
         "<p style=\"color:#666;font-size:12px\">Automatisch vom FC27-Collector. Keine Anlageberatung – "
         "Signale beruhen auf Preisstatistik und können falsch sein.</p></div>"
     )
@@ -180,7 +180,7 @@ def signal_mail(con, settings: Settings, result: dict) -> None:
         else:
             lines.append("Karten nicht im Titel/Beschreibung genannt – Tipps stehen im Video.")
         blocks.append(lines)
-    text = "\n\n".join("\n".join(b) for b in blocks) + f"\n\nDashboard: {settings.dashboard_link}\n"
+    text = "\n\n".join("\n".join(b) for b in blocks) + f"\n\nFutbin: {settings.dashboard_link}\n"
     body = "".join("<p style=\"margin:0 0 12px\">" + "<br>".join(html.escape(x) for x in b) + "</p>" for b in blocks)
     send(con, settings, "signal", subject, text, _wrap(subject.replace("[FC27 SIGNAL] ", ""), body, settings))
 
@@ -232,7 +232,7 @@ def hourly_mail(con, settings: Settings, result: dict, cards: list[dict]) -> Non
             lines.append(f"- {p['cid']}: {p['title'][:80]} ({_KIND.get(p['kind'], p['kind'])}) {p['url']}")
     if assessment and now - db.parse(assessment["created_at"]) < timedelta(hours=6):
         lines.append(f"Einschätzung ({assessment['author']}): {assessment['text']}")
-    text = "\n".join(lines) + f"\n\nDashboard: {settings.dashboard_link}\n"
+    text = "\n".join(lines) + f"\n\nFutbin: {settings.dashboard_link}\n"
     body = ""
     for ln in lines:
         body += f"<div style=\"margin:{'8px 0 2px' if ln.endswith(':') else '0 0 4px'}\">{html.escape(ln)}</div>"
