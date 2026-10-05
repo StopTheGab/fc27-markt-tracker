@@ -63,6 +63,11 @@ class Settings:
         self.mail_signals_enabled = flag(e, "MAIL_SIGNALS_ENABLED", True)
         self.mail_hourly_enabled = flag(e, "MAIL_HOURLY_ENABLED", True)
         self.mail_daily_cap = int(e.get("MAIL_DAILY_CAP", "90"))
+        # Push via ntfy (no account): signals always, hourly update optional
+        self.ntfy_topic = e.get("NTFY_TOPIC", "").strip()
+        self.ntfy_server = e.get("NTFY_SERVER", "https://ntfy.sh")
+        self.push_signals = flag(e, "PUSH_SIGNALS_ENABLED", True)
+        self.push_hourly = flag(e, "PUSH_HOURLY_ENABLED", True)
         self.resend_api_key = e.get("RESEND_API_KEY", "")
         self.smtp_host = e.get("SMTP_HOST", "")
         self.smtp_port = int(e.get("SMTP_PORT", "587") or 587)
@@ -71,6 +76,10 @@ class Settings:
         self.smtp_starttls = flag(e, "SMTP_STARTTLS", True)
         # History import per run (spreads load on the source)
         self.history_imports_per_run = int(e.get("FC27_HISTORY_IMPORTS_PER_RUN", "15"))
+
+    def push_enabled(self, kind: str) -> bool:
+        return bool(self.ntfy_topic) and (self.push_signals if kind == "signal" else
+                                          self.push_hourly if kind == "hourly" else True)
 
     @property
     def dashboard_link(self) -> str:

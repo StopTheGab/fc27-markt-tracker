@@ -79,6 +79,16 @@ _Stand: 2026-10-05, ca. 14:55. Der Collector läuft seit 10:49 (neu gestartet 14
 - Watchlist: 200 Karten (Karten unter 1.000 Coins entfernt, 76 gut gehandelte Karten von 10.000–200.000 neu). Ein Lauf dauert ca. 8 min.
 - **Futbin** bleibt außen vor: Die ToS (§ 13, Stand 24.02.2026) verbieten Scraping ohne schriftliche Erlaubnis. Erst mit Erlaubnis kann ich umstellen.
 
+## Push-Benachrichtigungen (seit 05.10. 18:15, ohne Konto)
+- Jede Signal-Mail und jedes Stunden-Update geht zusätzlich als **Push über ntfy** raus, auch ohne eingerichteten Mail-Anbieter.
+- Einrichtung (1 min):
+  1. App „ntfy“ installieren (Android: Play Store/F-Droid, iPhone: App Store).
+  2. „+“ antippen und das Thema aus `data\DASHBOARD_LINK.txt` eintragen (Server ntfy.sh).
+  Das Thema ist geheim, es steht nur lokal und nicht im Repo.
+- Abschalten getrennt möglich: `PUSH_SIGNALS_ENABLED` / `PUSH_HOURLY_ENABLED` in `.env`.
+- Echte E-Mail ohne Konto gibt es nicht. ntfy.sh hat anonymen Mailversand wegen Missbrauchs abgeschaltet.
+  Konten anlegen (Resend, Google Cloud, Discord) darf Claude nicht selbst, das musst du machen (Anleitungen oben).
+
 ## Was du noch selbst tun musst
 1. **E-Mail einschalten (ca. 5 min):**
    - Auf https://resend.com kostenlos registrieren, **mit gabriel.anter123@outlook.com**. Der Absender `onboarding@resend.dev` darf nur an die Konto-Adresse senden.

@@ -60,13 +60,38 @@ def _send(settings: Settings, subject: str, text: str, html_body: str) -> tuple[
     return False, "Kein Mail-Anbieter konfiguriert (MAIL_PROVIDER=none)"
 
 
+def push(con, settings: Settings, kind: str, subject: str, text: str) -> bool:
+    """Push notification via ntfy (no account needed: the user subscribes to the random topic in the ntfy app).
+    The topic name is the only secret, so the dashboard key is never included."""
+    topic = settings.ntfy_topic
+    if not topic:
+        return False
+    now = db.utcnow()
+    body = text.replace(settings.dashboard_link, settings.dashboard_url)[:3900]
+    try:
+        r = requests.post(settings.ntfy_server.rstrip("/") + "/", timeout=20, json={
+            "topic": topic, "title": subject[:200], "message": body,
+            "priority": 4 if kind == "signal" else 2,
+            "tags": ["moneybag"] if kind == "signal" else ["chart_with_upwards_trend"],
+            "click": settings.dashboard_url})
+        ok, info = r.status_code < 300, f"HTTP {r.status_code}: {r.text[:200]}"
+    except Exception as e:
+        ok, info = False, f"{type(e).__name__}: {e}"
+    con.execute("INSERT INTO mail_log(kind,sent_at,subject,ok,error) VALUES(?,?,?,?,?)",
+                (f"push-{kind}", db.iso(now), subject, int(ok), None if ok else info[:500]))
+    con.commit()
+    (log.info if ok else log.error)("Push %s: %s", "gesendet" if ok else "fehlgeschlagen", subject if ok else info)
+    return ok
+
+
 def send(con, settings: Settings, kind: str, subject: str, text: str, html_body: str) -> bool:
     now = db.utcnow()
+    pushed = settings.push_enabled(kind) and push(con, settings, kind, subject, text)
     if settings.mail_provider in ("", "none"):
         log.info("Mail übersprungen (kein Anbieter): %s", subject)
-        return False
+        return pushed
     day_start = now.astimezone(TZ).replace(hour=0, minute=0, second=0)
-    sent_today = con.execute("SELECT COUNT(*) FROM mail_log WHERE ok=1 AND sent_at>=?",
+    sent_today = con.execute("SELECT COUNT(*) FROM mail_log WHERE ok=1 AND kind NOT LIKE 'push-%' AND sent_at>=?",
                              (db.iso(day_start),)).fetchone()[0]
     if kind != "test" and sent_today >= settings.mail_daily_cap:
         log.warning("Tageslimit %s Mails erreicht – %s nicht gesendet", settings.mail_daily_cap, subject)
