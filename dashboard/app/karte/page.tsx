@@ -19,6 +19,7 @@ export default function CardPage() {
 }
 
 const RANGES = [
+  { id: "6h", label: "6 h", hours: 6 },
   { id: "24h", label: "24 h", hours: 24 },
   { id: "3d", label: "3 Tage", hours: 72 },
   { id: "7d", label: "7 Tage", hours: 168 },
@@ -31,7 +32,7 @@ function CardDetail() {
   const { cards, signals, status, loadedAt, now } = useData();
   const hasPrices = useHasPrices();
   const [history, setHistory] = useState<Loaded<HistoryFile>>({ state: "loading" });
-  const [range, setRange] = useState<(typeof RANGES)[number]["id"]>("7d");
+  const [range, setRange] = useState<(typeof RANGES)[number]["id"]>("all");
 
   // Verlauf laden und bei jedem Neuladen der Hauptdaten (alle 5 min) mitaktualisieren
   useEffect(() => {
@@ -54,7 +55,9 @@ function CardDetail() {
   const lastT = points.length ? points[points.length - 1].t : now;
   const firstT = points.length ? points[0].t : now;
   const hours = RANGES.find((r) => r.id === range)?.hours ?? 0;
-  const from = hours ? Math.max(firstT, lastT - hours * 3600_000) : firstT;
+  // Achse spannt immer den ganzen gewählten Zeitraum auf – auch wenn erst ein Teil davon Daten hat
+  const from = hours ? lastT - hours * 3600_000 : firstT;
+  const notFilled = hours > 0 && firstT > from;
   const inRange = points.filter((p) => p.t >= from && isNum(p.p)).map((p) => p.p as number);
   const rangeMin = inRange.length ? Math.min(...inRange) : null;
   const rangeMax = inRange.length ? Math.max(...inRange) : null;
@@ -240,6 +243,11 @@ function CardDetail() {
               Im Zeitraum: Tief {coins(rangeMin)} · Hoch {coins(rangeMax)} · {inRange.length} Messpunkte · letzter
               Punkt {dateTime(lastT)}
             </div>
+            {notFilled && (
+              <div className="small muted" style={{ marginTop: 4 }}>
+                Daten erst seit {dateTime(firstT)} – der gewählte Zeitraum füllt sich mit der Zeit.
+              </div>
+            )}
           </>
         )}
       </section>
